@@ -15,8 +15,30 @@ class _AuthenticationPageState extends State<AuthenticationPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Text("THIS IS MY DOG! ROKU!"),
             Text("Hi"),
-            Text("World!"),
+            Image.asset('assets/images/husky.jpg'),
+            Image.asset("assets/images/woman.png"),
+            Text("data"),
+            Text("Hi"),
+            Text("World!!!"),
+            Image.asset(
+              "woman.png",
+              width: 300,
+              height: 300,
+            ),
+            SizedBox(
+              height: 14,
+            ),
+            Image(
+              image: AssetImage("woman.png"),
+            ),
+            SizedBox(
+              height: 14,
+            ),
+            Image(
+              image: AssetImage("download.jpg"),
+            ),
           ],
         ),
       ),

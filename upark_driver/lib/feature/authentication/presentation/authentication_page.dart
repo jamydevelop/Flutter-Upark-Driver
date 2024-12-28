@@ -22,23 +22,11 @@ class _AuthenticationPageState extends State<AuthenticationPage> {
             Text("data"),
             Text("Hi"),
             Text("World!!!"),
-            Image.asset(
-              "woman.png",
-              width: 300,
-              height: 300,
-            ),
-            SizedBox(
-              height: 14,
-            ),
-            Image(
-              image: AssetImage("woman.png"),
-            ),
-            SizedBox(
-              height: 14,
-            ),
-            Image(
-              image: AssetImage("download.jpg"),
-            ),
+            // Image.asset(
+            //   "woman.png",
+            //   width: 300,
+            //   height: 300,
+            // ),
           ],
         ),
       ),

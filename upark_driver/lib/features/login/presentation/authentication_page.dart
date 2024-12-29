@@ -21,38 +21,76 @@ class _AuthenticationPageState extends State<AuthenticationPage> {
             left: largeSpacing,
             right: largeSpacing,
           ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Image.asset("assets/images/woman.png"),
-              SizedBox(
-                height: largeSpacing,
-              ),
-              Text(
-                "Login",
-                style: TextStyle(
-                  fontSize: fontSizeTitle1,
-                  fontWeight: FontWeight.bold,
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Image.asset("assets/images/woman.png"),
+                SizedBox(
+                  height: largeSpacing,
                 ),
-              ),
-              CommonTextLabel(
-                text: "Email",
-                fontSize: fontSizeTitle4,
-              ),
-              CommonTextField(
-                fillColor: Colors.white,
-                filled: true,
-                keyboardType: TextInputType.text,
-                inputBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12.0),
-                    borderSide: BorderSide(color: Colors.grey.shade400)),
-              ),
-              CommonTextLabel(
-                text: "password",
-                fontSize: fontSizeTitle4,
-              ),
-            ],
+                Text(
+                  "Login",
+                  style: TextStyle(
+                    fontSize: fontSizeTitle1,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height: extraLargeSpacing),
+                CommonTextLabel(
+                  color: Colors.grey,
+                  text: "Email",
+                  fontSize: fontSizeTitle4,
+                ),
+                SizedBox(height: smallSpacing),
+                CommonTextField(
+                  //labelText: "Email",
+                  hintText: "Enter your email",
+                  prefixIcon: Icon(
+                    Icons.alternate_email,
+                    color: Colors.grey,
+                  ),
+                  onFieldSubmitted: (value) {
+                    // Hide the on-screen keyboard
+                    FocusScope.of(context).unfocus();
+                  },
+                  keyboardType: TextInputType.emailAddress,
+                  inputBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12.0),
+                      borderSide: BorderSide(color: Colors.grey.shade400)),
+                ),
+                SizedBox(height: smallSpacing),
+                CommonTextLabel(
+                  color: Colors.grey,
+                  text: "password",
+                  fontSize: fontSizeTitle4,
+                ),
+                SizedBox(height: smallSpacing),
+                CommonTextField(
+                  hintText: "Password",
+                  prefixIcon: Icon(
+                    Icons.key_sharp,
+                    color: Colors.grey,
+                  ),
+                  onFieldSubmitted: (value) {
+                    // Hide the on-screen keyboard
+                    FocusScope.of(context).unfocus();
+                  },
+                  suffixIcon: Icon(
+                    Icons.visibility, // Right-side icon
+                    color: Colors.grey,
+                  ),
+                  //isSecure: true,
+                  fillColor: Colors.white,
+                  filled: true,
+                  keyboardType: TextInputType.text,
+                  inputBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12.0),
+                      borderSide: BorderSide(color: Colors.grey.shade400)),
+                ),
+              ],
+            ),
           ),
         ),
       ),

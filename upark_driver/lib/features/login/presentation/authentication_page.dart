@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/dimensions.dart';
 
 class AuthenticationPage extends StatefulWidget {
   const AuthenticationPage({super.key});
@@ -15,25 +16,26 @@ class _AuthenticationPageState extends State<AuthenticationPage> {
         backgroundColor: Colors.white,
         body: Padding(
           padding: const EdgeInsets.only(
-            left: 24,
-            right: 24,
+            left: largeSpacing,
+            right: largeSpacing,
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              // SizedBox(height: 36),
               Image.asset("assets/images/woman.png"),
               SizedBox(
-                height: 24,
+                height: largeSpacing,
               ),
               Text(
                 "Login",
                 style: TextStyle(
-                  fontSize: 24,
+                  fontSize: fontSizeTitle1,
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              Text("Email"),
+              Text("Password"),
             ],
           ),
         ),

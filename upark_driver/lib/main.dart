@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:upark_driver/feature/authentication/presentation/authentication_page.dart';
+import 'package:upark_driver/features/authentication/presentation/authentication_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,14 +10,16 @@ class MyApp extends StatelessWidget {
 //test
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+    return SafeArea(
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
+        ),
+        home: const AuthenticationPage(),
       ),
-      home: const AuthenticationPage(),
     );
   }
 }

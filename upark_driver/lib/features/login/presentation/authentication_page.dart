@@ -3,7 +3,9 @@ import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/features/login/widget/email_text_label.widget.dart';
 import 'package:upark_driver/features/login/widget/email_textfield.widget.dart';
 import 'package:upark_driver/features/login/widget/forgot_password_text_label.widget.dart';
+import 'package:upark_driver/features/login/widget/login_button.widget.dart';
 import 'package:upark_driver/features/login/widget/login_text_label.widget.dart';
+import 'package:upark_driver/features/login/widget/or_text_label.widget.dart';
 import 'package:upark_driver/features/login/widget/password_text_label.dart';
 import 'package:upark_driver/features/login/widget/password_textfield.widget.dart';
 
@@ -40,9 +42,13 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(height: smallSpacing),
                 PasswordTextLabelWidget(),
                 PasswordTextfieldWidget(),
-                SizedBox(height: smallSpacing),
+                SizedBox(height: extraLargeSpacing),
                 ForgotPasswordTextLabelWidget(),
-                SizedBox(height: smallSpacing),
+                SizedBox(height: extraLargeSpacing),
+                LoginButtonWidget(),
+                SizedBox(height: regularSpacing),
+                OrTextLabelWidget(),
+                SizedBox(height: regularSpacing),
               ],
             ),
           ),

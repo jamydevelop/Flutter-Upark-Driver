@@ -46,8 +46,7 @@ class CommonTextField extends StatefulWidget {
       this.autofocus = false,
       this.textAlign = TextAlign.start,
       this.onEditingComplete,
-      this.hasCounter = false,
-      required bool obscureText});
+      this.hasCounter = false});
 
   final String? helperText;
   final TextStyle? helperTextStyle;

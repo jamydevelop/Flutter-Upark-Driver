@@ -1,22 +1,15 @@
-// ignore_for_file: library_private_types_in_public_api
-
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/widget/common_text_field.dart';
 
-class PassworTextFielddWidget extends StatefulWidget {
-  const PassworTextFielddWidget({super.key});
-
-  @override
-  _PassworTextFielddWidgetState createState() =>
-      _PassworTextFielddWidgetState();
-}
-
-class _PassworTextFielddWidgetState extends State<PassworTextFielddWidget> {
-  bool _isTextShown = false;
+class PasswordTextfieldWidget extends StatelessWidget {
+  const PasswordTextfieldWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return CommonTextField(
+      isSecure: true,
+      hasShowHideTextIcon: true,
+      maxLines: 1,
       hintText: "Password",
       prefixIcon: Icon(
         Icons.key_sharp,
@@ -26,20 +19,6 @@ class _PassworTextFielddWidgetState extends State<PassworTextFielddWidget> {
         // Hide the on-screen keyboard
         FocusScope.of(context).unfocus();
       },
-      suffixIcon: IconButton(
-        icon: Icon(
-          _isTextShown
-              ? Icons.visibility_off_outlined
-              : Icons.visibility_outlined,
-          color: Colors.grey,
-        ),
-        onPressed: () {
-          setState(() {
-            _isTextShown = !_isTextShown; // Toggle visibility state
-          });
-        },
-      ),
-      obscureText: !_isTextShown, // If true, hides the text, otherwise shows it
       fillColor: Colors.white,
       filled: true,
       keyboardType: TextInputType.text,

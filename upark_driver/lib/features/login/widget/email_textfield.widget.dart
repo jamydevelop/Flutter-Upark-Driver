@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/widget/common_text_field.dart';
 
-class EmailTextFieldWidget extends StatelessWidget {
-  const EmailTextFieldWidget({super.key});
+class EmailTextfieldWidget extends StatelessWidget {
+  const EmailTextfieldWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,6 @@ class EmailTextFieldWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(12.0),
         borderSide: BorderSide(color: Colors.grey.shade400),
       ),
-      obscureText: false, // Email should always be visible
     );
   }
 }

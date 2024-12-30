@@ -11,6 +11,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  bool _isTextShown = false;
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -45,7 +46,6 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 SizedBox(height: smallSpacing),
                 CommonTextField(
-                  //labelText: "Email",
                   hintText: "Enter your email",
                   prefixIcon: Icon(
                     Icons.alternate_email,
@@ -57,8 +57,10 @@ class _LoginPageState extends State<LoginPage> {
                   },
                   keyboardType: TextInputType.emailAddress,
                   inputBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12.0),
-                      borderSide: BorderSide(color: Colors.grey.shade400)),
+                    borderRadius: BorderRadius.circular(12.0),
+                    borderSide: BorderSide(color: Colors.grey.shade400),
+                  ),
+                  obscureText: false, // Email should always be visible
                 ),
                 SizedBox(height: smallSpacing),
                 CommonTextLabel(
@@ -77,17 +79,28 @@ class _LoginPageState extends State<LoginPage> {
                     // Hide the on-screen keyboard
                     FocusScope.of(context).unfocus();
                   },
-                  suffixIcon: Icon(
-                    Icons.visibility, // Right-side icon
-                    color: Colors.grey,
+                  suffixIcon: IconButton(
+                    icon: Icon(
+                      _isTextShown
+                          ? Icons.visibility_off_outlined
+                          : Icons.visibility_outlined,
+                      color: Colors.grey,
+                    ),
+                    onPressed: () {
+                      setState(() {
+                        _isTextShown = !_isTextShown; // Toggle visibility state
+                      });
+                    },
                   ),
-                  //isSecure: true,
+                  obscureText:
+                      !_isTextShown, // If true, hides the text, otherwise shows it
                   fillColor: Colors.white,
                   filled: true,
                   keyboardType: TextInputType.text,
                   inputBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12.0),
-                      borderSide: BorderSide(color: Colors.grey.shade400)),
+                    borderRadius: BorderRadius.circular(12.0),
+                    borderSide: BorderSide(color: Colors.grey.shade400),
+                  ),
                 ),
               ],
             ),

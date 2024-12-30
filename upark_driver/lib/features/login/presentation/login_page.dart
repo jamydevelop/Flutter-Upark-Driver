@@ -3,6 +3,7 @@ import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/features/login/widget/email_text_label.widget.dart';
 import 'package:upark_driver/features/login/widget/email_textfield.widget.dart';
 import 'package:upark_driver/features/login/widget/forgot_password_text_label.widget.dart';
+import 'package:upark_driver/features/login/widget/google_button.widget.dart';
 import 'package:upark_driver/features/login/widget/login_button.widget.dart';
 import 'package:upark_driver/features/login/widget/login_text_label.widget.dart';
 import 'package:upark_driver/features/login/widget/or_text_label.widget.dart';
@@ -32,7 +33,11 @@ class _LoginPageState extends State<LoginPage> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Image.asset("assets/images/woman.png"),
+                Image.asset(
+                  "assets/images/woman.png",
+                  height: 246,
+                  width: 326,
+                ),
                 SizedBox(height: largeSpacing),
                 LoginTextLabelWidget(),
                 SizedBox(height: extraLargeSpacing),
@@ -49,6 +54,7 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(height: regularSpacing),
                 OrTextLabelWidget(),
                 SizedBox(height: regularSpacing),
+                GoogleButtonWidget(),
               ],
             ),
           ),

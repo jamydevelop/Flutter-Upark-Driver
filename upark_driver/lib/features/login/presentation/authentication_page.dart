@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
-import 'package:upark_driver/core/widget/common_text_label.dart';
+import 'package:upark_driver/features/login/widget/email_text_label.widget.dart';
 import 'package:upark_driver/features/login/widget/email_textfield.widget.dart';
 import 'package:upark_driver/features/login/widget/forgot_password_text_label.widget.dart';
+import 'package:upark_driver/features/login/widget/login_text_label.widget.dart';
+import 'package:upark_driver/features/login/widget/password_text_label.dart';
 import 'package:upark_driver/features/login/widget/password_textfield.widget.dart';
 
 class LoginPage extends StatefulWidget {
@@ -29,31 +31,16 @@ class _LoginPageState extends State<LoginPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Image.asset("assets/images/woman.png"),
-                SizedBox(
-                  height: largeSpacing,
-                ),
-                Text(
-                  "Login",
-                  style: TextStyle(
-                    fontSize: fontSizeTitle1,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
+                SizedBox(height: largeSpacing),
+                LoginTextLabelWidget(),
                 SizedBox(height: extraLargeSpacing),
-                CommonTextLabel(
-                  color: Colors.grey,
-                  text: "Email",
-                  fontSize: fontSizeTitle4,
-                ),
+                EmailTextLabelWidget(),
                 SizedBox(height: smallSpacing),
                 EmailTextfieldWidget(),
                 SizedBox(height: smallSpacing),
-                CommonTextLabel(
-                  color: Colors.grey,
-                  text: "password",
-                  fontSize: fontSizeTitle4,
-                ),
+                PasswordTextLabelWidget(),
                 PasswordTextfieldWidget(),
+                SizedBox(height: smallSpacing),
                 ForgotPasswordTextLabelWidget(),
                 SizedBox(height: smallSpacing),
               ],

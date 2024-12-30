@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
-import 'package:upark_driver/core/widget/common_text_field.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
+import 'package:upark_driver/features/login/widget/email_textfield.widget.dart';
+import 'package:upark_driver/features/login/widget/password_textfield.widget.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -11,7 +12,6 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  bool _isTextShown = false;
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -45,63 +45,15 @@ class _LoginPageState extends State<LoginPage> {
                   fontSize: fontSizeTitle4,
                 ),
                 SizedBox(height: smallSpacing),
-                CommonTextField(
-                  hintText: "Enter your email",
-                  prefixIcon: Icon(
-                    Icons.alternate_email,
-                    color: Colors.grey,
-                  ),
-                  onFieldSubmitted: (value) {
-                    // Hide the on-screen keyboard
-                    FocusScope.of(context).unfocus();
-                  },
-                  keyboardType: TextInputType.emailAddress,
-                  inputBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12.0),
-                    borderSide: BorderSide(color: Colors.grey.shade400),
-                  ),
-                  obscureText: false, // Email should always be visible
-                ),
+                EmailTextFieldWidget(),
                 SizedBox(height: smallSpacing),
                 CommonTextLabel(
                   color: Colors.grey,
                   text: "password",
                   fontSize: fontSizeTitle4,
                 ),
+                PassworTextFielddWidget(),
                 SizedBox(height: smallSpacing),
-                CommonTextField(
-                  hintText: "Password",
-                  prefixIcon: Icon(
-                    Icons.key_sharp,
-                    color: Colors.grey,
-                  ),
-                  onFieldSubmitted: (value) {
-                    // Hide the on-screen keyboard
-                    FocusScope.of(context).unfocus();
-                  },
-                  suffixIcon: IconButton(
-                    icon: Icon(
-                      _isTextShown
-                          ? Icons.visibility_off_outlined
-                          : Icons.visibility_outlined,
-                      color: Colors.grey,
-                    ),
-                    onPressed: () {
-                      setState(() {
-                        _isTextShown = !_isTextShown; // Toggle visibility state
-                      });
-                    },
-                  ),
-                  obscureText:
-                      !_isTextShown, // If true, hides the text, otherwise shows it
-                  fillColor: Colors.white,
-                  filled: true,
-                  keyboardType: TextInputType.text,
-                  inputBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12.0),
-                    borderSide: BorderSide(color: Colors.grey.shade400),
-                  ),
-                ),
               ],
             ),
           ),

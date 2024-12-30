@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
 import 'package:upark_driver/features/login/widget/email_textfield.widget.dart';
+import 'package:upark_driver/features/login/widget/forgot_password_text_label.widget.dart';
 import 'package:upark_driver/features/login/widget/password_textfield.widget.dart';
 
 class LoginPage extends StatefulWidget {
@@ -53,6 +54,7 @@ class _LoginPageState extends State<LoginPage> {
                   fontSize: fontSizeTitle4,
                 ),
                 PasswordTextfieldWidget(),
+                ForgotPasswordTextLabelWidget(),
                 SizedBox(height: smallSpacing),
               ],
             ),

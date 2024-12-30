@@ -9,20 +9,20 @@ class LoginButtonWidget extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        CommonButton(
-          width: 326,
-          foregroundColor: Colors.white,
-          borderColor: Colors.green,
-          backgroundColor: Colors.green,
-          child: Text(
-            "Login",
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
+        Expanded(
+          child: CommonButton(
+            foregroundColor: Colors.white,
+            backgroundColor: Colors.green,
+            child: Text(
+              "Login",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
             ),
+            onPressed: () {
+              debugPrint("Login Button Pressed!");
+            },
           ),
-          onPressed: () {
-            debugPrint("Login Button Pressed!");
-          },
         ),
       ],
     );

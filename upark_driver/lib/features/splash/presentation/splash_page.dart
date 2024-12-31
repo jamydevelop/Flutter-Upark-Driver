@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/features/splash/widget/upark_logo_image.widget.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
@@ -7,7 +8,7 @@ class SplashPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text("Splash Screen"),
+        child: UparkLogoImageWidget(),
       ),
     );
   }

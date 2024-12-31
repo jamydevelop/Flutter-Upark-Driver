@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
+import 'package:upark_driver/features/login/widget/logo_image.widget.dart';
 import 'package:upark_driver/features/login/widget/text_label/create_acc_text_label.widget.dart';
 import 'package:upark_driver/features/login/widget/text_label/dont_have_acc_text_label.widget.dart';
 import 'package:upark_driver/features/login/widget/text_label/email_text_label.widget.dart';
@@ -36,11 +37,7 @@ class _LoginPageState extends State<LoginPage> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Image.asset(
-                  "assets/images/woman.png",
-                  height: 246,
-                  width: 326,
-                ),
+                LogoImageWidget(),
                 SizedBox(height: regularSpacing),
                 LoginTextLabelWidget(),
                 SizedBox(height: regularSpacing),

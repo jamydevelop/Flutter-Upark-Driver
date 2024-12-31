@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
 
@@ -11,7 +12,7 @@ class ForgotPasswordTextLabelWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         CommonTextLabel(
-          color: Colors.green,
+          color: darkGreen,
           text: "Forgot Password?",
           fontSize: fontSizeTitle4,
         ),

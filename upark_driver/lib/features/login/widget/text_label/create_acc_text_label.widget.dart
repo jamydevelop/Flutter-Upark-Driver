@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
 
@@ -11,7 +12,7 @@ class CreateAccountTextLabelWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         CommonTextLabel(
-          color: Colors.green,
+          color: darkGreen,
           text: "Create Account",
           fontSize: fontSizeCallout,
         ),

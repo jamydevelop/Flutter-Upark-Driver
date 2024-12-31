@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/widget/common_text_field.dart';
 
 class EmailTextfieldWidget extends StatelessWidget {
@@ -8,9 +9,10 @@ class EmailTextfieldWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return CommonTextField(
       hintText: "Enter your email",
+      hintTextStyle: TextStyle(color: grey),
       prefixIcon: Icon(
         Icons.alternate_email,
-        color: Colors.grey,
+        color: grey,
       ),
       onFieldSubmitted: (value) {
         // Hide the on-screen keyboard
@@ -19,7 +21,7 @@ class EmailTextfieldWidget extends StatelessWidget {
       keyboardType: TextInputType.emailAddress,
       inputBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12.0),
-        borderSide: BorderSide(color: Colors.grey.shade400),
+        borderSide: BorderSide(color: grey),
       ),
     );
   }

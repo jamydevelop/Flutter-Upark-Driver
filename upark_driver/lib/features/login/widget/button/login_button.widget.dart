@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/widget/common_button.dart';
 
 class LoginButtonWidget extends StatelessWidget {
@@ -12,7 +13,7 @@ class LoginButtonWidget extends StatelessWidget {
         Expanded(
           child: CommonButton(
             foregroundColor: Colors.white,
-            backgroundColor: Colors.green,
+            backgroundColor: darkGreen,
             child: Text(
               "Login",
               style: TextStyle(

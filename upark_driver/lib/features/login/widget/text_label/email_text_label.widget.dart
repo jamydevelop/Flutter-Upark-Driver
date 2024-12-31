@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
 
@@ -8,7 +9,7 @@ class EmailTextLabelWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CommonTextLabel(
-      color: Colors.grey,
+      color: grey,
       text: "Email",
       fontSize: fontSizeTitle4,
     );

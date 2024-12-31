@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
 
@@ -12,7 +13,7 @@ class OrTextLabelWidget extends StatelessWidget {
       children: [
         Expanded(
           child: Divider(
-            color: Colors.grey,
+            color: grey,
             height: 1.0,
             thickness: 1,
           ),
@@ -22,13 +23,13 @@ class OrTextLabelWidget extends StatelessWidget {
           child: CommonTextLabel(
             text: "Or",
             fontWeight: FontWeight.normal,
-            color: Colors.grey,
+            color: grey,
             fontSize: fontSizeCallout,
           ),
         ),
         Expanded(
           child: Divider(
-            color: Colors.grey,
+            color: grey,
             height: 1.0,
             thickness: 1,
           ),

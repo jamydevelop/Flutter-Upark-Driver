@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/widget/common_text_field.dart';
 
 class PasswordTextfieldWidget extends StatelessWidget {
@@ -11,9 +12,10 @@ class PasswordTextfieldWidget extends StatelessWidget {
       hasShowHideTextIcon: true,
       maxLines: 1,
       hintText: "Password",
+      hintTextStyle: TextStyle(color: grey),
       prefixIcon: Icon(
         Icons.key_sharp,
-        color: Colors.grey,
+        color: grey,
       ),
       onFieldSubmitted: (value) {
         // Hide the on-screen keyboard
@@ -24,7 +26,7 @@ class PasswordTextfieldWidget extends StatelessWidget {
       keyboardType: TextInputType.text,
       inputBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12.0),
-        borderSide: BorderSide(color: Colors.grey.shade400),
+        borderSide: BorderSide(color: grey),
       ),
     );
   }

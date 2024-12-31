@@ -9,7 +9,7 @@ class PasswordTextLabelWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return CommonTextLabel(
       color: Colors.grey,
-      text: "password",
+      text: "Password",
       fontSize: fontSizeTitle4,
     );
   }

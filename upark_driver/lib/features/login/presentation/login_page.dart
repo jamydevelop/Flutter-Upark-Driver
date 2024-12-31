@@ -41,7 +41,7 @@ class _LoginPageState extends State<LoginPage> {
                   height: 246,
                   width: 326,
                 ),
-                SizedBox(height: smallSpacing),
+                SizedBox(height: regularSpacing),
                 LoginTextLabelWidget(),
                 SizedBox(height: regularSpacing),
                 EmailTextLabelWidget(),

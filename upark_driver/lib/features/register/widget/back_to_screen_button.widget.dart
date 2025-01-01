@@ -9,8 +9,8 @@ class BackToScreenButtonWidget extends StatelessWidget {
     return Row(
       children: <Widget>[
         CommonButton(
-          // height: 24,
-          // width: 24,
+          height: 24,
+          width: 24,
           borderRadius: 0,
           backgroundColor: WidgetStateColor.transparent,
           onPressed: () {},

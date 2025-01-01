@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/features/register/widget/back_to_screen_button.widget.dart';
+import 'package:upark_driver/features/register/widget/create_account_text_label.dart';
+import 'package:upark_driver/features/register/widget/profile_image_text_label.widget.dart';
+import 'package:upark_driver/features/register/widget/upload_image_button.widget.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({super.key});
@@ -10,16 +14,29 @@ class RegisterPage extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.white,
         body: Padding(
-          padding: const EdgeInsets.all(0.0),
-          child: Column(
-            children: <Widget>[
-              BackToScreenButtonWidget(),
-              TextButton(
-                onPressed: () {},
-                child: Text("data"),
-              ),
-              Text("data"),
-            ],
+          padding: const EdgeInsets.symmetric(
+            horizontal: 24,
+            vertical: 12,
+          ),
+          child: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                BackToScreenButtonWidget(),
+                CreateAccountTextLabel(),
+                SizedBox(height: regularSpacing),
+                // Profile Image "Text Title"
+                ProfileImageTextLabelWidget(),
+                SizedBox(height: extraSmallSpacing),
+                //Upload Image "Button"
+                UploadImageButtonWidget(),
+                //First Name "Text Title"
+                //First Name "Text Field"
+                //Last Name "Text Title"
+                //Last Name "Text Field"
+                //Gender "Text Title"
+                // Male or Female "Checkbox"
+              ],
+            ),
           ),
         ),
       ),

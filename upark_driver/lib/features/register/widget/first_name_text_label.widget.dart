@@ -13,7 +13,7 @@ class FirstNameTextLabelWidget extends StatelessWidget {
       children: <Widget>[
         CommonTextLabel(
           color: grey,
-          text: "text",
+          text: "First Name",
           fontSize: fontSizeTitle4,
         ),
       ],

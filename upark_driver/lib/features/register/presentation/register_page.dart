@@ -3,6 +3,7 @@ import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/features/register/widget/back_to_screen_button.widget.dart';
 import 'package:upark_driver/features/register/widget/create_account_text_label.dart';
 import 'package:upark_driver/features/register/widget/first_name_text_label.widget.dart';
+import 'package:upark_driver/features/register/widget/first_name_textfield.widget.dart';
 import 'package:upark_driver/features/register/widget/profile_image_text_label.widget.dart';
 import 'package:upark_driver/features/register/widget/upload_image_button.widget.dart';
 
@@ -33,6 +34,7 @@ class RegisterPage extends StatelessWidget {
                 SizedBox(height: regularSpacing),
                 FirstNameTextLabelWidget(),
                 SizedBox(height: extraSmallSpacing),
+                FirstNameTextfieldWidget(),
                 //First Name "Text Title"
                 //First Name "Text Field"
                 //Last Name "Text Title"

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/dimensions.dart';
 
 class CommonTextLabel extends StatelessWidget {
   final String text;
@@ -10,7 +11,7 @@ class CommonTextLabel extends StatelessWidget {
   const CommonTextLabel({
     super.key,
     required this.text,
-    this.fontSize = 24.0, // Default font size (can be adjusted)
+    this.fontSize = fontSizeTitle4, // Default font size (can be adjusted)
     this.fontWeight = FontWeight.bold, // Default font weight
     this.color,
   });

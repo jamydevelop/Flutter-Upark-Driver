@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/widget/common_text_field.dart';
 
-class FirstNameTextfieldWidget extends StatelessWidget {
-  const FirstNameTextfieldWidget({super.key});
+class LastNameTextfieldWidget extends StatelessWidget {
+  const LastNameTextfieldWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return CommonTextField(
-      hintText: "Enter your first name",
+      hintText: "Last Name",
       hintTextStyle: TextStyle(color: grey, fontSize: 18.0),
       prefixIcon: Image.asset(
         "assets/images/profile.png",

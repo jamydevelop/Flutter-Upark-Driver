@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/features/register/widget/button/back_to_screen_button.widget.dart';
+import 'package:upark_driver/features/register/widget/text_field/last_name_textfield.widget.dart';
 import 'package:upark_driver/features/register/widget/text_label/create_account_text_label.widget.dart';
 import 'package:upark_driver/features/register/widget/text_label/first_name_text_label.widget.dart';
 import 'package:upark_driver/features/register/widget/text_field/first_name_textfield.widget.dart';
+import 'package:upark_driver/features/register/widget/text_label/last_name_text_field.widget.dart';
 import 'package:upark_driver/features/register/widget/text_label/profile_image_text_label.widget.dart';
 import 'package:upark_driver/features/register/widget/button/upload_image_button.widget.dart';
 
@@ -35,6 +37,10 @@ class RegisterPage extends StatelessWidget {
                 FirstNameTextLabelWidget(),
                 SizedBox(height: extraSmallSpacing),
                 FirstNameTextfieldWidget(),
+                SizedBox(height: regularSpacing),
+                LastNameTextLabelWidget(),
+                SizedBox(height: extraSmallSpacing),
+                LastNameTextfieldWidget(),
                 //First Name "Text Title"
                 //First Name "Text Field"
                 //Last Name "Text Title"

@@ -9,7 +9,7 @@ class AppRouter {
     initialLocation: "/register",
     //other routes/screen for the app
     routes: [
-      GoRoute(path: "/", builder: (context, state) => const SplashPage()),
+      GoRoute(path: "/splash", builder: (context, state) => const SplashPage()),
       GoRoute(path: "/login", builder: (context, state) => const LoginPage()),
       GoRoute(
           path: "/register", builder: (context, state) => const RegisterPage()),

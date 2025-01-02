@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/colors.dart';
+import 'package:upark_driver/core/widget/common_text_label.dart';
 
 class GenderSelectionWidget extends StatefulWidget {
   const GenderSelectionWidget({super.key});
@@ -31,7 +33,10 @@ class GenderSelectionWidgetState extends State<GenderSelectionWidget> {
                   });
                 },
               ),
-              Text('Male'),
+              CommonTextLabel(
+                color: grey,
+                text: "Male",
+              ),
             ],
           ),
           Row(
@@ -47,7 +52,10 @@ class GenderSelectionWidgetState extends State<GenderSelectionWidget> {
                   });
                 },
               ),
-              Text('Female'),
+              CommonTextLabel(
+                color: grey,
+                text: "Female",
+              ),
             ],
           ),
         ],

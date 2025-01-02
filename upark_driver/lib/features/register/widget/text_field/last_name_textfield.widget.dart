@@ -9,7 +9,7 @@ class LastNameTextfieldWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return CommonTextField(
       hintText: "Last Name",
-      hintTextStyle: TextStyle(color: grey, fontSize: 18.0),
+      hintTextStyle: TextStyle(color: grey, fontSize: 16.0),
       prefixIcon: Image.asset(
         "assets/images/profile.png",
         scale: 3,

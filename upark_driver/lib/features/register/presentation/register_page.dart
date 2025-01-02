@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/features/register/widget/button/back_to_screen_button.widget.dart';
+import 'package:upark_driver/features/register/widget/gender_selection.widget.dart';
 import 'package:upark_driver/features/register/widget/text_field/last_name_textfield.widget.dart';
 import 'package:upark_driver/features/register/widget/text_label/create_account_text_label.widget.dart';
 import 'package:upark_driver/features/register/widget/text_label/first_name_text_label.widget.dart';
 import 'package:upark_driver/features/register/widget/text_field/first_name_textfield.widget.dart';
+import 'package:upark_driver/features/register/widget/text_label/gender_text_label.widget.dart';
 import 'package:upark_driver/features/register/widget/text_label/last_name_text_field.widget.dart';
 import 'package:upark_driver/features/register/widget/text_label/profile_image_text_label.widget.dart';
 import 'package:upark_driver/features/register/widget/button/upload_image_button.widget.dart';
@@ -41,6 +43,9 @@ class RegisterPage extends StatelessWidget {
                 LastNameTextLabelWidget(),
                 SizedBox(height: extraSmallSpacing),
                 LastNameTextfieldWidget(),
+                SizedBox(height: regularSpacing),
+                GenderTextLabelWidget(),
+                GenderSelectionWidget(),
                 //First Name "Text Title"
                 //First Name "Text Field"
                 //Last Name "Text Title"

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/features/register/widget/button/back_to_screen_button.widget.dart';
-import 'package:upark_driver/features/register/widget/text_label/create_account_text_label.dart';
+import 'package:upark_driver/features/register/widget/text_label/create_account_text_label.widget.dart';
 import 'package:upark_driver/features/register/widget/text_label/first_name_text_label.widget.dart';
 import 'package:upark_driver/features/register/widget/text_field/first_name_textfield.widget.dart';
 import 'package:upark_driver/features/register/widget/text_label/profile_image_text_label.widget.dart';
@@ -24,7 +24,7 @@ class RegisterPage extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 BackToScreenButtonWidget(),
-                CreateAccountTextLabel(),
+                CreateAccountTextLabelWidget(),
                 SizedBox(height: regularSpacing),
                 // Profile Image "Text Title"
                 ProfileImageTextLabelWidget(),

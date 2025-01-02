@@ -9,7 +9,7 @@ class FirstNameTextfieldWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return CommonTextField(
       hintText: "Enter your first name",
-      hintTextStyle: TextStyle(color: grey, fontSize: 20),
+      hintTextStyle: TextStyle(color: grey, fontSize: 18),
       prefixIcon: Image.asset(
         "assets/images/profile.png",
         scale: 3,

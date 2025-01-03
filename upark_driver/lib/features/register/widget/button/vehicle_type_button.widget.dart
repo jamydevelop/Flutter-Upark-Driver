@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:upark_driver/core/resources/colors.dart';
 
 class VehicleTypeButtonWidget extends StatefulWidget {
   const VehicleTypeButtonWidget({super.key});

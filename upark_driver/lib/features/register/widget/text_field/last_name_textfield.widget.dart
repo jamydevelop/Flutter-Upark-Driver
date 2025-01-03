@@ -14,7 +14,7 @@ class LastNameTextfieldWidget extends StatelessWidget {
         LastNameTextLabelWidget(),
         SizedBox(height: extraSmallSpacing),
         CommonTextField(
-          hintText: "Last Name",
+          hintText: "Enter your last name",
           hintTextStyle: TextStyle(color: grey, fontSize: 16.0),
           prefixIcon: Image.asset(
             "assets/icons/profile.png",

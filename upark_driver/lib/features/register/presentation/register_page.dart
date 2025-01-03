@@ -4,6 +4,7 @@ import 'package:upark_driver/features/register/widget/button/back_to_screen_butt
 import 'package:upark_driver/features/register/widget/button/vehicle_type_button.register.widget.dart';
 import 'package:upark_driver/features/register/widget/gender_selection.register.widget.dart';
 import 'package:upark_driver/features/register/widget/text_field/contact_number_textfield.register.widget.dart';
+import 'package:upark_driver/features/register/widget/text_field/email_textfield_register.widget.dart';
 import 'package:upark_driver/features/register/widget/text_field/last_name_textfield.register.widget.dart';
 import 'package:upark_driver/features/register/widget/text_field/first_name_textfield.register.widget.dart';
 import 'package:upark_driver/features/register/widget/button/upload_image_button.register.widget.dart';
@@ -37,6 +38,7 @@ class RegisterPage extends StatelessWidget {
                 ContactNumberTextfieldRegisterWidget(),
                 VehicleTypeButtonRegisterWidget(),
                 PlateNumberTextfieldRegisterWidget(),
+                EmailTextfieldRegisterWidget(),
               ],
             ),
           ),

@@ -6,7 +6,7 @@ class UparkLogoImageWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Image.asset(
-      "assets/images/splash_icon.png",
+      "assets/icons/splash_icon.png",
       height: 131,
       width: 99,
     );

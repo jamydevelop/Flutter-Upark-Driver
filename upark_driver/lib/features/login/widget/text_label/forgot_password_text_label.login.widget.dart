@@ -3,8 +3,9 @@ import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
 
-class RegisterProfileImageTextLabelWidget extends StatelessWidget {
-  const RegisterProfileImageTextLabelWidget({super.key});
+class ForgotPasswordTextLabelLoginWidget extends StatelessWidget {
+  const ForgotPasswordTextLabelLoginWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Row(

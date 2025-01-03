@@ -1,6 +1,5 @@
 import 'package:go_router/go_router.dart';
-
-import 'package:upark_driver/features/register/presentation/register_page.dart';
+import 'package:upark_driver/features/login/presentation/login_page.dart';
 
 class AppRouter {
   final GoRouter router = GoRouter(
@@ -8,8 +7,7 @@ class AppRouter {
     initialLocation: "/login",
     //other routes/screen for the app
     routes: [
-      GoRoute(
-          path: "/register", builder: (context, state) => const RegisterPage()),
+      GoRoute(path: "/login", builder: (context, state) => const LoginPage()),
     ],
   );
 }

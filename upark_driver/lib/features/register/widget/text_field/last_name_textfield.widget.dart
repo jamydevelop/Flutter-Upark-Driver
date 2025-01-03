@@ -11,7 +11,7 @@ class LastNameTextfieldWidget extends StatelessWidget {
       hintText: "Last Name",
       hintTextStyle: TextStyle(color: grey, fontSize: 16.0),
       prefixIcon: Image.asset(
-        "assets/images/profile.png",
+        "assets/icons/profile.png",
         scale: 3,
       ),
       onFieldSubmitted: (value) {

@@ -1,18 +1,20 @@
 import 'package:flutter/widgets.dart';
 import 'package:upark_driver/core/resources/colors.dart';
+import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
 
-class VehicleTypeTextLabelWidget extends StatelessWidget {
-  const VehicleTypeTextLabelWidget({super.key});
+class RegisterGenderTextLabelWidget extends StatelessWidget {
+  const RegisterGenderTextLabelWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: [
+      children: <Widget>[
         CommonTextLabel(
           color: grey,
-          text: "Vehicle Type",
-        ),
+          text: "Gender",
+          fontSize: fontSizeTitle4,
+        )
       ],
     );
   }

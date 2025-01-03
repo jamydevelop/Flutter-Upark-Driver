@@ -3,17 +3,17 @@ import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
 
-class ProfileImageTextLabelWidget extends StatelessWidget {
-  const ProfileImageTextLabelWidget({super.key});
+class RegisterFirstNameTextLabelWidget extends StatelessWidget {
+  const RegisterFirstNameTextLabelWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
-      children: [
+      children: <Widget>[
         CommonTextLabel(
           color: grey,
-          text: "Profile Image",
+          text: "First Name",
           fontSize: fontSizeTitle4,
         ),
       ],

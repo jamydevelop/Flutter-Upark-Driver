@@ -2,22 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_field.dart';
-import 'package:upark_driver/features/register/widget/text_label/last_name_text_label.widget.dart';
+import 'package:upark_driver/features/register/widget/text_label/register_contact_number_text_label.widget.dart';
 
-class LastNameTextfieldWidget extends StatelessWidget {
-  const LastNameTextfieldWidget({super.key});
+class RegisterContactNumberTextfieldWidget extends StatelessWidget {
+  const RegisterContactNumberTextfieldWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        LastNameTextLabelWidget(),
+        RegisterContactNumberTextLabelWidget(),
         SizedBox(height: extraSmallSpacing),
         CommonTextField(
-          hintText: "Enter your last name",
-          hintTextStyle: TextStyle(color: grey, fontSize: 16.0),
+          hintText: "Enter your contact number",
+          hintTextStyle: TextStyle(
+            color: grey,
+            fontSize: 16,
+          ),
           prefixIcon: Image.asset(
-            "assets/icons/profile.png",
+            "assets/icons/call_icon.png",
             scale: 3,
           ),
           onFieldSubmitted: (value) {

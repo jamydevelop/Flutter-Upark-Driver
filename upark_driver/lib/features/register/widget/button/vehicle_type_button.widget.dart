@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
-import 'package:upark_driver/features/register/widget/text_label/vehicle_type_text_label.widget.dart';
+import 'package:upark_driver/features/register/widget/text_label/register_vehicle_type_text_label.widget.dart';
 
 class VehicleTypeButtonWidget extends StatefulWidget {
   const VehicleTypeButtonWidget({super.key});
@@ -19,7 +19,7 @@ class _VehicleTypeButtonWidgetState extends State<VehicleTypeButtonWidget> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        VehicleTypeTextLabelWidget(),
+        RegisterVehicleTypeTextLabelWidget(),
         SizedBox(height: extraSmallSpacing),
         Container(
           height: 58,

@@ -27,7 +27,7 @@ class FacebookButtonLoginWidget extends StatelessWidget {
                     left: 16,
                   ),
                   child: Image.asset(
-                    "assets/images/fb_icon.png",
+                    "assets/icons/fb_icon.png",
                     height: 24,
                     width: 24,
                   ),

@@ -9,7 +9,7 @@ class DontHaveAccTextLabelLoginWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         CommonTextLabel(
           color: grey,

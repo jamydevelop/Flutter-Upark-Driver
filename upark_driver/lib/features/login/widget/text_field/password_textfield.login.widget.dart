@@ -2,30 +2,35 @@ import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_field.dart';
-import 'package:upark_driver/features/register/widget/text_label/email_text_label.login.widget.dart';
+import 'package:upark_driver/features/login/widget/text_label/password_text_label.login.widget.dart';
 
-class EmailTextfieldLoginWidget extends StatelessWidget {
-  const EmailTextfieldLoginWidget({super.key});
+class LoginPasswordTextfieldLoginWidget extends StatelessWidget {
+  const LoginPasswordTextfieldLoginWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        EmailTextLabelLoginWidget(),
+        LoginPasswordTextLabelWidget(),
         SizedBox(height: extraSmallSpacing),
         CommonTextField(
-          hintText: "Enter your email",
+          isSecure: true,
+          hasShowHideTextIcon: true,
+          maxLines: 1,
+          hintText: "Password",
           hintTextStyle: TextStyle(color: grey),
           prefixIcon: Icon(
-            Icons.alternate_email,
+            Icons.key_sharp,
             color: grey,
           ),
           onFieldSubmitted: (value) {
             // Hide the on-screen keyboard
             FocusScope.of(context).unfocus();
           },
-          keyboardType: TextInputType.emailAddress,
+          fillColor: Colors.white,
+          filled: true,
+          keyboardType: TextInputType.text,
           inputBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12.0),
             borderSide: BorderSide(color: grey),

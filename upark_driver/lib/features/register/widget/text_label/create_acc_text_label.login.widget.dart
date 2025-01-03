@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
-import 'package:upark_driver/features/login/widget/text_label/dont_have_acc_text_label.login.widget.dart';
+import 'package:upark_driver/features/register/widget/text_label/dont_have_acc_text_label.login.widget.dart';
 
 class CreateAccountTextLabelLoginWidget extends StatelessWidget {
   const CreateAccountTextLabelLoginWidget({super.key});
@@ -12,7 +12,7 @@ class CreateAccountTextLabelLoginWidget extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        DontHaveAccountTextLabelLoginWidget(),
+        DontHaveAccTextLabelLoginWidget(),
         CommonTextLabel(
           color: darkGreen,
           text: "Create Account",

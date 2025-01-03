@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_field.dart';
-import 'package:upark_driver/features/login/widget/text_label/email_text_label.login.widget.dart';
+import 'package:upark_driver/features/register/widget/text_label/email_text_label.login.widget.dart';
 
 class EmailTextfieldLoginWidget extends StatelessWidget {
   const EmailTextfieldLoginWidget({super.key});

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/features/register/widget/text_label/vehicle_type_text_label.widget.dart';
 
@@ -11,7 +12,7 @@ class VehicleTypeButtonWidget extends StatefulWidget {
 }
 
 class _VehicleTypeButtonWidgetState extends State<VehicleTypeButtonWidget> {
-  String _dropDownValue = "Car"; // Default selected value
+  String? _dropDownValue; // Default value is null (no selection)
   final List<String> items = ["Car", "Motorcycle"];
 
   @override
@@ -32,6 +33,19 @@ class _VehicleTypeButtonWidgetState extends State<VehicleTypeButtonWidget> {
               icon: Icon(Icons.keyboard_arrow_down_sharp),
               isExpanded: true,
               value: _dropDownValue, // Set the current value
+              hint: Row(
+                children: [
+                  Icon(
+                    Icons.directions_car,
+                    size: 28,
+                    color: grey,
+                  ),
+                  Text(
+                    "Vehicle Type",
+                    style: TextStyle(color: Colors.grey),
+                  ),
+                ],
+              ), // Hint text
               items: items.map((String item) {
                 return DropdownMenuItem<String>(
                   value: item,
@@ -53,7 +67,7 @@ class _VehicleTypeButtonWidgetState extends State<VehicleTypeButtonWidget> {
               }).toList(),
               onChanged: (String? newValue) {
                 setState(() {
-                  _dropDownValue = newValue!;
+                  _dropDownValue = newValue;
                 });
               },
               dropdownColor: Colors.white, // Dropdown menu color

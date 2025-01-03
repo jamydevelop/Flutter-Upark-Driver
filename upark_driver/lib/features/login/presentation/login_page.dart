@@ -3,7 +3,7 @@ import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/features/login/widget/button/fb_button.login.widget.dart';
 import 'package:upark_driver/features/login/widget/button/google_button.login.widget.dart';
 import 'package:upark_driver/features/login/widget/button/login_button.login.widget.dart';
-import 'package:upark_driver/features/register/widget/logo_image.login.widget.dart';
+import 'package:upark_driver/features/login/widget/logo_image.login.widget.dart';
 import 'package:upark_driver/features/login/widget/text_field/email_textfield.login.widget.dart';
 import 'package:upark_driver/features/login/widget/text_field/password_textfield.login.widget.dart';
 import 'package:upark_driver/features/login/widget/text_label/create_acc_text_label.login.widget.dart';

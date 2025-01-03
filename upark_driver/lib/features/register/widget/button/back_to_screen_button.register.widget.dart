@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/widget/common_button.dart';
 
-class BackToScreenButtonWidget extends StatelessWidget {
-  const BackToScreenButtonWidget({super.key});
+class BackToScreenButtonRegisterWidget extends StatelessWidget {
+  const BackToScreenButtonRegisterWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

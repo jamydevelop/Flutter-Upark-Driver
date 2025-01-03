@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
-import 'package:upark_driver/features/register/widget/text_label/register_vehicle_type_text_label.widget.dart';
+import 'package:upark_driver/features/register/widget/text_label/vehicle_type_text_label.register.widget.dart';
 
-class VehicleTypeButtonWidget extends StatefulWidget {
-  const VehicleTypeButtonWidget({super.key});
+class VehicleTypeButtonRegisterWidget extends StatefulWidget {
+  const VehicleTypeButtonRegisterWidget({super.key});
 
   @override
-  State<VehicleTypeButtonWidget> createState() =>
-      _VehicleTypeButtonWidgetState();
+  State<VehicleTypeButtonRegisterWidget> createState() =>
+      _VehicleTypeButtonRegisterWidgetState();
 }
 
-class _VehicleTypeButtonWidgetState extends State<VehicleTypeButtonWidget> {
+class _VehicleTypeButtonRegisterWidgetState
+    extends State<VehicleTypeButtonRegisterWidget> {
   String? _dropDownValue; // Default value is null (no selection)
   final List<String> items = ["Car", "Motorcycle"];
 
@@ -19,7 +20,7 @@ class _VehicleTypeButtonWidgetState extends State<VehicleTypeButtonWidget> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        RegisterVehicleTypeTextLabelWidget(),
+        VehicleTypeTextLabelRegisterWidget(),
         SizedBox(height: extraSmallSpacing),
         Container(
           height: 58,

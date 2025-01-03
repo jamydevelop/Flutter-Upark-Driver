@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
-import 'package:upark_driver/features/register/widget/button/back_to_screen_button.widget.dart';
-import 'package:upark_driver/features/register/widget/button/vehicle_type_button.widget.dart';
-import 'package:upark_driver/features/register/widget/register_gender_selection.widget.dart';
-import 'package:upark_driver/features/register/widget/text_field/register_contact_number_textfield.widget.dart';
-import 'package:upark_driver/features/register/widget/text_field/register_last_name_textfield.widget.dart';
-import 'package:upark_driver/features/register/widget/text_field/register_first_name_textfield.widget.dart';
-import 'package:upark_driver/features/register/widget/button/upload_image_button.widget.dart';
-import 'package:upark_driver/features/register/widget/text_label/register_create_account_text_label.widget.dart';
+import 'package:upark_driver/features/register/widget/button/back_to_screen_button.register.widget.dart';
+import 'package:upark_driver/features/register/widget/button/vehicle_type_button.register.widget.dart';
+import 'package:upark_driver/features/register/widget/gender_selection.register.widget.dart';
+import 'package:upark_driver/features/register/widget/text_field/contact_number_textfield.register.widget.dart';
+import 'package:upark_driver/features/register/widget/text_field/last_name_textfield.register.widget.dart';
+import 'package:upark_driver/features/register/widget/text_field/first_name_textfield.register.widget.dart';
+import 'package:upark_driver/features/register/widget/button/upload_image_button.register.widget.dart';
+import 'package:upark_driver/features/register/widget/text_label/create_account_text_label.register.widget.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({super.key});
@@ -27,14 +27,14 @@ class RegisterPage extends StatelessWidget {
               spacing: regularSpacing,
               children: <Widget>[
                 SizedBox(height: regularSpacing),
-                BackToScreenButtonWidget(),
-                RegisterCreateAccountTextLabelWidget(),
-                UploadImageButtonWidget(),
-                RegisterFirstNameTextfieldWidget(),
-                RegisterLastNameTextfieldWidget(),
-                RegisterGenderSelectionWidget(),
-                RegisterContactNumberTextfieldWidget(),
-                VehicleTypeButtonWidget(),
+                BackToScreenButtonRegisterWidget(),
+                CreateAccountTextLabelRegisterWidget(),
+                UploadImageButtonRegisterWidget(),
+                FirstNameTextfieldRegisterWidget(),
+                LastNameTextfieldRegisterWidget(),
+                GenderSelectionRegisterWidget(),
+                ContactNumberTextfieldRegisterWidget(),
+                VehicleTypeButtonRegisterWidget(),
               ],
             ),
           ),

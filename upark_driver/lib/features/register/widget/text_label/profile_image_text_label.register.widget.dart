@@ -3,18 +3,18 @@ import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
 
-class RegisterGenderTextLabelWidget extends StatelessWidget {
-  const RegisterGenderTextLabelWidget({super.key});
-
+class ProfileImageTextLabelRegisterWidget extends StatelessWidget {
+  const ProfileImageTextLabelRegisterWidget({super.key});
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: <Widget>[
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
         CommonTextLabel(
           color: grey,
-          text: "Gender",
+          text: "Profile Image",
           fontSize: fontSizeTitle4,
-        )
+        ),
       ],
     );
   }

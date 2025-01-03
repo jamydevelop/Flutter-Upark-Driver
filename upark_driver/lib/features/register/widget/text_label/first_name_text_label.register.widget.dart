@@ -3,8 +3,8 @@ import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
 
-class RegisterFirstNameTextLabelWidget extends StatelessWidget {
-  const RegisterFirstNameTextLabelWidget({super.key});
+class FirstNameTextLabelRegisterWidget extends StatelessWidget {
+  const FirstNameTextLabelRegisterWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

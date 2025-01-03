@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 
-class CreateAccountTextLabelWidget extends StatelessWidget {
-  const CreateAccountTextLabelWidget({super.key});
+class TitleCreateAccountTextLabelWidget extends StatelessWidget {
+  const TitleCreateAccountTextLabelWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

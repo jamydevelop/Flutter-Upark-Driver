@@ -7,6 +7,7 @@ import 'package:upark_driver/features/register/widget/text_field/contact_number_
 import 'package:upark_driver/features/register/widget/text_field/last_name_textfield.register.widget.dart';
 import 'package:upark_driver/features/register/widget/text_field/first_name_textfield.register.widget.dart';
 import 'package:upark_driver/features/register/widget/button/upload_image_button.register.widget.dart';
+import 'package:upark_driver/features/register/widget/text_field/plate_number_textfield.register.widget.dart';
 import 'package:upark_driver/features/register/widget/text_label/create_account_text_label.register.widget.dart';
 
 class RegisterPage extends StatelessWidget {
@@ -35,6 +36,7 @@ class RegisterPage extends StatelessWidget {
                 GenderSelectionRegisterWidget(),
                 ContactNumberTextfieldRegisterWidget(),
                 VehicleTypeButtonRegisterWidget(),
+                PlateNumberTextfieldRegisterWidget(),
               ],
             ),
           ),

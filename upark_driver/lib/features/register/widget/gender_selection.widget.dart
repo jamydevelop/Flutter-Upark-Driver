@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
+import 'package:upark_driver/features/register/widget/text_label/gender_text_label.widget.dart';
 
 class GenderSelectionWidget extends StatefulWidget {
   const GenderSelectionWidget({super.key});
@@ -16,45 +17,51 @@ class GenderSelectionWidgetState extends State<GenderSelectionWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+    return Column(
       children: [
+        GenderTextLabelWidget(),
+        SizedBox(height: extraSmallSpacing),
         Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Checkbox(
-              value: isMaleSelected,
-              onChanged: (bool? value) {
-                setState(() {
-                  isMaleSelected = value ?? false;
-                  if (isMaleSelected) {
-                    isFemaleSelected = false; // Uncheck the other box
-                  }
-                });
-              },
+            Row(
+              children: [
+                Checkbox(
+                  value: isMaleSelected,
+                  onChanged: (bool? value) {
+                    setState(() {
+                      isMaleSelected = value ?? false;
+                      if (isMaleSelected) {
+                        isFemaleSelected = false; // Uncheck the other box
+                      }
+                    });
+                  },
+                ),
+                CommonTextLabel(
+                  color: grey,
+                  text: "Male",
+                ),
+              ],
             ),
-            CommonTextLabel(
-              color: grey,
-              text: "Male",
-            ),
-          ],
-        ),
-        SizedBox(width: regularSpacing),
-        Row(
-          children: [
-            Checkbox(
-              value: isFemaleSelected,
-              onChanged: (bool? value) {
-                setState(() {
-                  isFemaleSelected = value ?? false;
-                  if (isFemaleSelected) {
-                    isMaleSelected = false; // Uncheck the other box
-                  }
-                });
-              },
-            ),
-            CommonTextLabel(
-              color: grey,
-              text: "Female",
+            SizedBox(width: regularSpacing),
+            Row(
+              children: [
+                Checkbox(
+                  value: isFemaleSelected,
+                  onChanged: (bool? value) {
+                    setState(() {
+                      isFemaleSelected = value ?? false;
+                      if (isFemaleSelected) {
+                        isMaleSelected = false; // Uncheck the other box
+                      }
+                    });
+                  },
+                ),
+                CommonTextLabel(
+                  color: grey,
+                  text: "Female",
+                ),
+              ],
             ),
           ],
         ),

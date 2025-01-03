@@ -2,16 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
-import 'package:upark_driver/features/register/widget/text_label/gender_text_label.widget.dart';
+import 'package:upark_driver/features/register/widget/text_label/register_gender_text_label.widget.dart';
 
-class GenderSelectionWidget extends StatefulWidget {
-  const GenderSelectionWidget({super.key});
+class RegisterGenderSelectionWidget extends StatefulWidget {
+  const RegisterGenderSelectionWidget({super.key});
 
   @override
-  GenderSelectionWidgetState createState() => GenderSelectionWidgetState();
+  RegisterGenderSelectionWidgetState createState() =>
+      RegisterGenderSelectionWidgetState();
 }
 
-class GenderSelectionWidgetState extends State<GenderSelectionWidget> {
+class RegisterGenderSelectionWidgetState
+    extends State<RegisterGenderSelectionWidget> {
   bool isMaleSelected = false;
   bool isFemaleSelected = false;
 
@@ -19,7 +21,7 @@ class GenderSelectionWidgetState extends State<GenderSelectionWidget> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        GenderTextLabelWidget(),
+        RegisterGenderTextLabelWidget(),
         SizedBox(height: extraSmallSpacing),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,

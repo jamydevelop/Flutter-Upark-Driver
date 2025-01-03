@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/features/register/widget/button/back_to_screen_button.widget.dart';
+import 'package:upark_driver/features/register/widget/button/vehicle_type_button.widget.dart';
 import 'package:upark_driver/features/register/widget/gender_selection.widget.dart';
 import 'package:upark_driver/features/register/widget/text_field/contact_number_textfield.widget.dart';
 import 'package:upark_driver/features/register/widget/text_field/last_name_textfield.widget.dart';
@@ -51,7 +52,8 @@ class RegisterPage extends StatelessWidget {
                 ContactNumberTextLabelWidget(),
                 SizedBox(height: extraSmallSpacing),
                 ContactNumberTextfieldWidget(),
-                SizedBox(height: extraSmallSpacing),
+                SizedBox(height: regularSpacing),
+                VehicleTypeButtonWidget(),
 
                 //First Name "Text Title"
                 //First Name "Text Field"

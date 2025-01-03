@@ -53,7 +53,7 @@ class RegisterPage extends StatelessWidget {
                 SizedBox(height: extraSmallSpacing),
                 ContactNumberTextfieldWidget(),
                 SizedBox(height: regularSpacing),
-                VehicleTypeButtonWidget(),
+                //VehicleTypeButtonWidget(),
 
                 //First Name "Text Title"
                 //First Name "Text Field"

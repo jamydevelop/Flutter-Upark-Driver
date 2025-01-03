@@ -3,8 +3,8 @@ import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
 
-class EmailTextLabelWidget extends StatelessWidget {
-  const EmailTextLabelWidget({super.key});
+class EmailTextLabelLoginWidget extends StatelessWidget {
+  const EmailTextLabelLoginWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

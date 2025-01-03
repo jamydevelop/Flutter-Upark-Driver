@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/widget/common_button.dart';
 
-class FacebookButtonWidget extends StatelessWidget {
-  const FacebookButtonWidget({super.key});
+class GoogleButtonLoginWidget extends StatelessWidget {
+  const GoogleButtonLoginWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,14 +27,14 @@ class FacebookButtonWidget extends StatelessWidget {
                     left: 16,
                   ),
                   child: Image.asset(
-                    "assets/images/fb_icon.png",
+                    "assets/images/google_icon.png",
                     height: 24,
                     width: 24,
                   ),
                 ),
               ),
               Text(
-                "Continue with Facebook",
+                "Continue with Google",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),

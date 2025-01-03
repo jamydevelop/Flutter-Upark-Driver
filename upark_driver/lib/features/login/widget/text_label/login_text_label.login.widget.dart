@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 
-class LoginTextLabelWidget extends StatelessWidget {
-  const LoginTextLabelWidget({super.key});
+class LoginTextLabelLoginWidget extends StatelessWidget {
+  const LoginTextLabelLoginWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

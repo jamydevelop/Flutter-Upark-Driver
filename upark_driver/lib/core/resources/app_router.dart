@@ -6,7 +6,7 @@ import 'package:upark_driver/features/splash/presentation/splash_page.dart';
 class AppRouter {
   final GoRouter router = GoRouter(
     //this is for initial location of the app
-    initialLocation: "/register",
+    initialLocation: "/login",
     //other routes/screen for the app
     routes: [
       GoRoute(path: "/splash", builder: (context, state) => const SplashPage()),

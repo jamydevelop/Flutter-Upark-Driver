@@ -19,34 +19,36 @@ class RegisterPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: Colors.white,
-        body: Padding(
-          padding: const EdgeInsets.symmetric(
-            horizontal: 24,
-            vertical: 12,
-          ),
-          child: SingleChildScrollView(
-            child: Column(
-              spacing: regularSpacing,
-              children: <Widget>[
-                SizedBox(height: regularSpacing),
-                BackToScreenButtonRegisterWidget(),
-                CreateAccountTextLabelRegisterWidget(),
-                UploadImageButtonRegisterWidget(),
-                FirstNameTextfieldRegisterWidget(),
-                LastNameTextfieldRegisterWidget(),
-                GenderSelectionRegisterWidget(),
-                ContactNumberTextfieldRegisterWidget(),
-                VehicleTypeButtonRegisterWidget(),
-                PlateNumberTextfieldRegisterWidget(),
-                EmailTextfieldRegisterWidget(),
-                PasswordTextfieldRegisterWidget(),
-                ConfirmPasswordTextfieldRegisterWidget(),
-                RegisterButtonWidget()
-              ],
-            ),
+    return Scaffold(
+      // appBar: AppBar(
+      //   title: Text("data"),
+      //   automaticallyImplyLeading: true,
+      // ),
+      backgroundColor: Colors.white,
+      body: Padding(
+        padding: const EdgeInsets.symmetric(
+          horizontal: 24,
+          vertical: 12,
+        ),
+        child: SingleChildScrollView(
+          child: Column(
+            spacing: regularSpacing,
+            children: <Widget>[
+              //SizedBox(height: regularSpacing),
+              //BackToScreenButtonRegisterWidget(),
+              CreateAccountTextLabelRegisterWidget(),
+              UploadImageButtonRegisterWidget(),
+              FirstNameTextfieldRegisterWidget(),
+              LastNameTextfieldRegisterWidget(),
+              GenderSelectionRegisterWidget(),
+              ContactNumberTextfieldRegisterWidget(),
+              VehicleTypeButtonRegisterWidget(),
+              PlateNumberTextfieldRegisterWidget(),
+              EmailTextfieldRegisterWidget(),
+              PasswordTextfieldRegisterWidget(),
+              ConfirmPasswordTextfieldRegisterWidget(),
+              RegisterButtonWidget()
+            ],
           ),
         ),
       ),

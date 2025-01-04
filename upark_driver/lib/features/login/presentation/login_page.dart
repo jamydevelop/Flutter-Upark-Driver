@@ -21,32 +21,30 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: Colors.white,
-        body: Padding(
-          padding: const EdgeInsets.only(
-            left: largeSpacing,
-            right: largeSpacing,
-          ),
-          child: SingleChildScrollView(
-            child: Column(
-              spacing: regularSpacing,
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                LogoImageLoginWidget(),
-                LoginTextLabelLoginWidget(),
-                EmailTextfieldLoginWidget(),
-                LoginPasswordTextfieldLoginWidget(),
-                ForgotPasswordTextLabelLoginWidget(),
-                LoginButtonLoginWidget(),
-                OrTextLabelLoginWidget(),
-                GoogleButtonLoginWidget(),
-                FacebookButtonLoginWidget(),
-                CreateAccountTextLabelLoginWidget(),
-              ],
-            ),
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Padding(
+        padding: const EdgeInsets.only(
+          left: largeSpacing,
+          right: largeSpacing,
+        ),
+        child: SingleChildScrollView(
+          child: Column(
+            spacing: regularSpacing,
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              LogoImageLoginWidget(),
+              LoginTextLabelLoginWidget(),
+              EmailTextfieldLoginWidget(),
+              LoginPasswordTextfieldLoginWidget(),
+              ForgotPasswordTextLabelLoginWidget(),
+              LoginButtonLoginWidget(),
+              OrTextLabelLoginWidget(),
+              GoogleButtonLoginWidget(),
+              FacebookButtonLoginWidget(),
+              CreateAccountTextLabelLoginWidget(),
+            ],
           ),
         ),
       ),

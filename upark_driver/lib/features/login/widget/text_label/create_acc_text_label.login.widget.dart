@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
@@ -13,10 +14,16 @@ class CreateAccountTextLabelLoginWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         DontHaveAccTextLabelLoginWidget(),
-        CommonTextLabel(
-          color: darkGreen,
-          text: "Create Account",
-          fontSize: fontSizeCallout,
+        GestureDetector(
+          onTap: () {
+            //context.go("/register");
+            GoRouter.of(context).go("/register");
+          },
+          child: CommonTextLabel(
+            color: darkGreen,
+            text: "Create Account",
+            fontSize: fontSizeCallout,
+          ),
         ),
       ],
     );

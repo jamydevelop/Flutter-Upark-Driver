@@ -6,11 +6,13 @@ class CreateAccountTextLabelRegisterWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      "Create Account",
-      style: TextStyle(
-        fontSize: fontSizeTitle1,
-        fontWeight: FontWeight.bold,
+    return Center(
+      child: Text(
+        "Create Account",
+        style: TextStyle(
+          fontSize: fontSizeTitle1,
+          fontWeight: FontWeight.bold,
+        ),
       ),
     );
   }

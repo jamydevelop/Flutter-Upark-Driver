@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/features/register/widget/button/back_to_screen_button.register.widget.dart';
 import 'package:upark_driver/features/register/widget/button/register_button.widget.dart';
@@ -21,6 +22,13 @@ class RegisterPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () {
+            context.go("/login");
+          },
+        ),
+        backgroundColor: Colors.white,
         automaticallyImplyLeading: true,
       ),
       backgroundColor: Colors.white,

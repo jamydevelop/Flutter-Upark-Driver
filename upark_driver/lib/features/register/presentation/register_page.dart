@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/features/register/widget/button/back_to_screen_button.register.widget.dart';
+import 'package:upark_driver/features/register/widget/button/register_button.widget.dart';
 import 'package:upark_driver/features/register/widget/button/vehicle_type_button.register.widget.dart';
 import 'package:upark_driver/features/register/widget/gender_selection.register.widget.dart';
 import 'package:upark_driver/features/register/widget/text_field/confirm_password_textfield.register.widget.dart';
@@ -43,6 +44,7 @@ class RegisterPage extends StatelessWidget {
                 EmailTextfieldRegisterWidget(),
                 PasswordTextfieldRegisterWidget(),
                 ConfirmPasswordTextfieldRegisterWidget(),
+                RegisterButtonWidget()
               ],
             ),
           ),

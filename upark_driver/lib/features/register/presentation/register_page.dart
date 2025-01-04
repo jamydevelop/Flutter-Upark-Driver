@@ -20,10 +20,9 @@ class RegisterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text("data"),
-      //   automaticallyImplyLeading: true,
-      // ),
+      appBar: AppBar(
+        automaticallyImplyLeading: true,
+      ),
       backgroundColor: Colors.white,
       body: Padding(
         padding: const EdgeInsets.symmetric(

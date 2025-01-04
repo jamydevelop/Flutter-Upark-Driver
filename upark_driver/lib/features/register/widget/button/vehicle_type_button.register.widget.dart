@@ -4,7 +4,10 @@ import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/features/register/widget/text_label/vehicle_type_text_label.register.widget.dart';
 
 class VehicleTypeButtonRegisterWidget extends StatefulWidget {
-  const VehicleTypeButtonRegisterWidget({super.key});
+  const VehicleTypeButtonRegisterWidget(
+      {super.key, required this.dropDownCallback});
+
+  final Function({required String value}) dropDownCallback;
 
   @override
   State<VehicleTypeButtonRegisterWidget> createState() =>
@@ -69,6 +72,7 @@ class _VehicleTypeButtonRegisterWidgetState
               onChanged: (String? newValue) {
                 setState(() {
                   _dropDownValue = newValue;
+                  widget.dropDownCallback(value: _dropDownValue ?? "");
                 });
               },
               dropdownColor: Colors.white, // Dropdown menu color

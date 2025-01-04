@@ -9,12 +9,15 @@ class ForgotPasswordTextLabelLoginWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.end,
       children: [
-        CommonTextLabel(
-          color: grey,
-          text: "Profile Image",
-          fontSize: fontSizeTitle4,
+        GestureDetector(
+          onTap: () {},
+          child: CommonTextLabel(
+            color: darkGreen,
+            text: "Forgot Password",
+            fontSize: fontSizeTitle4,
+          ),
         ),
       ],
     );

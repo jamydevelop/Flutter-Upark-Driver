@@ -14,8 +14,21 @@ import 'package:upark_driver/features/register/widget/text_field/password_textfi
 import 'package:upark_driver/features/register/widget/text_field/plate_number_textfield.register.widget.dart';
 import 'package:upark_driver/features/register/widget/text_label/create_account_text_label.register.widget.dart';
 
-class RegisterPage extends StatelessWidget {
+class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
+
+  @override
+  State<RegisterPage> createState() => _RegisterPageState();
+}
+
+class _RegisterPageState extends State<RegisterPage> {
+  String? dropDownValue;
+
+  void dropDownCallback({required String value}) {
+    setState(() {
+      dropDownValue = value;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -48,8 +61,12 @@ class RegisterPage extends StatelessWidget {
               LastNameTextfieldRegisterWidget(),
               GenderSelectionRegisterWidget(),
               ContactNumberTextfieldRegisterWidget(),
-              VehicleTypeButtonRegisterWidget(),
-              PlateNumberTextfieldRegisterWidget(),
+              VehicleTypeButtonRegisterWidget(
+                  dropDownCallback: dropDownCallback),
+              dropDownValue == null
+                  ? SizedBox.shrink()
+                  : PlateNumberTextfieldRegisterWidget(
+                      value: dropDownValue ?? ""),
               EmailTextfieldRegisterWidget(),
               PasswordTextfieldRegisterWidget(),
               ConfirmPasswordTextfieldRegisterWidget(),

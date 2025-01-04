@@ -4,7 +4,7 @@ class CommonButton extends StatelessWidget {
   const CommonButton(
       {super.key,
       this.text,
-      this.height = 50,
+      this.height = 60,
       this.width,
       this.borderRadius = 10,
       this.fontSize = 16,
@@ -19,7 +19,7 @@ class CommonButton extends StatelessWidget {
       this.child,
       this.onPressed,
       this.textColor,
-      this.fontFamily = "Poppins",
+      this.fontFamily = "Roboto",
       this.decoration,
       this.borderWidth})
       : assert(

@@ -13,6 +13,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+          scaffoldBackgroundColor: Colors.white, fontFamily: "Roboto"),
       title: 'Upark App Demo',
       routerConfig: AppRouter().router,
       // home: const SplashPage(),

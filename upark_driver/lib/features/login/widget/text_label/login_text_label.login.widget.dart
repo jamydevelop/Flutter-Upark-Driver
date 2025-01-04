@@ -1,4 +1,4 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 
 class LoginTextLabelLoginWidget extends StatelessWidget {
@@ -8,10 +8,7 @@ class LoginTextLabelLoginWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       "Create Account",
-      style: TextStyle(
-        fontSize: fontSizeTitle1,
-        fontWeight: FontWeight.bold,
-      ),
+      style: TextStyle(fontSize: fontSizeTitle1, fontWeight: FontWeight.bold),
     );
   }
 }

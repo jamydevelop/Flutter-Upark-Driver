@@ -5,7 +5,13 @@ class LogoImageLoginWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset("assets/images/woman.png",
-        height: 246, width: 326, fit: BoxFit.fill);
+    return Center(
+      child: Image.asset(
+        "assets/images/high_five_image.png",
+        height: 246,
+        width: 326,
+        fit: BoxFit.contain,
+      ),
+    );
   }
 }

@@ -16,7 +16,7 @@ class EmailTextfieldRegisterWidget extends StatelessWidget {
         CommonTextField(
           hintText: "Enter your email",
           hintTextStyle: TextStyle(
-            color: textFieldTextGrey,
+            color: greySecondary,
             fontSize: 16,
           ),
           prefixIcon: Icon(Icons.alternate_email_sharp),

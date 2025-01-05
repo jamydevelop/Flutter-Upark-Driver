@@ -12,7 +12,7 @@ class PlateNumberTextLabelRegisterWidget extends StatelessWidget {
     return Row(
       children: [
         CommonTextLabel(
-          color: textFieldTextGrey,
+          color: greySecondary,
           text: "Plate # for $value",
         ),
       ],

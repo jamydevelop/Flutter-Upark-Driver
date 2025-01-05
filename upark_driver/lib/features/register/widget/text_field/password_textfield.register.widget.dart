@@ -17,7 +17,7 @@ class PasswordTextfieldRegisterWidget extends StatelessWidget {
         CommonTextField(
           hintText: "Enter your password",
           hintTextStyle: TextStyle(
-            color: textFieldTextGrey,
+            color: greySecondary,
             fontSize: 16,
           ),
           prefixIcon: Image.asset(

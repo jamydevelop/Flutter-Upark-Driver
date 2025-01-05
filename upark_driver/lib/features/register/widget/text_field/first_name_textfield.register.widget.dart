@@ -16,7 +16,7 @@ class FirstNameTextfieldRegisterWidget extends StatelessWidget {
         CommonTextField(
           hintText: "Enter your first name",
           hintTextStyle: TextStyle(
-            color: textFieldTextGrey,
+            color: greySecondary,
             fontSize: 16.0,
           ),
           prefixIcon: Image.asset(

@@ -12,7 +12,7 @@ class FirstNameTextLabelRegisterWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         CommonTextLabel(
-          color: textFieldTextGrey,
+          color: greySecondary,
           text: "First Name",
           fontSize: fontSizeTitle4,
         ),

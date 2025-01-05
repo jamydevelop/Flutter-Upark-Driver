@@ -11,8 +11,8 @@ class EmailTextLabelLoginWidget extends StatelessWidget {
     return CommonTextLabel(
       fontFamily: "Inter",
       fontWeight: FontWeight.w500,
-      fontSize: fontSizeSubhead,
-      color: textLabelGrey,
+      fontSize: fontSizeSubhead, //15px
+      color: greyPrimary, //#7D7777
       text: "Email",
     );
   }

@@ -12,7 +12,7 @@ class DontHaveAccTextLabelLoginWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         CommonTextLabel(
-          color: textFieldTextGrey,
+          color: greySecondary,
           text: "Don't have an account?",
           fontSize: fontSizeTitle4,
         ),

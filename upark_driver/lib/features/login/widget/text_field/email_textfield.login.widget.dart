@@ -20,7 +20,7 @@ class EmailTextfieldLoginWidget extends StatelessWidget {
               fontFamily: "Roboto",
               fontWeight: FontWeight.w400,
               fontSize: fontSizeSubhead,
-              color: textFieldTextGrey),
+              color: greySecondary),
           prefixIcon: Image.asset("assets/icons/at_sign_icon.png", scale: 3),
           // Icon(
           //   Icons.alternate_email,
@@ -33,7 +33,7 @@ class EmailTextfieldLoginWidget extends StatelessWidget {
           keyboardType: TextInputType.emailAddress,
           inputBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(16.0),
-            borderSide: BorderSide(color: textFieldTextGrey, width: 1),
+            borderSide: BorderSide(color: greySecondary, width: 1),
           ),
         ),
       ],

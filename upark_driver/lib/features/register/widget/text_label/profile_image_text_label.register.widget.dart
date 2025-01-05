@@ -11,7 +11,7 @@ class ProfileImageTextLabelRegisterWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         CommonTextLabel(
-          color: textFieldTextGrey,
+          color: greySecondary,
           text: "Profile Image",
           fontSize: fontSizeTitle4,
         ),

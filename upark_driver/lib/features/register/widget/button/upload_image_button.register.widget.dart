@@ -19,7 +19,7 @@ class UploadImageButtonRegisterWidget extends StatelessWidget {
               child: CommonButton(
                 height: 58,
                 foregroundColor: darkGreen,
-                backgroundColor: buttonGrey,
+                backgroundColor: greyTertiary,
                 child: Text(
                   "Upload Image",
                   style: TextStyle(

@@ -12,7 +12,7 @@ class LoginPasswordTextLabelWidget extends StatelessWidget {
       fontFamily: "Inter",
       fontWeight: FontWeight.w500,
       fontSize: fontSizeSubhead, //15px
-      color: textLabelGrey, //#7D7777
+      color: greyPrimary, //#7D7777
       text: "Password",
     );
   }

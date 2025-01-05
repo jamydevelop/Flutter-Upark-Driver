@@ -13,7 +13,7 @@ class OrTextLabelLoginWidget extends StatelessWidget {
       children: [
         Expanded(
           child: Divider(
-            color: textFieldTextGrey,
+            color: greySecondary,
             height: 1.0,
             thickness: 1,
           ),
@@ -23,13 +23,13 @@ class OrTextLabelLoginWidget extends StatelessWidget {
           child: CommonTextLabel(
             text: "Or",
             fontWeight: FontWeight.normal,
-            color: textFieldTextGrey,
+            color: greySecondary,
             fontSize: fontSizeCallout,
           ),
         ),
         Expanded(
           child: Divider(
-            color: textFieldTextGrey,
+            color: greySecondary,
             height: 1.0,
             thickness: 1,
           ),

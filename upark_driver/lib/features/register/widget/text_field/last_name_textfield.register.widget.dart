@@ -15,7 +15,7 @@ class LastNameTextfieldRegisterWidget extends StatelessWidget {
         SizedBox(height: extraSmallSpacing),
         CommonTextField(
           hintText: "Enter your last name",
-          hintTextStyle: TextStyle(color: textFieldTextGrey, fontSize: 16.0),
+          hintTextStyle: TextStyle(color: greySecondary, fontSize: 16.0),
           prefixIcon: Image.asset(
             "assets/icons/profile.png",
             scale: 3,

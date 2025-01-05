@@ -42,7 +42,7 @@ class _VehicleTypeButtonRegisterWidgetState
                   Icon(
                     Icons.directions_car,
                     size: 28,
-                    color: textFieldTextGrey,
+                    color: greySecondary,
                   ),
                   Text(
                     "Vehicle Type",

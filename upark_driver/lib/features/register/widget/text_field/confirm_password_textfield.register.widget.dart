@@ -17,7 +17,7 @@ class ConfirmPasswordTextfieldRegisterWidget extends StatelessWidget {
         CommonTextField(
           hintText: "Re-type your password",
           hintTextStyle: TextStyle(
-            color: textFieldTextGrey,
+            color: greySecondary,
             fontSize: 16,
           ),
           prefixIcon: Image.asset(

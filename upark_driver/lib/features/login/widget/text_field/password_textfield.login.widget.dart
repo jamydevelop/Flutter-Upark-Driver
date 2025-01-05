@@ -23,12 +23,12 @@ class LoginPasswordTextfieldLoginWidget extends StatelessWidget {
             fontFamily: "Inter",
             fontWeight: FontWeight.w400,
             fontSize: fontSizeSubhead,
-            color: textFieldTextGrey, //#868686
+            color: greySecondary, //#868686
           ),
           prefixIcon: Image.asset(
             "assets/icons/key_fill_icon.png",
             scale: 3,
-            color: textFieldTextGrey, //#868686
+            color: greySecondary, //#868686
           ),
           // Icon(
           //   Icons.key_sharp,
@@ -43,7 +43,7 @@ class LoginPasswordTextfieldLoginWidget extends StatelessWidget {
           keyboardType: TextInputType.text,
           inputBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(16.0),
-            borderSide: BorderSide(color: textFieldTextGrey, width: 1),
+            borderSide: BorderSide(color: greySecondary, width: 1),
           ),
         ),
       ],

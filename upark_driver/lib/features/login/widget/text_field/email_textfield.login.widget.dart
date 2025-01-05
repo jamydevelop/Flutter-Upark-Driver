@@ -15,7 +15,7 @@ class EmailTextfieldLoginWidget extends StatelessWidget {
         EmailTextLabelLoginWidget(),
         SizedBox(height: extraSmallSpacing),
         CommonTextField(
-          hintText: "Enter your email",
+          hintText: "Email",
           hintTextStyle: TextStyle(
               fontFamily: "Roboto",
               fontWeight: FontWeight.w400,

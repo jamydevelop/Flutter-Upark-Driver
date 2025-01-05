@@ -18,12 +18,22 @@ class LoginPasswordTextfieldLoginWidget extends StatelessWidget {
           isSecure: true,
           hasShowHideTextIcon: true,
           maxLines: 1,
-          hintText: "Password",
-          hintTextStyle: TextStyle(color: textFieldTextGrey),
-          prefixIcon: Icon(
-            Icons.key_sharp,
-            color: textFieldTextGrey,
+          hintText: "••••••••••",
+          hintTextStyle: TextStyle(
+            fontFamily: "Inter",
+            fontWeight: FontWeight.w400,
+            fontSize: fontSizeSubhead,
+            color: textFieldTextGrey, //#868686
           ),
+          prefixIcon: Image.asset(
+            "assets/icons/key_fill_icon.png",
+            scale: 3,
+            color: textFieldTextGrey, //#868686
+          ),
+          // Icon(
+          //   Icons.key_sharp,
+          //   color: textFieldTextGrey,
+          // ),
           onFieldSubmitted: (value) {
             // Hide the on-screen keyboard
             FocusScope.of(context).unfocus();
@@ -32,8 +42,8 @@ class LoginPasswordTextfieldLoginWidget extends StatelessWidget {
           filled: true,
           keyboardType: TextInputType.text,
           inputBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(12.0),
-            borderSide: BorderSide(color: textFieldTextGrey),
+            borderRadius: BorderRadius.circular(16.0),
+            borderSide: BorderSide(color: textFieldTextGrey, width: 1),
           ),
         ),
       ],

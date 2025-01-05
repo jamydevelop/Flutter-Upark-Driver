@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/colors.dart';
+import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_button.dart';
 
 class FacebookButtonLoginWidget extends StatelessWidget {
@@ -6,43 +8,21 @@ class FacebookButtonLoginWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-            child: CommonButton(
-          hasBorder: true,
-          borderColor: Colors.grey,
-          backgroundColor: Colors.white,
-          foregroundColor: Colors.black,
-          onPressed: () {
-            debugPrint("Google Button Cliked!");
-          },
-          child: Stack(
-            alignment: Alignment.center,
-            children: [
-              Align(
-                alignment: Alignment.centerLeft,
-                child: Padding(
-                  padding: const EdgeInsets.only(
-                    left: 16,
-                  ),
-                  child: Image.asset(
-                    "assets/icons/fb_icon.png",
-                    height: 24,
-                    width: 24,
-                  ),
-                ),
-              ),
-              Text(
-                "Continue with Facebook",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ],
-          ),
-        ))
-      ],
+    return CommonButton(
+      borderRadius: 99,
+      borderWidth: 2,
+      hasBorder: true,
+      borderColor: greenPrimary,
+      backgroundColor: Colors.white,
+      foregroundColor: Colors.black,
+      onPressed: () {
+        debugPrint("Google Button Cliked!");
+      },
+      child: Image.asset(
+        "assets/icons/fb_icon.png",
+        height: largeSpacing, //24px
+        width: largeSpacing,
+      ),
     );
   }
 }

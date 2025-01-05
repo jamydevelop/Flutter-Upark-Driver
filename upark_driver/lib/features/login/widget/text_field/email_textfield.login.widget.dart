@@ -12,6 +12,7 @@ class EmailTextfieldLoginWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        SizedBox(height: regularSpacing),
         EmailTextLabelLoginWidget(),
         SizedBox(height: extraSmallSpacing),
         CommonTextField(

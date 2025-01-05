@@ -13,6 +13,7 @@ class CreateAccountTextLabelLoginWidget extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        SizedBox(height: extraLargeSpacing),
         DontHaveAccTextLabelLoginWidget(),
         GestureDetector(
           onTap: () {

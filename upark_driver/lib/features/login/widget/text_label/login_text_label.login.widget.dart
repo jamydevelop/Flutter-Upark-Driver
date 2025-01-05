@@ -13,7 +13,7 @@ class LoginTextLabelLoginWidget extends StatelessWidget {
       fontWeight: FontWeight.w600,
       fontSize: fontSizeTitle1, //25px
       text: "Login",
-      color: blackPrimary,
+      color: blackPrimary, //#0B0B0B
     );
   }
 }

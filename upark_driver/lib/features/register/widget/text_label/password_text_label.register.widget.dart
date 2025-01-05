@@ -11,7 +11,7 @@ class PasswordTextLabelRegisterWidget extends StatelessWidget {
       children: <Widget>[
         CommonTextLabel(
           text: "Password",
-          color: grey,
+          color: textFieldTextGrey,
         ),
       ],
     );

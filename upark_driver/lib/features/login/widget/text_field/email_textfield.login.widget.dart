@@ -16,19 +16,24 @@ class EmailTextfieldLoginWidget extends StatelessWidget {
         SizedBox(height: extraSmallSpacing),
         CommonTextField(
           hintText: "Enter your email",
-          hintTextStyle: TextStyle(color: grey),
-          prefixIcon: Icon(
-            Icons.alternate_email,
-            color: grey,
-          ),
+          hintTextStyle: TextStyle(
+              fontFamily: "Roboto",
+              fontWeight: FontWeight.w400,
+              fontSize: fontSizeSubhead,
+              color: textFieldTextGrey),
+          prefixIcon: Image.asset("assets/icons/at_sign_icon.png", scale: 3),
+          // Icon(
+          //   Icons.alternate_email,
+          //   color: textFieldTextGrey,
+          // ),
           onFieldSubmitted: (value) {
             // Hide the on-screen keyboard
             FocusScope.of(context).unfocus();
           },
           keyboardType: TextInputType.emailAddress,
           inputBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(12.0),
-            borderSide: BorderSide(color: grey),
+            borderRadius: BorderRadius.circular(16.0),
+            borderSide: BorderSide(color: textFieldTextGrey, width: 1),
           ),
         ),
       ],

@@ -6,6 +6,7 @@ class CommonTextLabel extends StatelessWidget {
   final double fontSize;
   final FontWeight fontWeight;
   final Color? color;
+  final String? fontFamily;
 
   // Constructor to allow customization of text, fontSize, and fontWeight
   const CommonTextLabel({
@@ -14,6 +15,7 @@ class CommonTextLabel extends StatelessWidget {
     this.fontSize = fontSizeTitle4, // Default font size (can be adjusted)
     this.fontWeight = FontWeight.bold, // Default font weight
     this.color,
+    this.fontFamily,
   });
 
   @override
@@ -21,10 +23,10 @@ class CommonTextLabel extends StatelessWidget {
     return Text(
       text,
       style: TextStyle(
-        fontSize: fontSize,
-        fontWeight: fontWeight,
-        color: color,
-      ),
+          fontSize: fontSize,
+          fontWeight: fontWeight,
+          color: color,
+          fontFamily: fontFamily),
     );
   }
 }

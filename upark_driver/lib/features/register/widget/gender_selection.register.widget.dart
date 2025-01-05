@@ -40,7 +40,7 @@ class GenderSelectionRegisterWidgetState
                   },
                 ),
                 CommonTextLabel(
-                  color: grey,
+                  color: textFieldTextGrey,
                   text: "Male",
                 ),
               ],
@@ -60,7 +60,7 @@ class GenderSelectionRegisterWidgetState
                   },
                 ),
                 CommonTextLabel(
-                  color: grey,
+                  color: textFieldTextGrey,
                   text: "Female",
                 ),
               ],

@@ -18,7 +18,7 @@ class PlateNumberTextfieldRegisterWidget extends StatelessWidget {
         CommonTextField(
           hintText: "Plate #",
           hintTextStyle: TextStyle(
-            color: grey,
+            color: textFieldTextGrey,
             fontSize: 16,
           ),
           prefixIcon: Image.asset(

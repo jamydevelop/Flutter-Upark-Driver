@@ -12,7 +12,7 @@ class LastNameTextLabelRegisterWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         CommonTextLabel(
-          color: grey,
+          color: textFieldTextGrey,
           text: "Last Name",
           fontSize: fontSizeTitle4,
         ),

@@ -9,7 +9,7 @@ class ContactNumberTextLabelRegisterWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(children: <Widget>[
       CommonTextLabel(
-        color: grey,
+        color: textFieldTextGrey,
         text: "Contact Number",
       )
     ]);

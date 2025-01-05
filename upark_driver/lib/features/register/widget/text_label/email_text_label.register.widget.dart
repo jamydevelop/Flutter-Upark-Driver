@@ -11,7 +11,7 @@ class EmailTextLabelRegisterWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         CommonTextLabel(
-          color: grey,
+          color: textFieldTextGrey,
           text: "Email",
         ),
       ],

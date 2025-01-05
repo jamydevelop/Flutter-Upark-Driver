@@ -9,7 +9,7 @@ class LoginPasswordTextLabelWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CommonTextLabel(
-      color: grey,
+      color: textFieldTextGrey,
       text: "Password",
       fontSize: fontSizeTitle4,
     );

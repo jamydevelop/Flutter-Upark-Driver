@@ -16,7 +16,7 @@ class ContactNumberTextfieldRegisterWidget extends StatelessWidget {
         CommonTextField(
           hintText: "Enter your contact number",
           hintTextStyle: TextStyle(
-            color: grey,
+            color: textFieldTextGrey,
             fontSize: 16,
           ),
           prefixIcon: Image.asset(

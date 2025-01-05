@@ -19,10 +19,10 @@ class LoginPasswordTextfieldLoginWidget extends StatelessWidget {
           hasShowHideTextIcon: true,
           maxLines: 1,
           hintText: "Password",
-          hintTextStyle: TextStyle(color: grey),
+          hintTextStyle: TextStyle(color: textFieldTextGrey),
           prefixIcon: Icon(
             Icons.key_sharp,
-            color: grey,
+            color: textFieldTextGrey,
           ),
           onFieldSubmitted: (value) {
             // Hide the on-screen keyboard
@@ -33,7 +33,7 @@ class LoginPasswordTextfieldLoginWidget extends StatelessWidget {
           keyboardType: TextInputType.text,
           inputBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12.0),
-            borderSide: BorderSide(color: grey),
+            borderSide: BorderSide(color: textFieldTextGrey),
           ),
         ),
       ],

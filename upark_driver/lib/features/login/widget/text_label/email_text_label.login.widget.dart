@@ -9,9 +9,11 @@ class EmailTextLabelLoginWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CommonTextLabel(
-      color: grey,
+      fontFamily: "Inter",
+      fontWeight: FontWeight.w500,
+      fontSize: fontSizeSubhead,
+      color: textLabelGrey,
       text: "Email",
-      fontSize: fontSizeTitle4,
     );
   }
 }

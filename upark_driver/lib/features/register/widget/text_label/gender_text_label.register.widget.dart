@@ -11,7 +11,7 @@ class GenderTextLabelRegisterWidget extends StatelessWidget {
     return Row(
       children: <Widget>[
         CommonTextLabel(
-          color: grey,
+          color: textFieldTextGrey,
           text: "Gender",
           fontSize: fontSizeTitle4,
         )

@@ -10,7 +10,7 @@ class VehicleTypeTextLabelRegisterWidget extends StatelessWidget {
     return Row(
       children: [
         CommonTextLabel(
-          color: grey,
+          color: textFieldTextGrey,
           text: "Vehicle Type",
         ),
       ],

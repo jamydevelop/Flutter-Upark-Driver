@@ -11,7 +11,7 @@ class ConfirmPasswordTextLabelRegisterWidget extends StatelessWidget {
       children: <Widget>[
         CommonTextLabel(
           text: "Confirm Password",
-          color: grey,
+          color: textFieldTextGrey,
         ),
       ],
     );

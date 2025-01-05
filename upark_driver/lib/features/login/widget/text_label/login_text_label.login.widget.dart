@@ -7,7 +7,7 @@ class LoginTextLabelLoginWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      "Create Account",
+      "Login",
       style: TextStyle(fontSize: fontSizeTitle1, fontWeight: FontWeight.bold),
     );
   }

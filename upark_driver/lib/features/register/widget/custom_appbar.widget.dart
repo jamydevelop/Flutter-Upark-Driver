@@ -1,0 +1,26 @@
+import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+
+class CustomAppBarWidget extends StatelessWidget
+    implements PreferredSizeWidget {
+  const CustomAppBarWidget({super.key});
+
+  @override
+  Size get preferredSize =>
+      Size.fromHeight(kToolbarHeight); // Standard AppBar height
+
+  @override
+  Widget build(BuildContext context) {
+    return AppBar(
+      scrolledUnderElevation: 0.0,
+      leading: IconButton(
+        icon: Icon(Icons.arrow_back, color: Colors.black),
+        onPressed: () {
+          context.go("/login"); // Go to login page on back button press
+        },
+      ),
+      backgroundColor: Colors.white, // Static white color for the AppBar
+      automaticallyImplyLeading: true,
+    );
+  }
+}

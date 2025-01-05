@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/features/register/widget/button/register_button.widget.dart';
 import 'package:upark_driver/features/register/widget/button/vehicle_type_button.register.widget.dart';
+import 'package:upark_driver/features/register/widget/custom_appbar.widget.dart';
 import 'package:upark_driver/features/register/widget/gender_selection.register.widget.dart';
 import 'package:upark_driver/features/register/widget/text_field/confirm_password_textfield.register.widget.dart';
 import 'package:upark_driver/features/register/widget/text_field/contact_number_textfield.register.widget.dart';
@@ -33,16 +33,7 @@ class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.black),
-          onPressed: () {
-            context.go("/login");
-          },
-        ),
-        backgroundColor: Colors.white,
-        automaticallyImplyLeading: true,
-      ),
+      appBar: CustomAppBarWidget(),
       backgroundColor: Colors.white,
       body: Padding(
         padding: const EdgeInsets.symmetric(
@@ -53,8 +44,6 @@ class _RegisterPageState extends State<RegisterPage> {
           child: Column(
             spacing: regularSpacing,
             children: <Widget>[
-              //SizedBox(height: regularSpacing),
-              //BackToScreenButtonRegisterWidget(),
               CreateAccountTextLabelRegisterWidget(),
               UploadImageButtonRegisterWidget(),
               FirstNameTextfieldRegisterWidget(),

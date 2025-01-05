@@ -11,13 +11,15 @@ class MyApp extends StatelessWidget {
 //test
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-          scaffoldBackgroundColor: Colors.white, fontFamily: "Roboto"),
-      title: 'Upark App Demo',
-      routerConfig: AppRouter().router,
-      // home: const SplashPage(),
+    return SafeArea(
+      child: MaterialApp.router(
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+            scaffoldBackgroundColor: Colors.white, fontFamily: "Roboto"),
+        title: 'Upark App Demo',
+        routerConfig: AppRouter().router,
+        // home: const SplashPage(),
+      ),
     );
   }
 }

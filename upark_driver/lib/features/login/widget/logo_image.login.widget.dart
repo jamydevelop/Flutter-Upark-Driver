@@ -10,7 +10,7 @@ class LogoImageLoginWidget extends StatelessWidget {
         "assets/images/high_five_image.png",
         height: 246,
         width: 326,
-        fit: BoxFit.contain,
+        fit: BoxFit.fill,
       ),
     );
   }

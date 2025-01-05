@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
 
@@ -12,6 +13,7 @@ class LoginTextLabelLoginWidget extends StatelessWidget {
       fontWeight: FontWeight.w600,
       fontSize: fontSizeTitle1, //25px
       text: "Login",
+      color: blackPrimary,
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
 
 class LoginTextLabelLoginWidget extends StatelessWidget {
@@ -7,9 +8,10 @@ class LoginTextLabelLoginWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CommonTextLabel(
-      text: "Login",
+      fontFamily: "Roboto",
       fontWeight: FontWeight.w600,
-      fontSize: 25,
+      fontSize: fontSizeTitle1, //25px
+      text: "Login",
     );
   }
 }

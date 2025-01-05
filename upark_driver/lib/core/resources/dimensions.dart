@@ -23,5 +23,6 @@ const double fontSizeTitle5 = 10.0;
 const double fontSizeTitle4 = 14.0;
 const double fontSizeTitle3 = 20.0;
 const double fontSizeTitle2 = 22.0;
-const double fontSizeTitle1 = 28.0;
+const double fontSizeTitle1 = 25.0;
+const double fontSizeTitle0 = 28.0;
 const double fontSizeLargeTitle = 34.0;

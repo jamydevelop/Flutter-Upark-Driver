@@ -10,7 +10,7 @@ class CreateAccountTextLabelRegisterWidget extends StatelessWidget {
       child: Text(
         "Create Account",
         style: TextStyle(
-          fontSize: fontSizeTitle1,
+          fontSize: fontSizeTitle0,
           fontWeight: FontWeight.bold,
         ),
       ),

@@ -7,10 +7,11 @@ import 'package:upark_driver/features/login/widget/button/login_button.login.wid
 import 'package:upark_driver/features/login/widget/logo_image.login.widget.dart';
 import 'package:upark_driver/features/login/widget/text_field/email_textfield.login.widget.dart';
 import 'package:upark_driver/features/login/widget/text_field/password_textfield.login.widget.dart';
+import 'package:upark_driver/features/login/widget/text_label/continue_with_text_label.login.widget.dart'
+    as test;
 import 'package:upark_driver/features/login/widget/text_label/create_acc_text_label.login.widget.dart';
 import 'package:upark_driver/features/login/widget/text_label/forgot_password_text_label.login.widget.dart';
 import 'package:upark_driver/features/login/widget/text_label/login_text_label.login.widget.dart';
-import 'package:upark_driver/features/login/widget/text_label/or_text_label.login.widget.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -46,7 +47,8 @@ class _LoginPageState extends State<LoginPage> {
                 LoginPasswordTextfieldLoginWidget(),
                 ForgotPasswordTextLabelLoginWidget(),
                 LoginButtonLoginWidget(),
-                OrTextLabelLoginWidget(),
+                test.ContinueWithTextLabelLoginWidget(),
+                //OrTextLabelLoginWidget(),
                 GoogleButtonLoginWidget(),
                 FacebookButtonLoginWidget(),
                 CreateAccountTextLabelLoginWidget()

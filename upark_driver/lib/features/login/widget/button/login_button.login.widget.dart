@@ -9,25 +9,30 @@ class LoginButtonLoginWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+    return Column(
       children: [
-        Expanded(
-          child: CommonButton(
-            borderRadius: 10,
-            foregroundColor: whitePrimary,
-            backgroundColor: greenPrimary,
-            child: CommonTextLabel(
-              fontFamily: "Roboto",
-              fontWeight: FontWeight.w600,
-              fontSize: fontSizeCallout,
-              color: whitePrimary, //#FFFFFF
-              text: "Login",
+        SizedBox(height: extraLargeSpacing),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Expanded(
+              child: CommonButton(
+                borderRadius: 10,
+                foregroundColor: whitePrimary,
+                backgroundColor: greenPrimary,
+                child: CommonTextLabel(
+                  fontFamily: "Roboto",
+                  fontWeight: FontWeight.w600,
+                  fontSize: fontSizeCallout,
+                  color: whitePrimary, //
+                  text: "Login",
+                ),
+                onPressed: () {
+                  debugPrint("Login Button Pressed!");
+                },
+              ),
             ),
-            onPressed: () {
-              debugPrint("Login Button Pressed!");
-            },
-          ),
+          ],
         ),
       ],
     );

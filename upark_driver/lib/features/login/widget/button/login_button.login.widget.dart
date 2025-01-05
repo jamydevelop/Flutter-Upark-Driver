@@ -13,7 +13,7 @@ class LoginButtonLoginWidget extends StatelessWidget {
         Expanded(
           child: CommonButton(
             foregroundColor: Colors.white,
-            backgroundColor: darkGreen,
+            backgroundColor: greenPrimary,
             child: Text(
               "Login",
               style: TextStyle(

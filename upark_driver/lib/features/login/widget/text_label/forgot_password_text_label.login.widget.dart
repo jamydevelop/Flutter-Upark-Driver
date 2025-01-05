@@ -14,9 +14,11 @@ class ForgotPasswordTextLabelLoginWidget extends StatelessWidget {
         GestureDetector(
           onTap: () {},
           child: CommonTextLabel(
-            color: darkGreen,
+            fontFamily: "Roboto",
+            fontWeight: FontWeight.w600,
+            fontSize: fontSizeCaption1, //12px
+            color: greenPrimary, //#379237
             text: "Forgot Password",
-            fontSize: fontSizeTitle4,
           ),
         ),
       ],

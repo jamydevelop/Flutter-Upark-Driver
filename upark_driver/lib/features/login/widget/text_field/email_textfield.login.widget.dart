@@ -19,9 +19,13 @@ class EmailTextfieldLoginWidget extends StatelessWidget {
           hintTextStyle: TextStyle(
               fontFamily: "Roboto",
               fontWeight: FontWeight.w400,
-              fontSize: fontSizeSubhead,
-              color: greySecondary),
-          prefixIcon: Image.asset("assets/icons/at_sign_icon.png", scale: 3),
+              fontSize: fontSizeSubhead, //15px
+              color: greySecondary), //#868686
+          prefixIcon: Image.asset(
+            "assets/icons/at_sign_icon.png",
+            scale: 3,
+            color: greySecondary, //#868686
+          ),
           // Icon(
           //   Icons.alternate_email,
           //   color: textFieldTextGrey,

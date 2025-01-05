@@ -20,7 +20,7 @@ class CreateAccountTextLabelLoginWidget extends StatelessWidget {
             GoRouter.of(context).go("/register");
           },
           child: CommonTextLabel(
-            color: darkGreen,
+            color: greenPrimary,
             text: "Create Account",
             fontSize: fontSizeCallout,
           ),

@@ -17,7 +17,7 @@ class RegisterButtonWidget extends StatelessWidget {
             Expanded(
               child: CommonButton(
                 foregroundColor: Colors.white,
-                backgroundColor: darkGreen,
+                backgroundColor: greenPrimary,
                 child: Text(
                   "Register",
                   style: TextStyle(

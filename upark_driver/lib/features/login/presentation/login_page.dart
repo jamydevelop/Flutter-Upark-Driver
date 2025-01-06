@@ -41,7 +41,7 @@ class _LoginPageState extends State<LoginPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 LogoImageLoginWidget(),
-                SizedBox(height: regularSpacing),
+                SizedBox(height: smallSpacing),
                 LoginTextLabelLoginWidget(),
                 EmailTextfieldLoginWidget(),
                 LoginPasswordTextfieldLoginWidget(),

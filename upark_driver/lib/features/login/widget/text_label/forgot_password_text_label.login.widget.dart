@@ -33,7 +33,7 @@ class ForgotPasswordTextLabelLoginWidgetState
             fontWeight: FontWeight.w600,
             fontSize: fontSizeCaption1, //12px
             color: textColor, // Use the dynamic color based on the state
-            text: "Forgot Password",
+            text: "Forgot Password?",
           ),
         ),
       ],

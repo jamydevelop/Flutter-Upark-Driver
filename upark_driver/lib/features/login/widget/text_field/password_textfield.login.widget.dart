@@ -12,6 +12,7 @@ class LoginPasswordTextfieldLoginWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        SizedBox(height: extraSmallSpacing),
         LoginPasswordTextLabelWidget(),
         SizedBox(height: extraSmallSpacing),
         CommonTextField(

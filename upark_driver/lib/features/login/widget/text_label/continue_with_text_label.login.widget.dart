@@ -14,7 +14,7 @@ class ContinueWithTextLabelLoginWidget extends StatelessWidget {
         fontWeight: FontWeight.w500,
         fontSize: fontSizeCallout,
         color: greySecondary, //#868686
-        text: "Continue With",
+        text: "Continue with",
       ),
     );
   }

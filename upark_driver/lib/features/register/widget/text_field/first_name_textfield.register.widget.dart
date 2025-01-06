@@ -16,18 +16,18 @@ class FirstNameTextfieldRegisterWidget extends StatelessWidget {
         CommonTextField(
           hintText: "Enter your first name",
           hintTextStyle: TextStyle(
-            color: greySecondary,
-            fontSize: 16.0,
+            fontFamily: "Roboto",
+            fontWeight: FontWeight.w400,
+            fontSize: fontSizeTitle5,
+            color: greySecondary, //#868686
           ),
-          prefixIcon: Image.asset(
-            "assets/icons/profile.png",
-            scale: 3,
-          ),
+          prefixIcon: Image.asset("assets/icons/profile.png", scale: 3),
           onFieldSubmitted: (value) {
             FocusScope.of(context).unfocus();
           },
           inputBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(12.0),
+            borderRadius: BorderRadius.circular(16.0),
+            borderSide: BorderSide(color: greySecondary, width: 1),
           ),
         ),
       ],

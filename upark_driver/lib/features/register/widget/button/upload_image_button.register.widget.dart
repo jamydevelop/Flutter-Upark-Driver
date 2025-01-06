@@ -23,6 +23,9 @@ class UploadImageButtonRegisterWidget extends StatelessWidget {
                 backgroundColor: greyTertiary,
                 borderRadius: primaryBorder,
                 child: CommonTextLabel(
+                  fontFamily: "Poppins",
+                  fontWeight: FontWeight.w600,
+                  fontSize: fontSizeTitle4,
                   text: "Upload Image",
                 ),
                 onPressed: () => debugPrint("Upload Image Button Clicked!"),

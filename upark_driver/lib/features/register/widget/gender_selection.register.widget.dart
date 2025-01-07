@@ -30,11 +30,19 @@ class GenderSelectionRegisterWidgetState
               children: [
                 Checkbox(
                   value: isMaleSelected,
-                  activeColor: greenPrimary, //#379237
+                  activeColor:
+                      greenPrimary, // Checkbox fill color when selected
+                  side: BorderSide(
+                    color: checkBoxColor, // Red border color
+                    width: 1, // Border width of 1
+                  ),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(
+                          4) // Rounded corners with radius 4
+                      ),
                   onChanged: (bool? value) {
                     setState(() {
-                      isMaleSelected =
-                          value ?? false; // null-coalescing operator
+                      isMaleSelected = value ?? false; // Handle null value
                       if (isMaleSelected) {
                         isFemaleSelected = false; // Uncheck the other box
                       }
@@ -54,6 +62,9 @@ class GenderSelectionRegisterWidgetState
             Row(
               children: [
                 Checkbox(
+                  side: BorderSide(color: checkBoxColor, width: 1),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(4)),
                   value: isFemaleSelected,
                   activeColor: greenPrimary, //#379237
                   onChanged: (bool? value) {

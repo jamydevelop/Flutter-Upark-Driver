@@ -17,3 +17,5 @@ const Color blackPrimary = Color(0xFF0B0B0B);
 const Color greenPrimary = Color(0xFF379237);
 
 const Color whitePrimary = Color(0xFFFFFFFF);
+
+const Color checkBoxColor = Color(0xFFD9D9D9);

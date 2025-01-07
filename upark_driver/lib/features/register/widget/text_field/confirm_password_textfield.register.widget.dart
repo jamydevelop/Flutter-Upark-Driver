@@ -15,10 +15,12 @@ class ConfirmPasswordTextfieldRegisterWidget extends StatelessWidget {
         ConfirmPasswordTextLabelRegisterWidget(),
         SizedBox(height: extraSmallSpacing),
         CommonTextField(
-          hintText: "Re-type your password",
+          hintText: "••••••••••••",
           hintTextStyle: TextStyle(
+            fontFamily: "Inter",
+            fontWeight: FontWeight.w400,
             color: greySecondary,
-            fontSize: 16,
+            fontSize: fontSizeTitle5,
           ),
           prefixIcon: Image.asset(
             "assets/icons/key_square_icon.png",
@@ -28,8 +30,8 @@ class ConfirmPasswordTextfieldRegisterWidget extends StatelessWidget {
             FocusScope.of(context).unfocus();
           },
           inputBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(12),
-          ),
+              borderRadius: BorderRadius.circular(16),
+              borderSide: BorderSide(color: greySecondary, width: 1)),
         )
       ],
     );

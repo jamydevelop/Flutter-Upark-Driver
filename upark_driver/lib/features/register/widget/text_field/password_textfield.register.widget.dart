@@ -15,7 +15,7 @@ class PasswordTextfieldRegisterWidget extends StatelessWidget {
         PasswordTextLabelRegisterWidget(),
         SizedBox(height: extraSmallSpacing),
         CommonTextField(
-          hintText: "Enter your password",
+          hintText: "••••••••••••",
           hintTextStyle: TextStyle(
             color: greySecondary,
             fontSize: 16,

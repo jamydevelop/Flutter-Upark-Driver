@@ -28,8 +28,8 @@ class PasswordTextfieldRegisterWidget extends StatelessWidget {
             FocusScope.of(context).unfocus();
           },
           inputBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(12),
-          ),
+              borderRadius: BorderRadius.circular(16),
+              borderSide: BorderSide(color: greySecondary, width: 1)),
         )
       ],
     );

@@ -16,8 +16,10 @@ class ContactNumberTextfieldRegisterWidget extends StatelessWidget {
         CommonTextField(
           hintText: "Enter your contact number",
           hintTextStyle: TextStyle(
-            color: greySecondary,
-            fontSize: 16,
+            fontFamily: "Roboto",
+            fontWeight: FontWeight.w400,
+            fontSize: fontSizeTitle5, //15px
+            color: greySecondary, //#868686
           ),
           prefixIcon: Image.asset(
             "assets/icons/call_icon.png",
@@ -27,8 +29,8 @@ class ContactNumberTextfieldRegisterWidget extends StatelessWidget {
             FocusScope.of(context).unfocus();
           },
           inputBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(12.0),
-          ),
+              borderRadius: BorderRadius.circular(16.0),
+              borderSide: BorderSide(color: greySecondary, width: 1)),
         ),
       ],
     );

@@ -16,13 +16,17 @@ class RegisterButtonWidget extends StatelessWidget {
           children: [
             Expanded(
               child: CommonButton(
-                foregroundColor: Colors.white,
+                borderRadius: 10,
+                borderWidth: 2,
+                foregroundColor: whitePrimary,
                 backgroundColor: greenPrimary,
                 child: Text(
                   "Register",
                   style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
+                      fontFamily: "Roboto",
+                      fontWeight: FontWeight.w600,
+                      fontSize: fontSizeTitle6,
+                      color: whitePrimary),
                 ),
                 onPressed: () {
                   debugPrint("Register Button Pressed!");

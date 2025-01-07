@@ -23,7 +23,7 @@ const double fontSizeCallout = 16.0;
 const double fontSizeBody = 17.0;
 
 const double fontSizeHeadline = 17.0;
-const double fontSizeTitle6 = 10.0;
+const double fontSizeTitle6 = 16.0;
 const double fontSizeTitle5 = 15.0;
 const double fontSizeTitle4 = 14.0;
 const double fontSizeTitle3 = 20.0;

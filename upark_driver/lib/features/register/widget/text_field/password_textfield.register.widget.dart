@@ -17,8 +17,10 @@ class PasswordTextfieldRegisterWidget extends StatelessWidget {
         CommonTextField(
           hintText: "••••••••••••",
           hintTextStyle: TextStyle(
+            fontFamily: "Inter",
+            fontWeight: FontWeight.w400,
             color: greySecondary,
-            fontSize: 16,
+            fontSize: fontSizeTitle5,
           ),
           prefixIcon: Image.asset(
             "assets/icons/key_square_icon.png",

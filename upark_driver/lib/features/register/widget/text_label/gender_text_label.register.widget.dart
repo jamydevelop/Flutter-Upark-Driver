@@ -11,9 +11,11 @@ class GenderTextLabelRegisterWidget extends StatelessWidget {
     return Row(
       children: <Widget>[
         CommonTextLabel(
-          color: greySecondary,
+          fontFamily: "Roboto",
+          fontWeight: FontWeight.w500,
+          fontSize: fontSizeTitle4, //14px
+          color: greyPrimary, //#7D7777
           text: "Gender",
-          fontSize: fontSizeTitle4,
         )
       ],
     );

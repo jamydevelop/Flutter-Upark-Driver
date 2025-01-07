@@ -30,9 +30,11 @@ class GenderSelectionRegisterWidgetState
               children: [
                 Checkbox(
                   value: isMaleSelected,
+                  activeColor: greenPrimary, //#379237
                   onChanged: (bool? value) {
                     setState(() {
-                      isMaleSelected = value ?? false;
+                      isMaleSelected =
+                          value ?? false; // null-coalescing operator
                       if (isMaleSelected) {
                         isFemaleSelected = false; // Uncheck the other box
                       }
@@ -40,7 +42,10 @@ class GenderSelectionRegisterWidgetState
                   },
                 ),
                 CommonTextLabel(
-                  color: greySecondary,
+                  fontFamily: "Roboto",
+                  fontWeight: FontWeight.w400,
+                  color: greySecondary, //#868686
+                  fontSize: fontSizeTitle4, //14px
                   text: "Male",
                 ),
               ],
@@ -50,9 +55,11 @@ class GenderSelectionRegisterWidgetState
               children: [
                 Checkbox(
                   value: isFemaleSelected,
+                  activeColor: greenPrimary, //#379237
                   onChanged: (bool? value) {
                     setState(() {
-                      isFemaleSelected = value ?? false;
+                      isFemaleSelected =
+                          value ?? false; //null-coalescing operator
                       if (isFemaleSelected) {
                         isMaleSelected = false; // Uncheck the other box
                       }
@@ -60,7 +67,10 @@ class GenderSelectionRegisterWidgetState
                   },
                 ),
                 CommonTextLabel(
-                  color: greySecondary,
+                  fontFamily: "Roboto",
+                  fontWeight: FontWeight.w400,
+                  color: greySecondary, //#868686
+                  fontSize: fontSizeTitle4, //14px
                   text: "Female",
                 ),
               ],

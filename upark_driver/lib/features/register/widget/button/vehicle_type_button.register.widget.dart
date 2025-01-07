@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
+import 'package:upark_driver/core/widget/common_text_label.dart';
 import 'package:upark_driver/features/register/widget/text_label/vehicle_type_text_label.register.widget.dart';
 
 class VehicleTypeButtonRegisterWidget extends StatefulWidget {
@@ -23,14 +24,14 @@ class _VehicleTypeButtonRegisterWidgetState
   Widget build(BuildContext context) {
     return Column(
       children: [
-        VehicleTypeTextLabelRegisterWidget(),
+        VehicleTypeTextLabelRegisterWidget(), //Title
         SizedBox(height: extraSmallSpacing),
         Container(
           height: 58,
-          padding: EdgeInsets.symmetric(horizontal: 12), // Optional padding
+          padding: EdgeInsets.symmetric(horizontal: smallSpacing),
           decoration: BoxDecoration(
-            border: Border.all(color: Colors.grey, width: 2), // Add border here
-            borderRadius: BorderRadius.circular(12), // Rounded corners
+            border: Border.all(color: greySecondary, width: 1),
+            borderRadius: BorderRadius.circular(16),
           ),
           child: DropdownButtonHideUnderline(
             child: DropdownButton<String>(
@@ -44,10 +45,14 @@ class _VehicleTypeButtonRegisterWidgetState
                     size: 28,
                     color: greySecondary,
                   ),
-                  Text(
-                    "Vehicle Type",
-                    style: TextStyle(color: Colors.grey),
-                  ),
+                  SizedBox(width: normalSpacing),
+                  CommonTextLabel(
+                    fontFamily: "Roboto",
+                    fontWeight: FontWeight.w400,
+                    fontSize: fontSizeTitle5, //15px
+                    color: greySecondary,
+                    text: "Vehicle Type",
+                  )
                 ],
               ), // Hint text
               items: items.map((String item) {
@@ -75,9 +80,6 @@ class _VehicleTypeButtonRegisterWidgetState
                   widget.dropDownCallback(value: _dropDownValue ?? "");
                 });
               },
-              dropdownColor: Colors.white, // Dropdown menu color
-              borderRadius:
-                  BorderRadius.circular(12), // BorderRadius for dropdown
             ),
           ),
         ),

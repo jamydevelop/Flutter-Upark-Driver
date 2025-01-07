@@ -16,16 +16,18 @@ class EmailTextfieldRegisterWidget extends StatelessWidget {
         CommonTextField(
           hintText: "Enter your email",
           hintTextStyle: TextStyle(
+            fontWeight: FontWeight.w400,
+            fontFamily: "Roboto",
             color: greySecondary,
-            fontSize: 16,
+            fontSize: fontSizeTitle5,
           ),
-          prefixIcon: Icon(Icons.alternate_email_sharp),
+          prefixIcon: Icon(Icons.alternate_email_sharp, color: greySecondary),
           onFieldSubmitted: (value) {
             FocusScope.of(context).unfocus();
           },
           inputBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(12),
-          ),
+              borderRadius: BorderRadius.circular(16),
+              borderSide: BorderSide(color: greySecondary, width: 1)),
         )
       ],
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/features/onboarding/widget/next_text_label.widget.dart';
 import 'package:upark_driver/features/onboarding/widget/pages/page_one.widget.dart';
@@ -17,20 +18,22 @@ class _OnboardingPageState extends State<OnboardingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: <Widget>[
+      appBar: AppBar(
+        backgroundColor: whitePrimary,
+        scrolledUnderElevation: 0.0,
+        leading: Center(child: SkipTextLabelWidget()),
+        actions: [
           Padding(
-            padding: const EdgeInsets.all(regularSpacing),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                SkipTextLabelWidget(),
-                NextTextLabelWidget(),
-              ],
-            ),
+            padding: const EdgeInsets.all(extraNormalSpacing),
+            child: NextTextLabelWidget(),
           ),
+        ],
+      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
           SizedBox(
-            height: 500,
+            height: 800,
             child: PageView(
               controller: _controller,
               children: [

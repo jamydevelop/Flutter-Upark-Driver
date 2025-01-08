@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:upark_driver/core/resources/colors.dart';
 
 class CustomAppBarWidget extends StatelessWidget
     implements PreferredSizeWidget {
@@ -14,7 +15,7 @@ class CustomAppBarWidget extends StatelessWidget
     return AppBar(
       scrolledUnderElevation: 0.0,
       leading: IconButton(
-        icon: Icon(Icons.arrow_back, color: Colors.black),
+        icon: Icon(Icons.arrow_back, color: blackSecondary),
         onPressed: () {
           context.go("/login"); // Go to login page on back button press
         },

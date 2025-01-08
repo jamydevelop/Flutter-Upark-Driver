@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/features/login/widget/button/fb_and_google.widget.dart';
 import 'package:upark_driver/features/login/widget/button/login_button.login.widget.dart';
@@ -22,37 +21,31 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
-    return AnnotatedRegion<SystemUiOverlayStyle>(
-      value: SystemUiOverlayStyle(
-          statusBarIconBrightness: Brightness.dark,
-          statusBarBrightness: Brightness.light,
-          statusBarColor: Colors.white),
-      child: Material(
-        color: Colors.white,
-        child: Padding(
-          padding: const EdgeInsets.only(
-            left: largeSpacing,
-            right: largeSpacing,
-          ),
-          child: SingleChildScrollView(
-            child: Column(
-              spacing: regularSpacing,
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                LogoImageLoginWidget(),
-                SizedBox(height: smallSpacing),
-                LoginTextLabelLoginWidget(),
-                EmailTextfieldLoginWidget(),
-                LoginPasswordTextfieldLoginWidget(),
-                ForgotPasswordTextLabelLoginWidget(),
-                LoginButtonLoginWidget(),
-                test.ContinueWithTextLabelLoginWidget(),
-                //OrTextLabelLoginWidget(),
-                FbAndGoogleWidget(),
-                CreateAccountTextLabelLoginWidget()
-              ],
-            ),
+    return Material(
+      color: Colors.white,
+      child: Padding(
+        padding: const EdgeInsets.only(
+          left: largeSpacing,
+          right: largeSpacing,
+        ),
+        child: SingleChildScrollView(
+          child: Column(
+            spacing: regularSpacing,
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              LogoImageLoginWidget(),
+              SizedBox(height: smallSpacing),
+              LoginTextLabelLoginWidget(),
+              EmailTextfieldLoginWidget(),
+              LoginPasswordTextfieldLoginWidget(),
+              ForgotPasswordTextLabelLoginWidget(),
+              LoginButtonLoginWidget(),
+              test.ContinueWithTextLabelLoginWidget(),
+              //OrTextLabelLoginWidget(),
+              FbAndGoogleWidget(),
+              CreateAccountTextLabelLoginWidget()
+            ],
           ),
         ),
       ),

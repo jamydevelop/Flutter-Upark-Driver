@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'package:upark_driver/core/resources/app_router.dart';
 
@@ -11,7 +12,11 @@ class MyApp extends StatelessWidget {
 //test
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return AnnotatedRegion<SystemUiOverlayStyle>(
+      value: SystemUiOverlayStyle(
+          statusBarIconBrightness: Brightness.dark,
+          statusBarBrightness: Brightness.light,
+          statusBarColor: Colors.white),
       child: MaterialApp.router(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(

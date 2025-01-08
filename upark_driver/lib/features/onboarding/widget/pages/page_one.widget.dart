@@ -7,14 +7,17 @@ class PageOneWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Container(
-          height: 500,
-          width: 500,
-          color: Colors.red,
-          child: Center(
-            child: Text("data"),
+        child: Expanded(
+            child: Container(
+          width: double.infinity,
+          height: double.infinity,
+          color: Colors.amber,
+          child: Column(
+            children: [
+              Image.asset("assets/images/page1.png"),
+            ],
           ),
-        ),
+        )),
       ),
     );
   }

@@ -10,6 +10,17 @@ class OnboardingPage extends StatefulWidget {
 class _OnboardingPageState extends State<OnboardingPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        leading: Center(child: Text("data")),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Center(child: Text("data")),
+          )
+        ],
+      ),
+      body: Stack(),
+    );
   }
 }

@@ -66,10 +66,17 @@ class _VehicleTypeButtonRegisterWidgetState
                         size: 28, // Icon size
                       ),
                       SizedBox(width: 8), // Space between icon and text
-                      Text(
-                        item,
-                        style: TextStyle(color: Colors.black),
-                      ),
+                      // Text(
+                      //   item,
+                      //   style: TextStyle(color: Colors.black),
+                      // ),
+                      CommonTextLabel(
+                        text: item,
+                        fontFamily: "Roboto",
+                        fontWeight: FontWeight.w400,
+                        fontSize: fontSizeTitle5,
+                        color: blackSecondary,
+                      )
                     ],
                   ),
                 );

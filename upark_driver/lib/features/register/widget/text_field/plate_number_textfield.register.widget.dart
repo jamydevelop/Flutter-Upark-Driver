@@ -18,8 +18,10 @@ class PlateNumberTextfieldRegisterWidget extends StatelessWidget {
         CommonTextField(
           hintText: "Plate #",
           hintTextStyle: TextStyle(
+            fontFamily: "Roboto",
+            fontWeight: FontWeight.w400,
+            fontSize: fontSizeTitle5, //15px
             color: greySecondary,
-            fontSize: 16,
           ),
           prefixIcon: Image.asset(
             "assets/icons/license_icon.png",
@@ -29,8 +31,8 @@ class PlateNumberTextfieldRegisterWidget extends StatelessWidget {
             FocusScope.of(context).unfocus();
           },
           inputBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(12),
-          ),
+              borderRadius: BorderRadius.circular(16),
+              borderSide: BorderSide(width: 1, color: greySecondary)),
         )
       ],
     );

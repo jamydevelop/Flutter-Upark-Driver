@@ -2,6 +2,7 @@
 const double extraSmallSpacing = 4.0;
 const double smallSpacing = 8.0;
 const double normalSpacing = 10;
+const double extraNormalSpacing = 12;
 const double regularSpacing = 16.0;
 const double largeSpacing = 24.0;
 const double extraLargeSpacing = 32.0;

@@ -35,3 +35,5 @@ const double fontSizeLargeTitle = 34.0;
 
 //Border radius
 const double primaryBorder = 15;
+
+const double dotSize = 10;

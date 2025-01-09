@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/features/onboarding/widget/next_text_label.widget.dart';
@@ -35,7 +36,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           SizedBox(
-            height: 800,
+            height: 650,
             child: PageView(
               controller: _controller,
               children: [
@@ -44,7 +45,17 @@ class _OnboardingPageState extends State<OnboardingPage> {
                 PageThreeWidget(),
               ],
             ),
-          )
+          ),
+          SmoothPageIndicator(
+            controller: _controller,
+            count: 3,
+            effect: ExpandingDotsEffect(
+              activeDotColor: greenPrimary,
+              dotColor: checkBoxColor,
+              dotHeight: dotSize,
+              dotWidth: dotSize,
+            ),
+          ),
         ],
       ),
     );

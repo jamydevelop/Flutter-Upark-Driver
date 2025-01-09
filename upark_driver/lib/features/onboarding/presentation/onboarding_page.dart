@@ -18,6 +18,17 @@ class OnboardingPage extends StatefulWidget {
 
 class _OnboardingPageState extends State<OnboardingPage> {
   final _controller = PageController();
+  int currentPage = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller.addListener(() {
+      currentPage = _controller.page!.round();
+      debugPrint(currentPage.toString());
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

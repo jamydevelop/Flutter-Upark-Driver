@@ -27,6 +27,7 @@ class PageOneWidget extends StatelessWidget {
             Align(
               alignment: Alignment.center,
               child: CommonTextLabel(
+                textAlign: TextAlign.center,
                 fontFamily: "Roboto",
                 fontWeight: FontWeight.w400,
                 fontSize: fontSizeTitle4, //14px

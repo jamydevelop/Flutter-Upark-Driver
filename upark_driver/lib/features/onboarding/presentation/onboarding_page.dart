@@ -20,13 +20,27 @@ class _OnboardingPageState extends State<OnboardingPage> {
   final _controller = PageController();
   int currentPage = 0;
 
+  // List of pages
+  final List<Widget> pages = [
+    PageOneWidget(),
+    PageTwoWidget(),
+    PageThreeWidget(),
+  ];
+
   @override
   void initState() {
     super.initState();
     _controller.addListener(() {
-      currentPage = _controller.page!.round();
-      debugPrint(currentPage.toString());
+      setState(() {
+        currentPage = _controller.page!.round();
+      });
     });
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
   }
 
   @override
@@ -48,18 +62,21 @@ class _OnboardingPageState extends State<OnboardingPage> {
         children: <Widget>[
           SizedBox(
             height: 650,
-            child: PageView(
+            child: PageView.builder(
               controller: _controller,
-              children: [
-                PageOneWidget(),
-                PageTwoWidget(),
-                PageThreeWidget(),
-              ],
+              itemCount: pages.length,
+              itemBuilder: (context, index) {
+                return pages[index];
+              },
             ),
           ),
+          // Text(
+          //   'Current Page: $currentPage',
+          //   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          // ),
           SmoothPageIndicator(
             controller: _controller,
-            count: 3,
+            count: pages.length,
             effect: ExpandingDotsEffect(
               activeDotColor: greenPrimary,
               dotColor: checkBoxColor,

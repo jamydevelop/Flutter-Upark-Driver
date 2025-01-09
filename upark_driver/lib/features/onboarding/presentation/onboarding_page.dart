@@ -49,7 +49,9 @@ class _OnboardingPageState extends State<OnboardingPage> {
       appBar: AppBar(
         backgroundColor: whitePrimary,
         scrolledUnderElevation: 0.0,
-        leading: Center(child: SkipTextLabelWidget()),
+        leading: currentPage == 2
+            ? SizedBox()
+            : Center(child: SkipTextLabelWidget()),
         actions: [
           Padding(
             padding: const EdgeInsets.all(extraNormalSpacing),

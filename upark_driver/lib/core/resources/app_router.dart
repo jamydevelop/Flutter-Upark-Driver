@@ -1,13 +1,14 @@
 import 'package:go_router/go_router.dart';
-import 'package:upark_driver/features/login/presentation/login_page.dart';
-import 'package:upark_driver/features/onboarding/presentation/onboarding_page.dart';
-import 'package:upark_driver/features/register/presentation/register_page.dart';
-import 'package:upark_driver/features/splash/presentation/splash_page.dart';
+import 'package:upark_driver/features/forgot_password/presentation/forgot_password.page.dart';
+import 'package:upark_driver/features/login/presentation/login.page.dart';
+import 'package:upark_driver/features/onboarding/presentation/onboarding.page.dart';
+import 'package:upark_driver/features/register/presentation/register.page.dart';
+import 'package:upark_driver/features/splash/presentation/splash.page.dart';
 
 class AppRouter {
   final GoRouter router = GoRouter(
     //this is for initial location of the app
-    initialLocation: "/register",
+    initialLocation: "/forgotpassword",
     //other routes/screen for the app
     routes: [
       GoRoute(path: "/splash", builder: (context, state) => const SplashPage()),
@@ -16,6 +17,9 @@ class AppRouter {
           path: "/register", builder: (context, state) => const RegisterPage()),
       GoRoute(
           path: "/onboarding", builder: (context, state) => OnboardingPage()),
+      GoRoute(
+          path: "/forgotpassword",
+          builder: (context, state) => const ForgotPasswordPage())
     ],
   );
 }

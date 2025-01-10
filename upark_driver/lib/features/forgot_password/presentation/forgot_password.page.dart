@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
-import 'package:upark_driver/core/widget/custom_appbar.widget.dart';
+import 'package:upark_driver/core/widget/common_appbar.dart';
 import 'package:upark_driver/features/forgot_password/widget/email_text_field.widget.dart';
 import 'package:upark_driver/features/forgot_password/widget/forgot_password_login.button.widget.dart';
 import 'package:upark_driver/features/forgot_password/widget/forgot_password_text_label.widget.dart';

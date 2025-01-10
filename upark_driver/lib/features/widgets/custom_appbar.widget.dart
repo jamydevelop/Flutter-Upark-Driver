@@ -2,9 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 
-class ArrowBackAppbarWidget extends AppBar {
-  ArrowBackAppbarWidget({super.key});
+class CustomAppBarWidget extends StatelessWidget
+    implements PreferredSizeWidget {
+  const CustomAppBarWidget({super.key});
 
+  @override
+  Size get preferredSize =>
+      Size.fromHeight(kToolbarHeight); // Standard AppBar height
+
+  @override
   Widget build(BuildContext context) {
     return AppBar(
       scrolledUnderElevation: 0.0,

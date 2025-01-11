@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
+import 'package:upark_driver/core/widget/common_back_appbar.dart';
 import 'package:upark_driver/features/register/widget/button/register_button.widget.dart';
 import 'package:upark_driver/features/register/widget/button/vehicle_type_button.register.widget.dart';
-import 'package:upark_driver/core/widget/common_appbar.dart';
 import 'package:upark_driver/features/register/widget/gender_selection.register.widget.dart';
 import 'package:upark_driver/features/register/widget/text_field/confirm_password_textfield.register.widget.dart';
 import 'package:upark_driver/features/register/widget/text_field/contact_number_textfield.register.widget.dart';
@@ -33,7 +33,7 @@ class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CommonAppbar(),
+      appBar: CommonBackAppbar(context: context),
       backgroundColor: Colors.white,
       body: Padding(
         padding: const EdgeInsets.symmetric(

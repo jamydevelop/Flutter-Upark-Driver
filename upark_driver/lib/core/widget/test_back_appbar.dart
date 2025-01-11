@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 
-class CommonAppbar extends StatelessWidget implements PreferredSizeWidget {
-  const CommonAppbar({super.key});
+class TestBackAppbar extends StatelessWidget implements PreferredSizeWidget {
+  const TestBackAppbar({super.key});
 
   @override
   Size get preferredSize =>
@@ -12,7 +12,6 @@ class CommonAppbar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      scrolledUnderElevation: 0.0,
       leading: IconButton(
         icon: Icon(Icons.arrow_back, color: blackSecondary),
         onPressed: () {
@@ -21,6 +20,7 @@ class CommonAppbar extends StatelessWidget implements PreferredSizeWidget {
       ),
       backgroundColor: Colors.white, // Static white color for the AppBar
       automaticallyImplyLeading: true,
+      scrolledUnderElevation: 0.0,
     );
   }
 }

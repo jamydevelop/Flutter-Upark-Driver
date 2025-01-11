@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
-import 'package:upark_driver/core/widget/common_appbar.dart';
+import 'package:upark_driver/core/widget/common_back_appbar.dart';
 import 'package:upark_driver/features/forgot_password/widget/email_text_field.widget.dart';
 import 'package:upark_driver/features/forgot_password/widget/forgot_password_login.button.widget.dart';
 import 'package:upark_driver/features/forgot_password/widget/forgot_password_text_label.widget.dart';
@@ -17,7 +17,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CommonAppbar(),
+      appBar: CommonBackAppbar(context: context),
       body: Padding(
         padding: const EdgeInsets.only(left: largeSpacing, right: largeSpacing),
         child: Column(

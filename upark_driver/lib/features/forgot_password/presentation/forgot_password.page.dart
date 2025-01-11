@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_back_appbar.dart';
-import 'package:upark_driver/features/forgot_password/widget/email_text_field.widget.dart';
-import 'package:upark_driver/features/forgot_password/widget/forgot_password_login.button.widget.dart';
-import 'package:upark_driver/features/forgot_password/widget/forgot_password_text_label.widget.dart';
-import 'package:upark_driver/features/forgot_password/widget/info_text_label.widget.dart';
+import 'package:upark_driver/features/forgot_password/widget/email_text_field.dart'
+    as fp;
+import 'package:upark_driver/features/forgot_password/widget/forgot_password_login.button.dart';
+import 'package:upark_driver/features/forgot_password/widget/forgot_password_text_label.dart';
+import 'package:upark_driver/features/forgot_password/widget/info_text_label.dart';
 
 class ForgotPasswordPage extends StatefulWidget {
   const ForgotPasswordPage({super.key});
@@ -25,10 +26,10 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            ForgotPasswordTextLabelWidget(),
-            InfoTextLabelWidget(),
-            EmailTextFieldWidget(),
-            ForgotPasswordLoginButtonWidget(),
+            ForgotPasswordTextLabel(),
+            InfoTextLabel(),
+            fp.EmailTextField(),
+            ForgotPasswordLoginButton(),
           ],
         ),
       ),

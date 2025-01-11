@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
-import 'package:upark_driver/features/onboarding/widget/next_text_label.widget.dart';
-import 'package:upark_driver/features/onboarding/widget/pages/page_one.widget.dart';
-import 'package:upark_driver/features/onboarding/widget/pages/page_three.widget.dart';
-import 'package:upark_driver/features/onboarding/widget/pages/page_two.widget.dart';
+import 'package:upark_driver/features/onboarding/widget/next_text_label.dart';
+import 'package:upark_driver/features/onboarding/widget/pages/page_one.dart';
+import 'package:upark_driver/features/onboarding/widget/pages/page_three.dart';
+import 'package:upark_driver/features/onboarding/widget/pages/page_two.dart';
 
-import 'package:upark_driver/features/onboarding/widget/skip_text_label.widget.dart';
+import 'package:upark_driver/features/onboarding/widget/skip_text_label.dart';
 
 class OnboardingPage extends StatefulWidget {
   const OnboardingPage({super.key});
@@ -22,9 +22,9 @@ class _OnboardingPageState extends State<OnboardingPage> {
 
   // List of pages
   final List<Widget> pages = [
-    PageOneWidget(),
-    PageTwoWidget(),
-    PageThreeWidget(),
+    PageOne(),
+    PageTwo(),
+    PageThree(),
   ];
 
   @override
@@ -49,13 +49,11 @@ class _OnboardingPageState extends State<OnboardingPage> {
       appBar: AppBar(
         backgroundColor: whitePrimary,
         scrolledUnderElevation: 0.0,
-        leading: currentPage == 2
-            ? SizedBox()
-            : Center(child: SkipTextLabelWidget()),
+        leading: currentPage == 2 ? SizedBox() : Center(child: SkipTextLabel()),
         actions: [
           Padding(
             padding: const EdgeInsets.all(extraNormalSpacing),
-            child: NextTextLabelWidget(),
+            child: NextTextLabel(),
           ),
         ],
       ),

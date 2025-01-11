@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
-import 'package:upark_driver/features/login/widget/button/fb_and_google.widget.dart';
-import 'package:upark_driver/features/login/widget/button/login_button.login.widget.dart';
+import 'package:upark_driver/features/login/widget/button/fb_and_google.dart';
+import 'package:upark_driver/features/login/widget/button/login_button.login.dart';
 import 'package:upark_driver/features/login/widget/logo_image.login.widget.dart';
 import 'package:upark_driver/features/login/widget/text_field/email_textfield.login.widget.dart';
 import 'package:upark_driver/features/login/widget/text_field/password_textfield.login.widget.dart';
@@ -40,10 +40,10 @@ class _LoginPageState extends State<LoginPage> {
               EmailTextfieldLoginWidget(),
               LoginPasswordTextfieldLoginWidget(),
               ForgotPasswordTextLabelLoginWidget(),
-              LoginButtonLoginWidget(),
+              LoginButtonLogin(),
               test.ContinueWithTextLabelLoginWidget(),
               //OrTextLabelLoginWidget(),
-              FbAndGoogleWidget(),
+              FbAndGoogle(),
               CreateAccountTextLabelLoginWidget()
             ],
           ),

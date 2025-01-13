@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-
 import 'package:upark_driver/core/resources/app_router.dart';
 
 void main() {

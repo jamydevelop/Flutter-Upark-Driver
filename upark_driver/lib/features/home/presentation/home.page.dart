@@ -16,9 +16,9 @@ class _HomePageState extends State<HomePage> {
         slivers: [
           SliverAppBar(
             backgroundColor: appbarPrimary,
-            expandedHeight: 250.0,
-            floating: true, // Set floating to false so it doesn't float
-            snap: true, // Set snap to false so it doesn't snap back
+            expandedHeight: 200.0,
+            floating: false, // Set floating to false so it doesn't float
+            snap: false, // Set snap to false so it doesn't snap back
             pinned: true, // Keeps the AppBar pinned to the top
             flexibleSpace: FlexibleSpaceBar(
               background: Column(
@@ -66,12 +66,18 @@ class _HomePageState extends State<HomePage> {
                     padding: const EdgeInsets.all(8.0),
                     child: ElevatedButton.icon(
                       onPressed: () {},
-                      icon: Icon(Icons.location_on),
-                      label: Text("Find Parking"),
+                      icon: Icon(
+                        Icons.my_location,
+                        color: Colors.white,
+                      ),
+                      label: Text(
+                        "Explore",
+                        style: TextStyle(color: whitePrimary),
+                      ),
                       style: ElevatedButton.styleFrom(
                         padding: EdgeInsets.symmetric(
                             horizontal: 16.0, vertical: 12.0),
-                        backgroundColor: Colors.blue,
+                        backgroundColor: greenPrimary,
                       ),
                     ),
                   ),

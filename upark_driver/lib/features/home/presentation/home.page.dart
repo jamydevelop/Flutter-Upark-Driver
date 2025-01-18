@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
+import 'package:upark_driver/features/home/widget/notidication_button_icon.dart';
+import 'package:upark_driver/features/home/widget/message_button_icon.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -18,9 +20,6 @@ class _HomePageState extends State<HomePage> {
           SliverAppBar(
             backgroundColor: appbarPrimary,
             expandedHeight: 200.0,
-            floating: false, // Set floating to false so it doesn't float
-            snap: false, // Set snap to false so it doesn't snap back
-            pinned: true, // Keeps the AppBar pinned to the top
             flexibleSpace: FlexibleSpaceBar(
               background: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -34,24 +33,13 @@ class _HomePageState extends State<HomePage> {
                       mainAxisAlignment:
                           MainAxisAlignment.end, // Aligning icons to the right
                       children: [
-                        IconButton(
-                          icon: Container(
-                            width: 39,
-                            height: 37,
-                            padding: const EdgeInsets.all(
-                                8.0), // Inner padding for the icon
-                            decoration: BoxDecoration(
-                              color: Colors.white, // White background color
-                              shape: BoxShape.circle, // Circular shape
-                            ),
-                            child: Image.asset(
-                              "assets/icons/message_icon.png",
-                              scale: 3,
-                            ),
-                          ),
-                          onPressed: () {
-                            // Add your onPressed action here
-                          },
+                        MessageButtonIcon(
+                          onPress: () =>
+                              debugPrint("Message Button Icon Pressed!"),
+                        ),
+                        NotificationButtonIcon(
+                          onPress: () =>
+                              debugPrint("Edit Profile Button Icon Pressed!"),
                         ),
                         IconButton(
                           icon: Container(

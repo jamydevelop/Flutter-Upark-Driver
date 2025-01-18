@@ -12,7 +12,7 @@ class FbAndGoogle extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         GoogleButtonLogin(),
-        SizedBox(width: extraLargeSpacing),
+        SizedBox(width: superLargeSpacing),
         FacebookButtonLogin(),
       ],
     );

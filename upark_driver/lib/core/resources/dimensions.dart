@@ -5,7 +5,8 @@ const double normalSpacing = 10;
 const double extraNormalSpacing = 12;
 const double regularSpacing = 16.0;
 const double largeSpacing = 24.0;
-const double extraLargeSpacing = 32.0;
+const double extraLargeSpacing = 28;
+const double superLargeSpacing = 32.0;
 
 //Icon button size
 const double iconButtonSize = 40;

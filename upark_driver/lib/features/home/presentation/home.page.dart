@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/colors.dart';
+import 'package:upark_driver/core/resources/dimensions.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -26,6 +27,7 @@ class _HomePageState extends State<HomePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   // First Row: 2 IconButtons aligned to the right
+                  SizedBox(height: largeSpacing),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
@@ -33,37 +35,64 @@ class _HomePageState extends State<HomePage> {
                           MainAxisAlignment.end, // Aligning icons to the right
                       children: [
                         IconButton(
-                          icon: Icon(
-                            Icons.menu,
-                            color: Colors.black,
+                          icon: Container(
+                            width: 39,
+                            height: 37,
+                            padding: const EdgeInsets.all(
+                                8.0), // Inner padding for the icon
+                            decoration: BoxDecoration(
+                              color: Colors.white, // White background color
+                              shape: BoxShape.circle, // Circular shape
+                            ),
+                            child: Image.asset(
+                              "assets/icons/message_icon.png",
+                              scale: 3,
+                            ),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            // Add your onPressed action here
+                          },
                         ),
                         IconButton(
-                          icon: Icon(
-                            Icons.notifications,
-                            color: Colors.black,
+                          icon: Container(
+                            width: 39, // Set width
+                            height: 37, // Set height
+                            padding: const EdgeInsets.all(
+                                8.0), // Inner padding for the icon
+                            decoration: BoxDecoration(
+                              color: Colors.white, // White background color
+                              shape: BoxShape.circle, // Circular shape
+                            ),
+                            child: Image.asset(
+                              "assets/icons/gengar_icon_image.png",
+                              scale: 3,
+                            ),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            // Add your onPressed action here
+                          },
                         ),
                       ],
                     ),
                   ),
                   // Second Row: Text
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: largeSpacing),
                     child: Text(
                       "Find Your Nearest \nParking Space",
                       style: TextStyle(
-                        fontSize: 20.0,
-                        fontWeight: FontWeight.bold,
+                        fontFamily: "Roboto",
+                        fontSize: 25.0,
+                        fontWeight: FontWeight.w600,
                         color: blackPrimary,
                       ),
                     ),
                   ),
                   // Third Row: ElevatedButton with Icon
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.only(
+                        left: largeSpacing, top: normalSpacing),
                     child: ElevatedButton.icon(
                       onPressed: () {},
                       icon: Icon(

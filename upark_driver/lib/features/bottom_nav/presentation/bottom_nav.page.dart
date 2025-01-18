@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/colors.dart';
+import 'package:upark_driver/features/home/presentation/home.page.dart';
 
 class BottomNavPage extends StatefulWidget {
   const BottomNavPage({super.key});
@@ -21,7 +22,7 @@ class _BottomNavPageState extends State<BottomNavPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: <Widget>[
-        Center(child: Text("First Page")), // Ensure the content is centered
+        Center(child: HomePage()), // Ensure the content is centered
         Center(child: Text("Second Page")),
         Center(child: Text("Last Page")),
       ][currentPageIndex],

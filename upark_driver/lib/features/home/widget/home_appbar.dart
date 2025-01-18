@@ -9,6 +9,8 @@ import 'package:upark_driver/features/home/widget/notidication_button_icon.dart'
 class HomeSilverAppbar extends SliverAppBar {
   HomeSilverAppbar({super.key})
       : super(
+          pinned: true,
+          floating: false,
           backgroundColor: appbarPrimary,
           expandedHeight: 220.0,
           flexibleSpace: FlexibleSpaceBar(

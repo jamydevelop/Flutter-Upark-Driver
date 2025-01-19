@@ -16,6 +16,7 @@ class _HomePageState extends State<HomePage> {
         slivers: [
           HomeSilverAppbar(),
           SliverFillRemaining(
+            hasScrollBody: false,
             child: Center(
               child: Text("This is sample body text"),
             ),

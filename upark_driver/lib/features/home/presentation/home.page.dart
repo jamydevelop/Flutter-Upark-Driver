@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/widget/common_text_label.dart';
 import 'package:upark_driver/features/home/widget/home_silver_appbar.dart';
 
 class HomePage extends StatefulWidget {
@@ -16,11 +17,23 @@ class _HomePageState extends State<HomePage> {
         slivers: [
           HomeSilverAppbar(),
           SliverFillRemaining(
-            hasScrollBody: false,
-            child: Center(
-              child: Text("This is sample body text"),
-            ),
-          ),
+              hasScrollBody: false,
+              child: Column(
+                children: [
+                  Container(
+                    margin: EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                      color: Colors.blueGrey,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    height: 110,
+                    width: double.infinity,
+                    child: Column(
+                      children: [CommonTextLabel(text: "text")],
+                    ),
+                  )
+                ],
+              )),
         ],
       ),
     );

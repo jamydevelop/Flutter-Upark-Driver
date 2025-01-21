@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/assets.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/features/home/presentation/home.page.dart';
 
@@ -29,15 +30,15 @@ class _BottomNavPageState extends State<BottomNavPage> {
       bottomNavigationBar: BottomNavigationBar(
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-              icon: _buildIcon("assets/icons/home_icon.png", 0),
+              icon: _buildIcon(Assets.homeIcon, 0),
               label: "Home",
             ),
             BottomNavigationBarItem(
-              icon: _buildIcon("assets/icons/bookings_icon.png", 1),
+              icon: _buildIcon(Assets.bookingsIcon, 1),
               label: "Bookings",
             ),
             BottomNavigationBarItem(
-              icon: _buildIcon("assets/icons/profile_icon.png", 2),
+              icon: _buildIcon(Assets.profileIcon, 2),
               label: "Profile",
             ),
           ],

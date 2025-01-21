@@ -3,14 +3,17 @@ import 'package:upark_driver/core/resources/colors.dart';
 
 class CommonIconButton extends StatelessWidget {
   final String iconPath;
-  final VoidCallback onPress;
+  final VoidCallback onTap;
   const CommonIconButton(
-      {super.key, required this.iconPath, required this.onPress});
+      {super.key, required this.iconPath, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
-    return IconButton(
-      icon: Container(
+    return InkWell(
+      onTap: onTap,
+      splashColor: Colors.yellow,
+      borderRadius: BorderRadius.circular(30.0),
+      child: Container(
         width: 39,
         height: 37,
         padding: const EdgeInsets.all(8.0), // Inner padding for the icon
@@ -18,12 +21,9 @@ class CommonIconButton extends StatelessWidget {
           color: whitePrimary, // White background color
           shape: BoxShape.circle, // Circular shape
         ),
-        child: Image.asset(
-          iconPath,
-          scale: 1,
-        ),
+        child:
+            Image.asset(iconPath, height: 37.0, width: 39.0, fit: BoxFit.fill),
       ),
-      onPressed: onPress,
     );
   }
 }

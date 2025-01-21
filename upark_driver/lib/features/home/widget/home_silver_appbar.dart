@@ -20,7 +20,8 @@ class HomeSilverAppbar extends SliverAppBar {
                 // First Row: 2 IconButtons aligned to the right
                 SizedBox(height: extraLargeSpacing),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: largeSpacing, vertical: 16.0), //eto yun
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment
                         .spaceBetween, // Aligning icons to the right
@@ -28,7 +29,7 @@ class HomeSilverAppbar extends SliverAppBar {
                       Row(
                         children: [
                           EditProfileButtonIcon(
-                            onPress: () =>
+                            onTap: () =>
                                 debugPrint("Edit Profile Button Icon Pressed!"),
                           ),
                         ],
@@ -36,9 +37,10 @@ class HomeSilverAppbar extends SliverAppBar {
                       Row(
                         children: [
                           CommonIconButton(
-                              iconPath: Assets.messageIcon, onPress: () {}),
+                              iconPath: Assets.messageIcon, onTap: () {}),
+                          const SizedBox(width: smallSpacing),
                           CommonIconButton(
-                              iconPath: Assets.bellIcon, onPress: () {}),
+                              iconPath: Assets.bellIcon, onTap: () {}),
                         ],
                       ),
                     ],

@@ -15,10 +15,10 @@ class ReserveParkingSpaceWidget extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: greyTertiary.withValues(
-                alpha: 0.4), // Shadow color with opacity
+                alpha: 1.0), // Shadow color with opacity
             spreadRadius: 1, // How much the shadow spreads
-            blurRadius: 2, // How soft the shadow looks
-            offset: Offset(1, 1), // Position of the shadow (x, y)
+            blurRadius: 5, // How soft the shadow looks
+            offset: Offset(0, 1), // Position of the shadow (x, y)
           ),
         ],
         border: Border.all(
@@ -28,7 +28,11 @@ class ReserveParkingSpaceWidget extends StatelessWidget {
       ),
       height: 110,
       width: double.infinity,
+      padding: EdgeInsets.symmetric(
+          horizontal: largeSpacing, vertical: regularSpacing),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           CommonTextLabel(
             text: "SM City Davao",

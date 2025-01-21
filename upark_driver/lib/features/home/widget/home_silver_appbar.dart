@@ -50,6 +50,7 @@ class HomeSilverAppbar extends SliverAppBar {
                   child: Text(
                     "Find Your Nearest \nParking Space",
                     style: TextStyle(
+                      fontFamily: "Roboto",
                       fontSize: 25.0,
                       fontWeight: FontWeight.w600,
                       color: blackPrimary,

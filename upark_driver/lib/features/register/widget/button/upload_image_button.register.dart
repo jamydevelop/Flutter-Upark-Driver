@@ -20,7 +20,7 @@ class UploadImageButtonRegister extends StatelessWidget {
               child: CommonButton(
                 height: 58,
                 foregroundColor: greenPrimary,
-                backgroundColor: greyTertiary,
+                backgroundColor: greyQuaternary,
                 borderRadius: primaryBorder,
                 child: CommonTextLabel(
                   fontFamily: "Poppins",

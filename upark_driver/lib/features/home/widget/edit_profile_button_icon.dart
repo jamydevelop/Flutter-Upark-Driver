@@ -11,7 +11,7 @@ class EditProfileButtonIcon extends StatelessWidget {
       icon: Container(
         width: 39,
         height: 37,
-        padding: EdgeInsets.all(8.0),
+        padding: EdgeInsets.all(4.0),
         decoration: BoxDecoration(color: whitePrimary, shape: BoxShape.circle),
         child: Image.asset(
           "assets/icons/gengar_icon_image.png",

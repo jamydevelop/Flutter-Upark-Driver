@@ -57,6 +57,7 @@ class ReserveParkingSpaceWidget extends StatelessWidget {
                 color: blackPrimary,
               ),
               Container(
+                margin: EdgeInsets.all(8.0),
                 width: 5,
                 height: 5,
                 decoration: BoxDecoration(
@@ -66,6 +67,7 @@ class ReserveParkingSpaceWidget extends StatelessWidget {
               ),
               Expanded(child: MySeparator(color: Colors.grey)),
               Container(
+                margin: EdgeInsets.all(8.0),
                 width: 5,
                 height: 5,
                 decoration: BoxDecoration(

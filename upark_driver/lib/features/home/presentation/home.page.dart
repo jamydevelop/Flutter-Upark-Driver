@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
+import 'package:upark_driver/core/widget/common_text_label.dart';
 import 'package:upark_driver/features/home/widget/home_silver_appbar.dart';
 import 'package:upark_driver/features/home/widget/reserve_parking_space.widget.dart';
+import 'package:upark_driver/features/home/widget/reserve_parking_title.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -20,9 +23,12 @@ class _HomePageState extends State<HomePage> {
           SliverFillRemaining(
               hasScrollBody: false,
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: largeSpacing),
+                padding: const EdgeInsets.symmetric(
+                    horizontal: largeSpacing, vertical: largeSpacing),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    ReserveParkingTitle(),
                     SizedBox(height: regularSpacing),
                     ReserveParkingSpaceWidget(),
                   ],

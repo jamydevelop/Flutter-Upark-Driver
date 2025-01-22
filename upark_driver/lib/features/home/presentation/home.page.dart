@@ -25,10 +25,10 @@ class _HomePageState extends State<HomePage> {
                 padding: const EdgeInsets.symmetric(
                     horizontal: largeSpacing, vertical: largeSpacing),
                 child: Column(
+                  spacing: regularSpacing,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     ReserveParkingTitle(),
-                    SizedBox(height: regularSpacing),
                     ReserveParkingSpaceWidget(),
                     ParkingSpacesAndSeeAll(),
                   ],

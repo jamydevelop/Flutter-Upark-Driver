@@ -1,11 +1,16 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
 
-class ParkingSpacesAndSeeAll extends StatelessWidget {
+class ParkingSpacesAndSeeAll extends StatefulWidget {
   const ParkingSpacesAndSeeAll({super.key});
 
+  @override
+  State<ParkingSpacesAndSeeAll> createState() => _ParkingSpacesAndSeeAllState();
+}
+
+class _ParkingSpacesAndSeeAllState extends State<ParkingSpacesAndSeeAll> {
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -17,11 +22,18 @@ class ParkingSpacesAndSeeAll extends StatelessWidget {
           fontSize: fontSizeTitle6,
           color: blackPrimary,
         ),
-        CommonTextLabel(
-          text: "See All",
-          fontWeight: FontWeight.w600,
-          fontSize: fontSizeTitle4,
-          color: greenPrimary,
+        InkWell(
+          onTap: () {
+            setState(() {
+              // Change the color to red when tapped
+            });
+          },
+          child: CommonTextLabel(
+            text: "See All",
+            fontWeight: FontWeight.w600,
+            fontSize: fontSizeTitle4,
+            color: greenPrimary,
+          ),
         )
       ],
     );

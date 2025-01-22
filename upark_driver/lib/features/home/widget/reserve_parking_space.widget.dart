@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
+import 'package:upark_driver/features/home/widget/my_seperator.dart';
 
 class ReserveParkingSpaceWidget extends StatelessWidget {
   const ReserveParkingSpaceWidget({super.key});
@@ -63,11 +64,7 @@ class ReserveParkingSpaceWidget extends StatelessWidget {
                   shape: BoxShape.circle,
                 ),
               ),
-              Expanded(
-                  child: Divider(
-                color: blackPrimary,
-                thickness: 1.0,
-              )),
+              Expanded(child: MySeparator(color: Colors.grey)),
               Container(
                 width: 5,
                 height: 5,

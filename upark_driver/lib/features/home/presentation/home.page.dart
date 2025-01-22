@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
-import 'package:upark_driver/core/widget/common_text_label.dart';
 import 'package:upark_driver/features/home/widget/home_silver_appbar.dart';
 import 'package:upark_driver/features/home/widget/reserve_parking_space.widget.dart';
 import 'package:upark_driver/features/home/widget/reserve_parking_title.dart';

@@ -40,6 +40,50 @@ class ReserveParkingSpaceWidget extends StatelessWidget {
             fontSize: fontSizeHeadline1,
             color: greenPrimary,
           ),
+          CommonTextLabel(
+            text: "CP-01",
+            fontWeight: FontWeight.w500,
+            fontSize: fontSizeTitle4,
+            color: blackPrimary,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              CommonTextLabel(
+                text: "10:00 AM",
+                fontWeight: FontWeight.w500,
+                fontSize: fontSizeTitle6,
+                color: blackPrimary,
+              ),
+              Container(
+                width: 5,
+                height: 5,
+                decoration: BoxDecoration(
+                  color: greenPrimary,
+                  shape: BoxShape.circle,
+                ),
+              ),
+              Expanded(
+                  child: Divider(
+                color: blackPrimary,
+                thickness: 1.0,
+              )),
+              Container(
+                width: 5,
+                height: 5,
+                decoration: BoxDecoration(
+                  color: Colors.red,
+                  shape: BoxShape.circle,
+                ),
+              ),
+              CommonTextLabel(
+                text: "10:00 AM",
+                fontWeight: FontWeight.w500,
+                fontSize: fontSizeTitle6,
+                color: blackPrimary,
+              ),
+            ],
+          )
         ],
       ),
     );

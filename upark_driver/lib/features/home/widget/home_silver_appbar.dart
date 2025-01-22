@@ -68,8 +68,7 @@ class HomeSilverAppbar extends SliverAppBar {
                     child: ElevatedButton(
                       onPressed: () => debugPrint("Button Pressed"),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor:
-                            Colors.green, // Set the button color to green
+                        backgroundColor: greenPrimary,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(
                               8), // Rounded corners with radius 8

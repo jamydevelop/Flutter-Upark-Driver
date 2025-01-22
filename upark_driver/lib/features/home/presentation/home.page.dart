@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/features/home/widget/home_silver_appbar.dart';
 import 'package:upark_driver/features/home/widget/parking_spaces_and_see_all.dart';
-import 'package:upark_driver/features/home/widget/reserve_parking_space.widget.dart';
+import 'package:upark_driver/features/home/widget/reserved_parking_space.widget.dart';
 import 'package:upark_driver/features/home/widget/reserve_parking_title.dart';
 
 class HomePage extends StatefulWidget {
@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     ReserveParkingTitle(),
-                    ReserveParkingSpaceWidget(),
+                    ReservedParkingSpaceWidget(),
                     ParkingSpacesAndSeeAll(),
                   ],
                 ),

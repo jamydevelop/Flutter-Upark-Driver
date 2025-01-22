@@ -4,8 +4,8 @@ import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
 import 'package:upark_driver/features/home/widget/seperator_dash_line.dart';
 
-class ReserveParkingSpaceWidget extends StatelessWidget {
-  const ReserveParkingSpaceWidget({super.key});
+class ReservedParkingSpaceWidget extends StatelessWidget {
+  const ReservedParkingSpaceWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

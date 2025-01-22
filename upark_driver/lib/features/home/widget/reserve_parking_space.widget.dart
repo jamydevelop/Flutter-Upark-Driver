@@ -30,7 +30,7 @@ class ReserveParkingSpaceWidget extends StatelessWidget {
       height: 110,
       width: double.infinity,
       padding: EdgeInsets.symmetric(
-          horizontal: largeSpacing, vertical: regularSpacing),
+          horizontal: largeSpacing, vertical: normalSpacing),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
@@ -82,7 +82,24 @@ class ReserveParkingSpaceWidget extends StatelessWidget {
                 color: blackPrimary,
               ),
             ],
-          )
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              CommonTextLabel(
+                text: "May 17, 2024",
+                fontWeight: FontWeight.w500,
+                fontSize: fontSizeCaption1,
+                color: greySecondary,
+              ),
+              CommonTextLabel(
+                text: "May 17, 2024",
+                fontWeight: FontWeight.w500,
+                fontSize: fontSizeCaption1,
+                color: greySecondary,
+              ),
+            ],
+          ),
         ],
       ),
     );

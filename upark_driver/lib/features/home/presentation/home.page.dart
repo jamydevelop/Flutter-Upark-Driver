@@ -32,12 +32,18 @@ class _HomePageState extends State<HomePage> {
                     ReserveParkingTitle(),
                     ReservedParkingSpaceWidget(),
                     ParkingSpacesAndSeeAll(),
-                    Row(
-                      spacing: normalSpacing,
-                      children: [
-                        AvailableParkingSpaceWidget(),
-                        AvailableParkingSpaceWidget(),
-                      ],
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        spacing: normalSpacing,
+                        children: [
+                          AvailableParkingSpaceWidget(),
+                          AvailableParkingSpaceWidget(),
+                          AvailableParkingSpaceWidget(),
+                          AvailableParkingSpaceWidget(),
+                          AvailableParkingSpaceWidget(),
+                        ],
+                      ),
                     ),
                   ],
                 ),

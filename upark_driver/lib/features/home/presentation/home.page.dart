@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
+import 'package:upark_driver/features/home/widget/available_parking_space.widget.dart';
 import 'package:upark_driver/features/home/widget/home_silver_appbar.dart';
 import 'package:upark_driver/features/home/widget/parking_spaces_and_see_all.dart';
 import 'package:upark_driver/features/home/widget/reserved_parking_space.widget.dart';
@@ -31,6 +32,13 @@ class _HomePageState extends State<HomePage> {
                     ReserveParkingTitle(),
                     ReservedParkingSpaceWidget(),
                     ParkingSpacesAndSeeAll(),
+                    Row(
+                      spacing: normalSpacing,
+                      children: [
+                        AvailableParkingSpaceWidget(),
+                        AvailableParkingSpaceWidget(),
+                      ],
+                    ),
                   ],
                 ),
               )),

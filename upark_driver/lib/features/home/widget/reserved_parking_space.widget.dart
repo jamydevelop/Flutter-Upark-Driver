@@ -10,6 +10,10 @@ class ReservedParkingSpaceWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 110,
+      width: double.infinity,
+      padding: EdgeInsets.symmetric(
+          horizontal: largeSpacing, vertical: normalSpacing),
       decoration: BoxDecoration(
         color: whitePrimary,
         borderRadius: BorderRadius.circular(16),
@@ -27,10 +31,6 @@ class ReservedParkingSpaceWidget extends StatelessWidget {
           color: greyPrimary,
         ),
       ),
-      height: 110,
-      width: double.infinity,
-      padding: EdgeInsets.symmetric(
-          horizontal: largeSpacing, vertical: normalSpacing),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,

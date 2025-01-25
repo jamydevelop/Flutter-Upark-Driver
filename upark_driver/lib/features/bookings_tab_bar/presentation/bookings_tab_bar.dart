@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/dimensions.dart';
+import 'package:upark_driver/core/widget/common_text_label.dart';
 
 class BookingsTabBar extends StatefulWidget {
   const BookingsTabBar({super.key});
@@ -17,10 +19,20 @@ class _BookingsTabBarState extends State<BookingsTabBar> {
           bottom: TabBar(
             tabs: <Widget>[
               Tab(
-                icon: Icon(Icons.cloud_outlined),
+                child: CommonTextLabel(
+                  text: "Pending",
+                  fontFamily: "Poppins",
+                  fontWeight: FontWeight.w400,
+                  fontSize: fontSizeTitle4,
+                ),
               ),
               Tab(
-                icon: Icon(Icons.beach_access_sharp),
+                child: CommonTextLabel(
+                  text: "Approved",
+                  fontFamily: "Roboto",
+                  fontWeight: FontWeight.w400,
+                  fontSize: fontSizeTitle4,
+                ),
               ),
               Tab(
                 icon: Icon(Icons.brightness_5_sharp),

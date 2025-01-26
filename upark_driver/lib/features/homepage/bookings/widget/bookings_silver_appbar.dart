@@ -6,33 +6,33 @@ class BookingsSilverAppbar extends SliverAppBar {
   const BookingsSilverAppbar({super.key})
       : super(
           pinned: true,
-          floating: true,
+          // floating: true,
           bottom: const TabBar(
             tabs: <Widget>[
               Tab(
-                child: CommonTextLabel(
-                  text: "Pending",
-                  fontFamily: "Poppins",
-                  fontWeight: FontWeight.w400,
-                  fontSize: fontSizeTitle4,
-                ),
-              ),
+                  child: CommonTextLabel(
+                      text: "To Pay",
+                      fontFamily: "Poppins",
+                      fontWeight: FontWeight.w400,
+                      fontSize: fontSizeTitle4)),
               Tab(
-                child: CommonTextLabel(
-                  text: "Approved",
-                  fontFamily: "Poppins",
-                  fontWeight: FontWeight.w400,
-                  fontSize: fontSizeTitle4,
-                ),
-              ),
+                  child: CommonTextLabel(
+                      text: "Approved",
+                      fontFamily: "Poppins",
+                      fontWeight: FontWeight.w400,
+                      fontSize: fontSizeTitle4)),
               Tab(
-                child: CommonTextLabel(
-                  text: "Cancelled",
-                  fontFamily: "Poppins",
-                  fontWeight: FontWeight.w400,
-                  fontSize: fontSizeTitle4,
-                ),
-              ),
+                  child: CommonTextLabel(
+                      text: "Cancelled",
+                      fontFamily: "Poppins",
+                      fontWeight: FontWeight.w400,
+                      fontSize: fontSizeTitle4)),
+              Tab(
+                  child: CommonTextLabel(
+                      text: "Completed",
+                      fontFamily: "Poppins",
+                      fontWeight: FontWeight.w400,
+                      fontSize: fontSizeTitle4)),
             ],
           ),
         );

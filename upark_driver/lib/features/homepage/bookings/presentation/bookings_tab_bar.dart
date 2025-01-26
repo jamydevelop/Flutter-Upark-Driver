@@ -13,7 +13,7 @@ class _BookingsTabBarState extends State<BookingsTabBar> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 5,
+      length: 3,
       child: Scaffold(
         appBar: AppBar(
           bottom: TabBar(
@@ -29,19 +29,18 @@ class _BookingsTabBarState extends State<BookingsTabBar> {
               Tab(
                 child: CommonTextLabel(
                   text: "Approved",
-                  fontFamily: "Roboto",
+                  fontFamily: "Poppins",
                   fontWeight: FontWeight.w400,
                   fontSize: fontSizeTitle4,
                 ),
               ),
               Tab(
-                icon: Icon(Icons.brightness_5_sharp),
-              ),
-              Tab(
-                icon: Icon(Icons.brightness_5_sharp),
-              ),
-              Tab(
-                icon: Icon(Icons.brightness_5_sharp),
+                child: CommonTextLabel(
+                  text: "Cancelled",
+                  fontFamily: "Poppins",
+                  fontWeight: FontWeight.w400,
+                  fontSize: fontSizeTitle4,
+                ),
               ),
             ],
           ),
@@ -49,19 +48,13 @@ class _BookingsTabBarState extends State<BookingsTabBar> {
         body: TabBarView(
           children: <Widget>[
             Center(
-              child: Text("It's cloudy here"),
+              child: Text("Pending Page"),
             ),
             Center(
-              child: Text("It's rainy here"),
+              child: Text("Approved Page"),
             ),
             Center(
-              child: Text("It's sunny here"),
-            ),
-            Center(
-              child: Text("It's sunny here"),
-            ),
-            Center(
-              child: Text("It's sunny here"),
+              child: Text("Cancelled Page"),
             ),
           ],
         ),

@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
 
 class BookingsSilverAppbar extends SliverAppBar {
   const BookingsSilverAppbar({super.key})
       : super(
+          backgroundColor: whitePrimary,
           pinned: true,
           // floating: true,
           bottom: const TabBar(

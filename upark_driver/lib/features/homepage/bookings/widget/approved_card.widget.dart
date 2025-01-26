@@ -42,6 +42,24 @@ class ApprovedCardWidget extends StatelessWidget {
                 )
               ],
             ),
+          ),
+          Row(
+            children: [
+              Container(
+                width: 133,
+                height: 87,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(8),
+                    topRight: Radius.circular(8),
+                  ),
+                ),
+                child: Image.asset(
+                  "assets/images/parking_image.png",
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ],
           )
         ],
       ),

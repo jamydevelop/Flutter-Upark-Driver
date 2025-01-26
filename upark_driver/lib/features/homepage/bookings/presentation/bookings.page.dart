@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/features/homepage/bookings/widget/approved_card.widget.dart';
 import 'package:upark_driver/features/homepage/bookings/widget/bookings_silver_appbar.dart';
 
 class BookingsPage extends StatefulWidget {
@@ -34,7 +35,7 @@ class _BookingsPageState extends State<BookingsPage>
                 controller: _tabController,
                 children: const <Widget>[
                   Center(child: Text("Pending Page")),
-                  Center(child: Text("Approved Page")),
+                  Center(child: ApprovedCardWidget()),
                   Center(child: Text("Cancelled Page")),
                   Center(child: Text("Completed Page")),
                 ],

@@ -10,6 +10,7 @@ Here's how you can write your color constant: */
 
 const Color appbarPrimary = Color(0xFFE4F1E4);
 
+const Color greyQuinary = Color(0xFF4D4D4D);
 const Color greyQuaternary = Color(0xFFE4F1E4);
 const Color greyTertiary = Color(0xFFD9D9D9);
 const Color greySecondary = Color(0xFF868686);

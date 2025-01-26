@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/colors.dart';
+import 'package:upark_driver/core/resources/dimensions.dart';
+import 'package:upark_driver/core/widget/common_text_label.dart';
 
 class ApprovedCardWidget extends StatelessWidget {
   const ApprovedCardWidget({super.key});
@@ -15,6 +17,33 @@ class ApprovedCardWidget extends StatelessWidget {
           width: 1,
           color: greyPrimary,
         ),
+      ),
+      child: Column(
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.symmetric(
+                horizontal: extraNormalSpacing, vertical: largeSpacing),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                CommonTextLabel(
+                  text: "Apr 23, 2024",
+                  fontFamily: "Poppins",
+                  fontWeight: FontWeight.w500,
+                  fontSize: fontSizeTitle4,
+                  color: greyQuinary,
+                ),
+                CommonTextLabel(
+                  text: "#12321312",
+                  fontFamily: "Poppins",
+                  fontWeight: FontWeight.w500,
+                  fontSize: fontSizeTitle4,
+                  color: greyQuinary,
+                )
+              ],
+            ),
+          )
+        ],
       ),
     );
   }

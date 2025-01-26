@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/features/homepage/bookings/presentation/approved.page.dart';
+import 'package:upark_driver/features/homepage/bookings/presentation/cancelled.page.dart';
+import 'package:upark_driver/features/homepage/bookings/presentation/completed.page.dart';
+import 'package:upark_driver/features/homepage/bookings/presentation/to_pay.page.dart';
 import 'package:upark_driver/features/homepage/bookings/widget/bookings_silver_appbar.dart';
 
 class BookingsPage extends StatefulWidget {
@@ -34,10 +37,10 @@ class _BookingsPageState extends State<BookingsPage>
               child: TabBarView(
                 controller: _tabController,
                 children: const <Widget>[
-                  Center(child: Text("Pending Page")),
+                  Center(child: ToPayPage()),
                   Center(child: ApprovedPage()),
-                  Center(child: Text("Cancelled Page")),
-                  Center(child: Text("Completed Page")),
+                  Center(child: CancelledPage()),
+                  Center(child: CompletedPage()),
                 ],
               ),
             ),

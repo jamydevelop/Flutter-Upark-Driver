@@ -11,7 +11,7 @@ class LoginTextLabelLoginWidget extends StatelessWidget {
     return CommonTextLabel(
       fontFamily: "Roboto",
       fontWeight: FontWeight.w600,
-      fontSize: fontSizeTitle1, //25px
+      fontSize: bigFontSizeTitle1, //25px
       text: "Login",
       color: blackPrimary, //#0B0B0B
     );

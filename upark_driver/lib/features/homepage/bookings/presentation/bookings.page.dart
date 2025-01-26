@@ -8,18 +8,31 @@ class BookingsPage extends StatefulWidget {
   State<BookingsPage> createState() => _BookingsPageState();
 }
 
-class _BookingsPageState extends State<BookingsPage> {
+class _BookingsPageState extends State<BookingsPage>
+    with SingleTickerProviderStateMixin {
+  late TabController _tabController;
+
+  @override
+  void initState() {
+    super.initState();
+    _tabController = TabController(length: 4, vsync: this);
+    _tabController.addListener(() {
+      setState(() {}); // Update the UI when the tab index changes.
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    return DefaultTabController(
-      length: 4,
-      child: Scaffold(
-        body: CustomScrollView(
+    return Scaffold(
+      body: DefaultTabController(
+        length: 4,
+        child: CustomScrollView(
           slivers: [
-            BookingsSilverAppbar(),
+            BookingsSilverAppbar(tabController: _tabController),
             SliverFillRemaining(
               child: TabBarView(
-                children: <Widget>[
+                controller: _tabController,
+                children: const <Widget>[
                   Center(child: Text("Pending Page")),
                   Center(child: Text("Approved Page")),
                   Center(child: Text("Cancelled Page")),
@@ -31,5 +44,11 @@ class _BookingsPageState extends State<BookingsPage> {
         ),
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    _tabController.dispose();
+    super.dispose();
   }
 }

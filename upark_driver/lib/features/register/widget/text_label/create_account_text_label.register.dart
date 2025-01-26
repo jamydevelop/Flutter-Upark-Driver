@@ -12,7 +12,7 @@ class CreateAccountTextLabelRegister extends StatelessWidget {
         child: CommonTextLabel(
       fontFamily: "Roboto",
       fontWeight: FontWeight.w600,
-      fontSize: fontSizeTitle1, //25px
+      fontSize: bigFontSizeTitle1, //25px
       color: blackPrimary, //#0B0B0B
       text: "Create Account",
     ));

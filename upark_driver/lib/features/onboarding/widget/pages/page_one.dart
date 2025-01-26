@@ -17,7 +17,7 @@ class PageOne extends StatelessWidget {
             CommonTextLabel(
               fontFamily: "Roboto",
               fontWeight: FontWeight.w500,
-              fontSize: fontSizeTitle1, //25
+              fontSize: bigFontSizeTitle1, //25
               color: blackPrimary,
               text: "Welcome to U Park",
             ),

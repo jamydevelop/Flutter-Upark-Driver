@@ -24,6 +24,7 @@ const double fontSizeSubhead = 15.0;
 const double fontSizeCallout = 16.0;
 const double fontSizeBody = 17.0;
 
+const double fontSizeTitle3 = 13.0;
 const double fontSizeTitle4 = 14.0;
 const double fontSizeTitle5 = 15.0;
 const double fontSizeTitle6 = 16.0;
@@ -31,11 +32,11 @@ const double fontSizeTitle6 = 16.0;
 const double fontSizeHeadline2 = 17.0;
 const double fontSizeHeadline1 = 18.0;
 
-const double fontSizeTitle3 = 20.0;
-const double fontSizeTitle2 = 22.0;
-const double fontSizeTitle1 = 25.0;
-const double fontSizeTitle0 = 28.0;
-const double fontSizeLargeTitle = 34.0;
+const double bigFontSizeTitle3 = 20.0;
+const double bigFontSizeTitle2 = 22.0;
+const double bigFontSizeTitle1 = 25.0;
+const double bigFontSizeTitle0 = 28.0;
+const double bigFontSizeLargeTitle = 34.0;
 
 //Border radius
 const double primaryBorder = 15;

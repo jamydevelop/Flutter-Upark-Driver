@@ -11,7 +11,7 @@ class ForgotPasswordTextLabel extends StatelessWidget {
     return CommonTextLabel(
       fontFamily: "Roboto",
       fontWeight: FontWeight.w500,
-      fontSize: fontSizeTitle1, //25px
+      fontSize: bigFontSizeTitle1, //25px
       color: blackPrimary,
       text: "Forgot\nPassword?",
     );

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/assets.dart';
 import 'package:upark_driver/core/resources/colors.dart';
-import 'package:upark_driver/features/homepage/bookings/presentation/bookings_tab_bar.dart';
+import 'package:upark_driver/features/homepage/bookings/presentation/bookings.page.dart';
 import 'package:upark_driver/features/homepage/home/presentation/home.page.dart';
 
 class BottomNavPage extends StatefulWidget {
@@ -25,7 +25,7 @@ class _BottomNavPageState extends State<BottomNavPage> {
     return Scaffold(
       body: <Widget>[
         Center(child: HomePage()), // Ensure the content is centered
-        Center(child: BookingsTabBar()),
+        Center(child: BookingsPage()),
         Center(child: Text("Last Page")),
       ][currentPageIndex],
       bottomNavigationBar: BottomNavigationBar(

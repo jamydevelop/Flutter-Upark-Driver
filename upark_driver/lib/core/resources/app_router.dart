@@ -1,7 +1,7 @@
 import 'package:go_router/go_router.dart';
-import 'package:upark_driver/features/bottom_nav/presentation/bottom_nav.page.dart';
+import 'package:upark_driver/features/homepage/bottom_nav/presentation/bottom_nav.page.dart';
 import 'package:upark_driver/features/forgot_password/presentation/forgot_password.page.dart';
-import 'package:upark_driver/features/home/presentation/home.page.dart';
+import 'package:upark_driver/features/homepage/home/presentation/home.page.dart';
 import 'package:upark_driver/features/login/presentation/login.page.dart';
 import 'package:upark_driver/features/onboarding/presentation/onboarding.page.dart';
 import 'package:upark_driver/features/register/presentation/register.page.dart';

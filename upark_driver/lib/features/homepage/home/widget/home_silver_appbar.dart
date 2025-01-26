@@ -4,7 +4,7 @@ import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_icon_button.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
-import 'package:upark_driver/features/home/widget/edit_profile_button_icon.dart';
+import 'package:upark_driver/features/homepage/home/widget/edit_profile_button_icon.dart';
 
 class HomeSilverAppbar extends SliverAppBar {
   HomeSilverAppbar({super.key})

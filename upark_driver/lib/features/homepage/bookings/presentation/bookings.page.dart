@@ -38,7 +38,7 @@ class _BookingsPageState extends State<BookingsPage>
                 controller: _tabController,
                 children: const <Widget>[
                   Center(child: ToPayPage()),
-                  Center(child: ApprovedPage()),
+                  ApprovedPage(),
                   Center(child: CancelledPage()),
                   Center(child: CompletedPage()),
                 ],

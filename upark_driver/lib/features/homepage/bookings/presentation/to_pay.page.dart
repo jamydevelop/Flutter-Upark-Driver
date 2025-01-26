@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/dimensions.dart';
 
 class ToPayPage extends StatefulWidget {
   const ToPayPage({super.key});
@@ -11,8 +12,13 @@ class _ToPayPageState extends State<ToPayPage> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      child: Column(
-        children: <Widget>[],
+      scrollDirection: Axis.vertical,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(
+            horizontal: largeSpacing, vertical: extraLargeSpacing),
+        child: Column(
+          children: <Widget>[],
+        ),
       ),
     );
   }

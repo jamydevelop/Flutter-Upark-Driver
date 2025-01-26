@@ -17,6 +17,21 @@ class _BookingsPageState extends State<BookingsPage> {
         body: CustomScrollView(
           slivers: [
             BookingsSilverAppbar(),
+            SliverFillRemaining(
+              child: TabBarView(
+                children: <Widget>[
+                  Center(
+                    child: Text("Pending Page"),
+                  ),
+                  Center(
+                    child: Text("Approved Page"),
+                  ),
+                  Center(
+                    child: Text("Cancelled Page"),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),

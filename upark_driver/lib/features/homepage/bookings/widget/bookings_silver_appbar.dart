@@ -7,7 +7,6 @@ class BookingsSilverAppbar extends SliverAppBar {
       : super(
           pinned: true,
           floating: true,
-          expandedHeight: 120.0,
           bottom: const TabBar(
             tabs: <Widget>[
               Tab(

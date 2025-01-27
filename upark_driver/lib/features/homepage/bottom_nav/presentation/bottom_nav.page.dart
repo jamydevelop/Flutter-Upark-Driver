@@ -45,14 +45,14 @@ class _BottomNavPageState extends State<BottomNavPage> {
           ],
           currentIndex: currentPageIndex,
           onTap: _onTappedItem,
-          selectedItemColor: blackPrimary),
+          selectedItemColor: greenPrimary),
     );
   }
 
   Widget _buildIcon(String assetPath, int index) {
     return ColorFiltered(
       colorFilter: ColorFilter.mode(
-        currentPageIndex == index ? blackPrimary : greySecondary,
+        currentPageIndex == index ? greenPrimary : greySecondary,
         BlendMode.srcIn,
       ),
       child: Image.asset(

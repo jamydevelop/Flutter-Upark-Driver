@@ -28,7 +28,7 @@ class ToPayCardWidget extends StatelessWidget {
           spacing: normalSpacing,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            card(),
+            parkingTicketNumberWidget(),
             cardImage(),
           ],
         ),
@@ -36,7 +36,7 @@ class ToPayCardWidget extends StatelessWidget {
     );
   }
 
-  Widget card() {
+  Widget parkingTicketNumberWidget() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [

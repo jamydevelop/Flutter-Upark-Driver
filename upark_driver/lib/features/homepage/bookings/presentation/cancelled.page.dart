@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
+import 'package:upark_driver/features/homepage/bookings/widget/cancelled_card.widget.dart';
 
 class CancelledPage extends StatefulWidget {
   const CancelledPage({super.key});
@@ -17,7 +18,15 @@ class _CancelledPageState extends State<CancelledPage> {
         padding: const EdgeInsets.symmetric(
             horizontal: largeSpacing, vertical: extraLargeSpacing),
         child: Column(
-          children: <Widget>[],
+          spacing: normalSpacing,
+          children: <Widget>[
+            CancelledCardWidget(),
+            CancelledCardWidget(),
+            CancelledCardWidget(),
+            CancelledCardWidget(),
+            CancelledCardWidget(),
+            CancelledCardWidget(),
+          ],
         ),
       ),
     );

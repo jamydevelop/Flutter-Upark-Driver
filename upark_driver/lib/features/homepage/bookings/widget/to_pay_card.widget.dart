@@ -59,22 +59,55 @@ class ToPayCardWidget extends StatelessWidget {
   }
 
   Widget cardImage() {
-    return Container(
-      width: 133,
-      height: 87,
-      decoration: BoxDecoration(
-        color: Colors.black,
-        borderRadius: BorderRadius.all(
-          Radius.circular(8),
+    return Row(
+      children: [
+        Container(
+          width: 133,
+          height: 87,
+          decoration: BoxDecoration(
+            color: Colors.black,
+            borderRadius: BorderRadius.all(
+              Radius.circular(8),
+            ),
+          ),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(8),
+            child: Image.asset(
+              "assets/images/parking_image.png",
+              fit: BoxFit.fill,
+            ),
+          ),
         ),
-      ),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(8),
-        child: Image.asset(
-          "assets/images/parking_image.png",
-          fit: BoxFit.fill,
+        SizedBox(width: normalSpacing),
+        Column(
+          spacing: extraSmallSpacing,
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            CommonTextLabel(
+              text: "Bormaheco Pay Parking",
+              fontFamily: "Poppins",
+              fontWeight: FontWeight.w500,
+              fontSize: fontSizeTitle4,
+              color: blackPrimary,
+            ),
+            CommonTextLabel(
+              text: "Parking Slot: CP2",
+              fontFamily: "Poppins",
+              fontWeight: FontWeight.w500,
+              fontSize: fontSizeTitle3,
+              color: greyQuinary,
+            ),
+            CommonTextLabel(
+              text: "January 31, 2025 from \n 9:00 to  10:00 PM",
+              fontFamily: "Poppins",
+              fontWeight: FontWeight.w500,
+              fontSize: fontSizeTitle3,
+              color: greyQuinary,
+            )
+          ],
         ),
-      ),
+      ],
     );
   }
 }

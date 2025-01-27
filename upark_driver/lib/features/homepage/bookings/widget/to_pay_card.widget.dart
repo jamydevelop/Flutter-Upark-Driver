@@ -113,27 +113,37 @@ class ToPayCardWidget extends StatelessWidget {
   }
 
   Widget chatButton() {
-    return Row(
-      children: [
-        Expanded(
-          child: CommonButton(
-            height: 50,
-            borderRadius: 10,
-            foregroundColor: whitePrimary,
-            backgroundColor: greenPrimary,
-            child: CommonTextLabel(
-              fontFamily: "Roboto",
-              fontWeight: FontWeight.w600,
-              fontSize: fontSizeCallout,
-              color: whitePrimary, //
-              text: "Chat",
-            ),
-            onPressed: () {
-              debugPrint("Chat Button Pressed!");
-            },
-          ),
+    return ElevatedButton(
+      onPressed: () => debugPrint("Button Pressed"),
+      style: ElevatedButton.styleFrom(
+        backgroundColor: greenPrimary,
+        shape: RoundedRectangleBorder(
+          borderRadius:
+              BorderRadius.circular(8), // Rounded corners with radius 8
         ),
-      ],
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center, // Center the content
+        children: [
+          // Image.asset(
+          //   "assets/icons/locate_icon.png",
+          //   scale: 3,
+          // ),
+          Icon(
+            Icons.chat,
+            size: 24,
+            color: whitePrimary,
+          ),
+          const SizedBox(width: 8),
+          CommonTextLabel(
+            text: "Chat",
+            fontFamily: "Roboto",
+            fontWeight: FontWeight.w600,
+            fontSize: fontSizeTitle6,
+            color: whitePrimary,
+          )
+        ],
+      ),
     );
   }
 }

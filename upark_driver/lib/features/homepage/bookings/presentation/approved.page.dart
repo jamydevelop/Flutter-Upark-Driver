@@ -18,7 +18,11 @@ class _ApprovedPageState extends State<ApprovedPage> {
         padding: const EdgeInsets.symmetric(
             horizontal: largeSpacing, vertical: extraLargeSpacing),
         child: Column(
+          spacing: normalSpacing,
           children: <Widget>[
+            ApprovedCardWidget(),
+            ApprovedCardWidget(),
+            ApprovedCardWidget(),
             ApprovedCardWidget(),
           ],
         ),

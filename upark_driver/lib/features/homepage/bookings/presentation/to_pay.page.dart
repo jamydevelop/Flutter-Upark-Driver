@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
+import 'package:upark_driver/features/homepage/bookings/widget/to_pay_card.widget.dart';
 
 class ToPayPage extends StatefulWidget {
   const ToPayPage({super.key});
@@ -17,7 +18,17 @@ class _ToPayPageState extends State<ToPayPage> {
         padding: const EdgeInsets.symmetric(
             horizontal: largeSpacing, vertical: extraLargeSpacing),
         child: Column(
-          children: <Widget>[],
+          spacing: normalSpacing,
+          children: <Widget>[
+            ToPayCardWidget(),
+            ToPayCardWidget(),
+            ToPayCardWidget(),
+            ToPayCardWidget(),
+            ToPayCardWidget(),
+            ToPayCardWidget(),
+            ToPayCardWidget(),
+            ToPayCardWidget(),
+          ],
         ),
       ),
     );

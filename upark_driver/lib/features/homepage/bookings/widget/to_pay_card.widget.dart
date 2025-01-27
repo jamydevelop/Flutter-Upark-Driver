@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
+import 'package:upark_driver/core/widget/common_button.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
 
 class ToPayCardWidget extends StatelessWidget {
@@ -9,7 +10,6 @@ class ToPayCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 163,
       width: double.infinity,
       decoration: BoxDecoration(
         color: whitePrimary,
@@ -30,6 +30,7 @@ class ToPayCardWidget extends StatelessWidget {
           children: [
             parkingTicketNumberWidget(),
             cardImage(),
+            chatButton(),
           ],
         ),
       ),
@@ -106,6 +107,31 @@ class ToPayCardWidget extends StatelessWidget {
               color: greyQuinary,
             )
           ],
+        ),
+      ],
+    );
+  }
+
+  Widget chatButton() {
+    return Row(
+      children: [
+        Expanded(
+          child: CommonButton(
+            height: 50,
+            borderRadius: 10,
+            foregroundColor: whitePrimary,
+            backgroundColor: greenPrimary,
+            child: CommonTextLabel(
+              fontFamily: "Roboto",
+              fontWeight: FontWeight.w600,
+              fontSize: fontSizeCallout,
+              color: whitePrimary, //
+              text: "Chat",
+            ),
+            onPressed: () {
+              debugPrint("Chat Button Pressed!");
+            },
+          ),
         ),
       ],
     );

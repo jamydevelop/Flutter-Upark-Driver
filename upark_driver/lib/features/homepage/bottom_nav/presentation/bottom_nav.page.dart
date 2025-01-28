@@ -3,6 +3,7 @@ import 'package:upark_driver/core/resources/assets.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/features/homepage/bookings/presentation/bookings.page.dart';
 import 'package:upark_driver/features/homepage/home/presentation/home.page.dart';
+import 'package:upark_driver/features/homepage/profile/presentation/profile.page.dart';
 
 class BottomNavPage extends StatefulWidget {
   const BottomNavPage({super.key});
@@ -12,7 +13,7 @@ class BottomNavPage extends StatefulWidget {
 }
 
 class _BottomNavPageState extends State<BottomNavPage> {
-  int currentPageIndex = 0;
+  int currentPageIndex = 2;
 
   void _onTappedItem(int index) {
     setState(() {
@@ -26,7 +27,7 @@ class _BottomNavPageState extends State<BottomNavPage> {
       body: <Widget>[
         Center(child: HomePage()), // Ensure the content is centered
         Center(child: BookingsPage()),
-        Center(child: Text("Last Page")),
+        Center(child: ProfilePage()),
       ][currentPageIndex],
       bottomNavigationBar: BottomNavigationBar(
           items: <BottomNavigationBarItem>[

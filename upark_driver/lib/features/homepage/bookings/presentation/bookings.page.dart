@@ -15,6 +15,7 @@ class BookingsPage extends StatefulWidget {
 class _BookingsPageState extends State<BookingsPage>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
+  int index = 0;
 
   @override
   void initState() {
@@ -25,6 +26,12 @@ class _BookingsPageState extends State<BookingsPage>
     });
   }
 
+  void onTap(int value) {
+    setState(() {
+      index = value;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +39,11 @@ class _BookingsPageState extends State<BookingsPage>
         length: 4,
         child: CustomScrollView(
           slivers: [
-            BookingsSilverAppbar(tabController: _tabController),
+            BookingsSilverAppbar(
+              tabController: _tabController,
+              onTap: onTap,
+              index: index,
+            ),
             SliverFillRemaining(
               child: TabBarView(
                 controller: _tabController,

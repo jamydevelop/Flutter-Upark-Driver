@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
+import 'package:upark_driver/features/homepage/bookings/widget/completed_card.widget.dart';
 
 class CompletedPage extends StatefulWidget {
   const CompletedPage({super.key});
@@ -17,7 +18,15 @@ class _CompletedPageState extends State<CompletedPage> {
         padding: const EdgeInsets.symmetric(
             horizontal: largeSpacing, vertical: extraLargeSpacing),
         child: Column(
-          children: <Widget>[],
+          spacing: normalSpacing,
+          children: <Widget>[
+            CompletedCardWidget(),
+            CompletedCardWidget(),
+            CompletedCardWidget(),
+            CompletedCardWidget(),
+            CompletedCardWidget(),
+            CompletedCardWidget(),
+          ],
         ),
       ),
     );

@@ -8,12 +8,16 @@ class CommonWidgetButton extends StatelessWidget {
   final String iconString;
   final String textTitle;
   final VoidCallback onTap;
+  final Color? textColor;
+  final Color? arrowColor;
 
   const CommonWidgetButton(
       {super.key,
       required this.iconString,
       required this.textTitle,
-      required this.onTap});
+      required this.onTap,
+      this.textColor = greyPrimary,
+      this.arrowColor = greyPrimary});
 
   @override
   Widget build(BuildContext context) {
@@ -51,13 +55,14 @@ class CommonWidgetButton extends StatelessWidget {
               text: textTitle,
               fontWeight: FontWeight.w500,
               fontSize: fontSizeTitle6,
-              color: greySecondary,
+              color: textColor,
             ),
 
             Spacer(), // Pushes the arrow icon to the right
 
             // Arrow icon
             Image.asset(
+              color: arrowColor,
               Assets.profileArrow,
               width: 18,
               height: 18,

@@ -5,7 +5,11 @@ import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
 
 class CommonWidgetButton extends StatelessWidget {
-  const CommonWidgetButton({super.key});
+  final String iconString;
+  final String textTitle;
+
+  const CommonWidgetButton(
+      {super.key, required this.iconString, required this.textTitle});
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +31,7 @@ class CommonWidgetButton extends StatelessWidget {
             ),
             child: Center(
               child: Image.asset(
-                Assets.profileFavorite,
+                iconString,
                 width: 24,
                 height: 24,
                 fit: BoxFit.contain,
@@ -38,7 +42,7 @@ class CommonWidgetButton extends StatelessWidget {
 
           // Text
           CommonTextLabel(
-            text: "Favorites",
+            text: textTitle,
             fontWeight: FontWeight.w500,
             fontSize: fontSizeTitle6,
             color: greySecondary,

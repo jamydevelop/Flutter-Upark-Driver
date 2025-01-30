@@ -5,4 +5,6 @@ class Assets {
   static const profileIcon = "$filePath/profile_icon.png";
   static const bellIcon = "$filePath/bell_icon.png";
   static const messageIcon = "$filePath/message_icon.png";
+  static const profileFavorite = "$filePath/profile_favorites.png";
+  static const profileArrow = "$filePath/profile_arrow.png";
 }

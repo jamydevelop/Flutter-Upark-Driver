@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
-import 'package:upark_driver/core/widget/common_text_label.dart';
 import 'package:upark_driver/features/homepage/profile/widget/profile_header.dart';
 
 class ProfilePage extends StatefulWidget {

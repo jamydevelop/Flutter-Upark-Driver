@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
+import 'package:upark_driver/features/homepage/profile/widget/favorites_widget.dart';
 import 'package:upark_driver/features/homepage/profile/widget/profile_header.dart';
 import 'package:upark_driver/features/homepage/profile/widget/title_widget.dart';
 
@@ -25,6 +26,7 @@ class _ProfilePageState extends State<ProfilePage> {
               ProfileHeader(),
               SizedBox(height: regularSpacing),
               TitleWidget(value: "Content"),
+              FavoritesWidget(),
             ],
           ),
         ),

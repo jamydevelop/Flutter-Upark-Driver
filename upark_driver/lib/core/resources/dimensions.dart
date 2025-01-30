@@ -7,6 +7,7 @@ const double regularSpacing = 16.0;
 const double largeSpacing = 24.0;
 const double extraLargeSpacing = 28;
 const double superLargeSpacing = 32.0;
+const double mostLargeSpacing = 54.0;
 
 //Icon button size
 const double iconButtonSize = 40;
@@ -29,6 +30,8 @@ const double fontSizeTitle3 = 13.0;
 const double fontSizeTitle4 = 14.0;
 const double fontSizeTitle5 = 15.0;
 const double fontSizeTitle6 = 16.0;
+const double fontSizeTitle7 = 17.0;
+const double fontSizeTitle8 = 18.0;
 
 const double fontSizeHeadline2 = 17.0;
 const double fontSizeHeadline1 = 18.0;

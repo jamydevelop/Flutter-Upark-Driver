@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_back_appbar.dart';
 import 'package:upark_driver/features/forgot_password/widget/email_text_field.dart'
@@ -18,7 +19,10 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CommonBackAppbar(context: context),
+      appBar: CommonBackAppbar(
+        context: context,
+        onTap: () => context.go("/login"),
+      ),
       body: Padding(
         padding: const EdgeInsets.only(left: largeSpacing, right: largeSpacing),
         child: Column(

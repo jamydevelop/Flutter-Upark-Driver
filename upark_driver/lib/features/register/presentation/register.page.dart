@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_back_appbar.dart';
 import 'package:upark_driver/features/register/widget/button/register_button.dart';
@@ -33,7 +34,10 @@ class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CommonBackAppbar(context: context),
+      appBar: CommonBackAppbar(
+        context: context,
+        onTap: () => context.go("/login"),
+      ),
       backgroundColor: Colors.white,
       body: Padding(
         padding: const EdgeInsets.symmetric(

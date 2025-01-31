@@ -9,6 +9,7 @@ class Assets {
   static const messageIcon = "$filePath1/message_icon.png";
 
   static const editProfileImage = "$filePath2/edit_profile_img.png";
+  static const editProfileHumanIcon = "$filePath1/profile.png";
 
   static const profileArrow = "$filePath1/profile_arrow.png";
   static const profileFavorite = "$filePath1/profile_favorites.png";

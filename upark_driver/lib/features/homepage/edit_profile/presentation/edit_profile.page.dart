@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:upark_driver/core/resources/assets.dart';
+import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/widget/common_back_appbar.dart';
 
 class EditProfilePage extends StatefulWidget {
@@ -20,7 +21,17 @@ class _EditProfilePageState extends State<EditProfilePage> {
       ),
       body: Column(
         children: [
-          Image.asset(Assets.editProfileImage),
+          Container(
+            width: 116,
+            height: 110,
+            decoration: BoxDecoration(
+              color: greySecondary,
+              shape: BoxShape.circle,
+              image: DecorationImage(
+                  image: AssetImage(Assets.editProfileImage),
+                  fit: BoxFit.cover),
+            ),
+          )
         ],
       ),
     );

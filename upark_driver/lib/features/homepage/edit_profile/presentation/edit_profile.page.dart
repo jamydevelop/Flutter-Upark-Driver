@@ -15,6 +15,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CommonBackAppbar(
+        textTitle: "Edit Profile",
         context: context,
         onTap: () => context.go("/login"),
       ),

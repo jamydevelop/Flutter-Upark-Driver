@@ -1,6 +1,7 @@
 import 'package:go_router/go_router.dart';
 import 'package:upark_driver/features/homepage/bottom_nav/presentation/bottom_nav.page.dart';
 import 'package:upark_driver/features/forgot_password/presentation/forgot_password.page.dart';
+import 'package:upark_driver/features/homepage/edit_profile/presentation/edit_profile.page.dart';
 import 'package:upark_driver/features/homepage/home/presentation/home.page.dart';
 import 'package:upark_driver/features/login/presentation/login.page.dart';
 import 'package:upark_driver/features/onboarding/presentation/onboarding.page.dart';
@@ -10,7 +11,7 @@ import 'package:upark_driver/features/splash/presentation/splash.page.dart';
 class AppRouter {
   final GoRouter router = GoRouter(
     //this is for initial location of the app
-    initialLocation: "/bottomnav",
+    initialLocation: "/edit-profile",
     //other routes/screen for the app
     routes: [
       GoRoute(path: "/splash", builder: (context, state) => const SplashPage()),
@@ -26,6 +27,9 @@ class AppRouter {
           path: "/bottomnav",
           builder: (context, state) => const BottomNavPage()),
       GoRoute(path: "/home", builder: (context, state) => const HomePage()),
+      GoRoute(
+          path: "/edit-profile",
+          builder: (context, state) => const EditProfilePage())
     ],
   );
 }

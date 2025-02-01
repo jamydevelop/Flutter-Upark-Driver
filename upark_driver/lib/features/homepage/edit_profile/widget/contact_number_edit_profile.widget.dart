@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_field.dart';
-import 'package:upark_driver/features/register/widget/text_label/contact_number_text_label.register.dart';
+import 'package:upark_driver/core/widget/common_text_label.dart';
 
 class ContactNumberEditProfileWidget extends StatelessWidget {
   const ContactNumberEditProfileWidget({super.key});
@@ -11,10 +11,19 @@ class ContactNumberEditProfileWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ContactNumberTextLabelRegister(),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: CommonTextLabel(
+            fontFamily: "Roboto",
+            fontWeight: FontWeight.w500,
+            fontSize: fontSizeTitle5, //15px
+            color: blackPrimary,
+            text: "Contact Number",
+          ),
+        ),
         SizedBox(height: extraSmallSpacing),
         CommonTextField(
-          hintText: "Enter your contact number",
+          hintText: "0915-794-4545",
           hintTextStyle: TextStyle(
             fontFamily: "Roboto",
             fontWeight: FontWeight.w400,

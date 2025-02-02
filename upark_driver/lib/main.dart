@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'Upark App Demo',
       routerConfig: AppRouter().router,
       // home: const SplashPage(),
+      //test
     );
   }
 }

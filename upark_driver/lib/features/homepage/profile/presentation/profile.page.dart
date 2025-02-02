@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/features/homepage/profile/widget/bookings_widget.dart';
 import 'package:upark_driver/features/homepage/profile/widget/change_password_widget.dart';
-import 'package:upark_driver/features/homepage/profile/widget/delete_account_widget.dart';
+// import 'package:upark_driver/features/homepage/profile/widget/delete_account_widget.dart';
 import 'package:upark_driver/features/homepage/profile/widget/favorites_widget.dart';
 import 'package:upark_driver/features/homepage/profile/widget/help_and_support_widget.dart';
 import 'package:upark_driver/features/homepage/profile/widget/log_out_widget.dart';
@@ -43,7 +43,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 VehicleDetailsWidget(),
                 TermsAndPoliciesWidget(),
                 HelpAndSupportWidget(),
-                DeleteAccountWidget(),
+                // DeleteAccountWidget(),
                 LogOutWidget(),
               ],
             ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:go_router/go_router.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/features/login/widget/button/fb_and_google.dart';
 import 'package:upark_driver/features/login/widget/button/login_button.login.dart';
@@ -47,7 +48,7 @@ class _LoginPageState extends State<LoginPage> {
                   EmailTextfieldLoginWidget(),
                   LoginPasswordTextfieldLoginWidget(),
                   ForgotPasswordTextLabelLoginWidget(),
-                  LoginButtonLogin(),
+                  LoginButtonLogin(onTap: () => context.go("/bottomnav")),
                   test.ContinueWithTextLabelLoginWidget(),
                   //OrTextLabelLoginWidget(),
                   FbAndGoogle(),

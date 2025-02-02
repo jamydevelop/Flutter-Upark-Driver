@@ -13,7 +13,7 @@ class BottomNavPage extends StatefulWidget {
 }
 
 class _BottomNavPageState extends State<BottomNavPage> {
-  int currentPageIndex = 2;
+  int currentPageIndex = 0;
 
   void _onTappedItem(int index) {
     setState(() {

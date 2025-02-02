@@ -5,7 +5,8 @@ import 'package:upark_driver/core/widget/common_button.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
 
 class LoginButtonLogin extends StatelessWidget {
-  const LoginButtonLogin({super.key});
+  final VoidCallback onTap;
+  const LoginButtonLogin({super.key, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +21,7 @@ class LoginButtonLogin extends StatelessWidget {
                 borderRadius: 10,
                 foregroundColor: whitePrimary,
                 backgroundColor: greenPrimary,
+                onPressed: onTap,
                 child: CommonTextLabel(
                   fontFamily: "Roboto",
                   fontWeight: FontWeight.w600,
@@ -27,9 +29,6 @@ class LoginButtonLogin extends StatelessWidget {
                   color: whitePrimary, //
                   text: "Login",
                 ),
-                onPressed: () {
-                  debugPrint("Login Button Pressed!");
-                },
               ),
             ),
           ],

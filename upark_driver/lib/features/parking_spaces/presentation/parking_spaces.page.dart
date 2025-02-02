@@ -15,7 +15,7 @@ class _ParkingSpacesPageState extends State<ParkingSpacesPage> {
     return Scaffold(
       appBar: CommonBackAppbar(
         context: context,
-        onTap: () => context.go("/home"),
+        onTap: () => context.go("/bottomnav"),
         textTitle: "Parking Spaces",
       ),
     );

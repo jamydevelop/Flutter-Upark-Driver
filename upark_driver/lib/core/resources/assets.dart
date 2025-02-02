@@ -21,4 +21,7 @@ class Assets {
   static const profileHelpAndSupport = "$filePath1/profile_sms_edit.png";
   static const profileDeleteAccount = "$filePath1/profile_delete.png";
   static const profileLogout = "$filePath1/profile_login.png";
+
+  static const parkingSpacesSearchIcon =
+      "$filePath1/parking_spaces_search_icon.png";
 }

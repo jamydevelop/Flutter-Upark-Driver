@@ -5,13 +5,14 @@ import 'package:upark_driver/features/homepage/edit_profile/presentation/edit_pr
 import 'package:upark_driver/features/homepage/home/presentation/home.page.dart';
 import 'package:upark_driver/features/login/presentation/login.page.dart';
 import 'package:upark_driver/features/onboarding/presentation/onboarding.page.dart';
+import 'package:upark_driver/features/parking_spaces/presentation/parking_spaces.page.dart';
 import 'package:upark_driver/features/register/presentation/register.page.dart';
 import 'package:upark_driver/features/splash/presentation/splash.page.dart';
 
 class AppRouter {
   final GoRouter router = GoRouter(
     //this is for initial location of the app
-    initialLocation: "/edit-profile",
+    initialLocation: "/parking-spaces",
     //other routes/screen for the app
     routes: [
       GoRoute(path: "/splash", builder: (context, state) => const SplashPage()),
@@ -29,7 +30,10 @@ class AppRouter {
       GoRoute(path: "/home", builder: (context, state) => const HomePage()),
       GoRoute(
           path: "/edit-profile",
-          builder: (context, state) => const EditProfilePage())
+          builder: (context, state) => const EditProfilePage()),
+      GoRoute(
+          path: "/parking-spaces",
+          builder: (context, state) => const ParkingSpacesPage())
     ],
   );
 }

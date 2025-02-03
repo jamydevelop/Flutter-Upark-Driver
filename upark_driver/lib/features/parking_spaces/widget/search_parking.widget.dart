@@ -22,6 +22,7 @@ class SearchParkingWidget extends StatelessWidget {
           ),
         ],
       ),
+      //test
       child: CommonTextField(
         hintText: "Search Parking Spaces",
         hintTextStyle: TextStyle(

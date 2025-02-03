@@ -49,7 +49,7 @@ class ParkingSpacesCardWidget extends StatelessWidget {
         ),
         SizedBox(width: normalSpacing),
 
-        // Expanded Text Column to Prevent Overflow
+        // Expanded to allow flexible space for text to avoid overflow
         Expanded(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -63,7 +63,11 @@ class ParkingSpacesCardWidget extends StatelessWidget {
                 color: blackPrimary,
               ),
               SizedBox(height: extraSmallSpacing),
+
+              // Wrap the Row with Flexible to avoid overflow in narrow space
               Row(
+                crossAxisAlignment: CrossAxisAlignment
+                    .start, // Align start to avoid vertical misalignment
                 children: [
                   Image.asset(
                     Assets.parkingSpacesLocation,
@@ -71,20 +75,25 @@ class ParkingSpacesCardWidget extends StatelessWidget {
                     height: 12,
                   ),
                   SizedBox(width: normalSpacing),
-                  CommonTextLabel(
-                    text:
-                        "Ecoland Subdivision Basketball Court, Quimpo Blvd cor. Tulip and...",
-                    fontFamily: "Roboto",
-                    fontWeight: FontWeight.w400,
-                    fontSize: fontSizeTitle1,
-                    color: greyQuinary,
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
+                  // Use Flexible to allow text to fit
+                  Flexible(
+                    child: CommonTextLabel(
+                      text:
+                          "Ecoland Subdivision Basketball Court, Quimpo Blvd cor. Tulip and...",
+                      fontFamily: "Roboto",
+                      fontWeight: FontWeight.w400,
+                      fontSize: fontSizeTitle1,
+                      color: greyQuinary,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: extraSmallSpacing),
+
               Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Image.asset(
                     Assets.parkingSpacesLocation,

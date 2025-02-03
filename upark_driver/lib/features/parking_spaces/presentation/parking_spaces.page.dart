@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_back_appbar.dart';
+import 'package:upark_driver/features/parking_spaces/widget/parking_spaces_card.widget.dart';
 import 'package:upark_driver/features/parking_spaces/widget/search_parking.widget.dart';
 
 class ParkingSpacesPage extends StatefulWidget {
@@ -21,13 +22,15 @@ class _ParkingSpacesPageState extends State<ParkingSpacesPage> {
         textTitle: "Parking Spaces",
       ),
       body: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: Padding(
+        child: Container(
           padding: const EdgeInsets.symmetric(
               horizontal: largeSpacing, vertical: extraLargeSpacing),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               SearchParkingWidget(),
+              SizedBox(height: largeSpacing),
+              ParkingSpacesCardWidget(),
             ],
           ),
         ),

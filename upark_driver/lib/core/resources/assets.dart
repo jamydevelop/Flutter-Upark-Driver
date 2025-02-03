@@ -24,4 +24,7 @@ class Assets {
 
   static const parkingSpacesSearchIcon =
       "$filePath1/parking_spaces_search_icon.png";
+
+  static const parkingSpacesLocation = "$filePath1/PS_location.png";
+  static const parkingSpacesClock = "$filePath1/PS_clock.png";
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/assets.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
@@ -62,23 +63,43 @@ class ParkingSpacesCardWidget extends StatelessWidget {
                 color: blackPrimary,
               ),
               SizedBox(height: extraSmallSpacing),
-              CommonTextLabel(
-                text:
-                    "Ecoland Subdivision Basketball Court, Quimpo Blvd cor. Tulip and...",
-                fontFamily: "Roboto",
-                fontWeight: FontWeight.w400,
-                fontSize: fontSizeTitle1,
-                color: greyQuinary,
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
+              Row(
+                children: [
+                  Image.asset(
+                    Assets.parkingSpacesLocation,
+                    width: 12,
+                    height: 12,
+                  ),
+                  SizedBox(width: normalSpacing),
+                  CommonTextLabel(
+                    text:
+                        "Ecoland Subdivision Basketball Court, Quimpo Blvd cor. Tulip and...",
+                    fontFamily: "Roboto",
+                    fontWeight: FontWeight.w400,
+                    fontSize: fontSizeTitle1,
+                    color: greyQuinary,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ],
               ),
               SizedBox(height: extraSmallSpacing),
-              CommonTextLabel(
-                text: "Mon - Fri, 8:00 AM - 5:00 PM",
-                fontFamily: "Roboto",
-                fontWeight: FontWeight.w400,
-                fontSize: fontSizeTitle1,
-                color: greyQuinary,
+              Row(
+                children: [
+                  Image.asset(
+                    Assets.parkingSpacesLocation,
+                    width: 12,
+                    height: 12,
+                  ),
+                  SizedBox(width: normalSpacing),
+                  CommonTextLabel(
+                    text: "Mon - Fri, 8:00 AM - 5:00 PM",
+                    fontFamily: "Roboto",
+                    fontWeight: FontWeight.w400,
+                    fontSize: fontSizeTitle1,
+                    color: greyQuinary,
+                  ),
+                ],
               ),
             ],
           ),

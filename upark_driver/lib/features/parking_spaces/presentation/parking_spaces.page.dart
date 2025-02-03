@@ -30,7 +30,23 @@ class _ParkingSpacesPageState extends State<ParkingSpacesPage> {
             children: <Widget>[
               SearchParkingWidget(),
               SizedBox(height: largeSpacing),
-              ParkingSpacesCardWidget(),
+              Column(
+                spacing: largeSpacing,
+                children: [
+                  ParkingSpacesCardWidget(),
+                  ParkingSpacesCardWidget(),
+                  ParkingSpacesCardWidget(),
+                  ParkingSpacesCardWidget(),
+                  ParkingSpacesCardWidget(),
+                  ParkingSpacesCardWidget(),
+                  ParkingSpacesCardWidget(),
+                  ParkingSpacesCardWidget(),
+                  ParkingSpacesCardWidget(),
+                  ParkingSpacesCardWidget(),
+                  ParkingSpacesCardWidget(),
+                  ParkingSpacesCardWidget(),
+                ],
+              )
             ],
           ),
         ),

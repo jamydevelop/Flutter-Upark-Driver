@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:upark_driver/features/favorites/presentation/favorites.page.dart';
 import 'package:upark_driver/features/homepage/bottom_nav/presentation/bottom_nav.page.dart';
 import 'package:upark_driver/features/forgot_password/presentation/forgot_password.page.dart';
 import 'package:upark_driver/features/homepage/edit_profile/presentation/edit_profile.page.dart';
@@ -12,7 +13,7 @@ import 'package:upark_driver/features/splash/presentation/splash.page.dart';
 class AppRouter {
   final GoRouter router = GoRouter(
     //this is for initial location of the app
-    initialLocation: "/parking-spaces",
+    initialLocation: "/favorites",
     //other routes/screen for the app
     routes: [
       GoRoute(path: "/splash", builder: (context, state) => const SplashPage()),
@@ -33,7 +34,10 @@ class AppRouter {
           builder: (context, state) => const EditProfilePage()),
       GoRoute(
           path: "/parking-spaces",
-          builder: (context, state) => const ParkingSpacesPage())
+          builder: (context, state) => const ParkingSpacesPage()),
+      GoRoute(
+          path: "/favorites",
+          builder: (context, state) => const FavoritesPage())
     ],
   );
 }

@@ -7,7 +7,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-//test
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
@@ -17,7 +17,6 @@ class MyApp extends StatelessWidget {
       title: 'Upark App Demo',
       routerConfig: AppRouter().router,
       // home: const SplashPage(),
-      //test
     );
   }
 }

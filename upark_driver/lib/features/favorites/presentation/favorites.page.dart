@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_back_appbar.dart';
 import 'package:upark_driver/features/favorites/widget/favorites_card.widget.dart';
@@ -17,7 +18,9 @@ class _FavoritesPageState extends State<FavoritesPage> {
     return Scaffold(
       appBar: CommonBackAppbar(
         context: context,
-        onTap: () {},
+        onTap: () {
+          context.go("/bottomnav");
+        },
         textTitle: "Favorites",
       ),
       body: SingleChildScrollView(

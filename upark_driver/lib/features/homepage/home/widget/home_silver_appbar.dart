@@ -37,10 +37,10 @@ class HomeSilverAppbar extends SliverAppBar {
                       Row(
                         children: [
                           CommonIconButton(
-                              iconPath: Assets.messageIcon, onTap: () {}),
+                              iconPath: Assets.bellIcon, onTap: () {}),
                           const SizedBox(width: smallSpacing),
                           CommonIconButton(
-                              iconPath: Assets.bellIcon, onTap: () {}),
+                              iconPath: Assets.messageIcon, onTap: () {}),
                         ],
                       ),
                     ],

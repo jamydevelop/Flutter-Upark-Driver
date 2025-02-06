@@ -6,6 +6,7 @@ import 'package:upark_driver/features/homepage/edit_profile/presentation/edit_pr
 import 'package:upark_driver/features/homepage/home/presentation/home.page.dart';
 import 'package:upark_driver/features/homepage/profile/presentation/profile.page.dart';
 import 'package:upark_driver/features/login/presentation/login.page.dart';
+import 'package:upark_driver/features/notifications/presentation/notifications.page.dart';
 import 'package:upark_driver/features/onboarding/presentation/onboarding.page.dart';
 import 'package:upark_driver/features/parking_spaces/presentation/parking_spaces.page.dart';
 import 'package:upark_driver/features/register/presentation/register.page.dart';
@@ -14,7 +15,7 @@ import 'package:upark_driver/features/splash/presentation/splash.page.dart';
 class AppRouter {
   final GoRouter router = GoRouter(
     //this is for initial location of the app
-    initialLocation: "/login",
+    initialLocation: "/notifications",
     //other routes/screen for the app
     routes: [
       GoRoute(path: "/splash", builder: (context, state) => const SplashPage()),
@@ -40,7 +41,10 @@ class AppRouter {
           path: "/favorites",
           builder: (context, state) => const FavoritesPage()),
       GoRoute(
-          path: "/profile", builder: (context, state) => const ProfilePage())
+          path: "/profile", builder: (context, state) => const ProfilePage()),
+      GoRoute(
+          path: "notifications",
+          builder: (context, state) => const NotificationsPage())
     ],
   );
 }

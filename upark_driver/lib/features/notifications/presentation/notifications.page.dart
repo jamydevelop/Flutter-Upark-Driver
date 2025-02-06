@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/widget/common_back_appbar.dart';
+import 'package:upark_driver/features/notifications/widget/notifications_header.dart';
 
 class NotificationsPage extends StatefulWidget {
   const NotificationsPage({super.key});
@@ -18,7 +19,9 @@ class _NotificationsPageState extends State<NotificationsPage> {
       ),
       body: SingleChildScrollView(
         child: Column(
-          children: <Widget>[],
+          children: <Widget>[
+            NotificationsHeader(),
+          ],
         ),
       ),
     );

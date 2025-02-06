@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/assets.dart';
 import 'package:upark_driver/core/resources/colors.dart';
-import 'package:upark_driver/features/dashboard/bookings/presentation/bookings.page.dart';
-import 'package:upark_driver/features/dashboard/home/presentation/home.page.dart';
+import 'package:upark_driver/features/dashboard/bookings/presentation/bookings_page.dart';
+import 'package:upark_driver/features/dashboard/home/presentation/home_page.dart';
 import 'package:upark_driver/features/dashboard/profile/presentation/profile_page.dart';
 
 class BottomNavPage extends StatefulWidget {

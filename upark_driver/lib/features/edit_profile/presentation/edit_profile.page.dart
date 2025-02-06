@@ -29,17 +29,19 @@ class _EditProfilePageState extends State<EditProfilePage> {
       body: Center(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: largeSpacing),
-          child: Column(
-            spacing: largeSpacing,
-            children: [
-              ImageWidget(),
-              FirstNameEditProfileWidget(),
-              LastNameEditProfileWidget(),
-              GenderEditProfileWidget(),
-              ContactNumberEditProfileWidget(),
-              UpdateButton(onTap: () {}),
-              DeleteAccountButton(onTap: () {}),
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              spacing: largeSpacing,
+              children: [
+                ImageWidget(),
+                FirstNameEditProfileWidget(),
+                LastNameEditProfileWidget(),
+                GenderEditProfileWidget(),
+                ContactNumberEditProfileWidget(),
+                UpdateButton(onTap: () {}),
+                DeleteAccountButton(onTap: () {}),
+              ],
+            ),
           ),
         ),
       ),

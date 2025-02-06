@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
-import 'package:upark_driver/features/bookings/widget/to_pay_card.widget.dart';
+import 'package:upark_driver/features/dashboard/bookings/widget/to_pay_card.widget.dart';
 
 class ToPayPage extends StatefulWidget {
   const ToPayPage({super.key});

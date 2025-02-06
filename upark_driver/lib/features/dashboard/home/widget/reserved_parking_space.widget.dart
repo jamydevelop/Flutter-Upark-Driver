@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
-import 'package:upark_driver/features/home/widget/seperator_dash_line.dart';
+import 'package:upark_driver/features/dashboard/home/widget/seperator_dash_line.dart';
 
 class ReservedParkingSpaceWidget extends StatelessWidget {
   const ReservedParkingSpaceWidget({super.key});

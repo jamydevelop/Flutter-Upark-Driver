@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
-import 'package:upark_driver/features/profile/widget/bookings_widget.dart';
-import 'package:upark_driver/features/profile/widget/change_password_widget.dart';
+import 'package:upark_driver/features/dashboard/profile/widget/bookings_widget.dart';
+import 'package:upark_driver/features/dashboard/profile/widget/change_password_widget.dart';
 // import 'package:upark_driver/features/homepage/profile/widget/delete_account_widget.dart';
-import 'package:upark_driver/features/profile/widget/favorites_widget.dart';
-import 'package:upark_driver/features/profile/widget/help_and_support_widget.dart';
-import 'package:upark_driver/features/profile/widget/log_out_widget.dart';
-import 'package:upark_driver/features/profile/widget/notifications_widget.dart';
-import 'package:upark_driver/features/profile/widget/profile_header.dart';
-import 'package:upark_driver/features/profile/widget/terms_and_policies_widget.dart';
-import 'package:upark_driver/features/profile/widget/title_widget.dart';
-import 'package:upark_driver/features/profile/widget/vehicle_details_widget.dart';
+import 'package:upark_driver/features/dashboard/profile/widget/favorites_widget.dart';
+import 'package:upark_driver/features/dashboard/profile/widget/help_and_support_widget.dart';
+import 'package:upark_driver/features/dashboard/profile/widget/log_out_widget.dart';
+import 'package:upark_driver/features/dashboard/profile/widget/notifications_widget.dart';
+import 'package:upark_driver/features/dashboard/profile/widget/profile_header.dart';
+import 'package:upark_driver/features/dashboard/profile/widget/terms_and_policies_widget.dart';
+import 'package:upark_driver/features/dashboard/profile/widget/title_widget.dart';
+import 'package:upark_driver/features/dashboard/profile/widget/vehicle_details_widget.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});

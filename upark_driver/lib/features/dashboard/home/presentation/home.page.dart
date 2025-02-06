@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
-import 'package:upark_driver/features/home/widget/available_parking_space.widget.dart';
-import 'package:upark_driver/features/home/widget/home_silver_appbar.dart';
-import 'package:upark_driver/features/home/widget/no_resereved_parking_slot.widget.dart';
-import 'package:upark_driver/features/home/widget/parking_spaces_and_see_all.dart';
-import 'package:upark_driver/features/home/widget/reserved_parking_space.widget.dart';
-import 'package:upark_driver/features/home/widget/reserve_parking_title.dart';
+import 'package:upark_driver/features/dashboard/home/widget/available_parking_space.widget.dart';
+import 'package:upark_driver/features/dashboard/home/widget/home_silver_appbar.dart';
+import 'package:upark_driver/features/dashboard/home/widget/no_resereved_parking_slot.widget.dart';
+import 'package:upark_driver/features/dashboard/home/widget/parking_spaces_and_see_all.dart';
+import 'package:upark_driver/features/dashboard/home/widget/reserved_parking_space.widget.dart';
+import 'package:upark_driver/features/dashboard/home/widget/reserve_parking_title.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

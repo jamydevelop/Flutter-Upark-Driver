@@ -43,7 +43,7 @@ class AppRouter {
       GoRoute(
           path: "/profile", builder: (context, state) => const ProfilePage()),
       GoRoute(
-          path: "notifications",
+          path: "/notifications",
           builder: (context, state) => const NotificationsPage())
     ],
   );

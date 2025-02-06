@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
-import 'package:upark_driver/features/homepage/bookings/widget/approved_card.widget.dart';
+import 'package:upark_driver/features/bookings/widget/approved_card.widget.dart';
 
 class ApprovedPage extends StatefulWidget {
   const ApprovedPage({super.key});

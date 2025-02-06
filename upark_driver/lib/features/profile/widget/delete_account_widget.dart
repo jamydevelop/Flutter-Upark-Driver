@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:upark_driver/core/resources/assets.dart';
 import 'package:upark_driver/core/resources/colors.dart';
-import 'package:upark_driver/features/homepage/profile/widget/common_widget.button.dart';
+import 'package:upark_driver/features/profile/widget/common_widget.button.dart';
 
 class DeleteAccountWidget extends StatelessWidget {
   const DeleteAccountWidget({super.key});

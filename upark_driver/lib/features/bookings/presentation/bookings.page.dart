@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:upark_driver/features/homepage/bookings/presentation/approved.page.dart';
-import 'package:upark_driver/features/homepage/bookings/presentation/cancelled.page.dart';
-import 'package:upark_driver/features/homepage/bookings/presentation/completed.page.dart';
-import 'package:upark_driver/features/homepage/bookings/presentation/to_pay.page.dart';
-import 'package:upark_driver/features/homepage/bookings/widget/bookings_silver_appbar.dart';
+import 'package:upark_driver/features/bookings/presentation/approved.page.dart';
+import 'package:upark_driver/features/bookings/presentation/cancelled.page.dart';
+import 'package:upark_driver/features/bookings/presentation/completed.page.dart';
+import 'package:upark_driver/features/bookings/presentation/to_pay.page.dart';
+import 'package:upark_driver/features/bookings/widget/bookings_silver_appbar.dart';
 
 class BookingsPage extends StatefulWidget {
   const BookingsPage({super.key});

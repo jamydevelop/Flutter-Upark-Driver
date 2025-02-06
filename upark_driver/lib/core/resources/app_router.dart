@@ -4,7 +4,7 @@ import 'package:upark_driver/features/bottom_nav/presentation/bottom_nav.page.da
 import 'package:upark_driver/features/forgot_password/presentation/forgot_password.page.dart';
 import 'package:upark_driver/features/edit_profile/presentation/edit_profile.page.dart';
 import 'package:upark_driver/features/home/presentation/home.page.dart';
-import 'package:upark_driver/features/profile/presentation/profile.page.dart';
+import 'package:upark_driver/features/profile/presentation/profile_page.dart';
 import 'package:upark_driver/features/login/presentation/login.page.dart';
 import 'package:upark_driver/features/notifications/presentation/notifications.page.dart';
 import 'package:upark_driver/features/onboarding/presentation/onboarding.page.dart';

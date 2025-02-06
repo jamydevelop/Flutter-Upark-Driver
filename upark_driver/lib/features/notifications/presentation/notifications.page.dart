@@ -15,7 +15,11 @@ class _NotificationsPageState extends State<NotificationsPage> {
       appBar: CommonBackAppbar(
         context: context,
         onTap: () {},
-        textTitle: "Notification",
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[],
+        ),
       ),
     );
   }

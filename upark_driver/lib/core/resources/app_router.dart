@@ -4,6 +4,7 @@ import 'package:upark_driver/features/homepage/bottom_nav/presentation/bottom_na
 import 'package:upark_driver/features/forgot_password/presentation/forgot_password.page.dart';
 import 'package:upark_driver/features/homepage/edit_profile/presentation/edit_profile.page.dart';
 import 'package:upark_driver/features/homepage/home/presentation/home.page.dart';
+import 'package:upark_driver/features/homepage/profile/presentation/profile.page.dart';
 import 'package:upark_driver/features/login/presentation/login.page.dart';
 import 'package:upark_driver/features/onboarding/presentation/onboarding.page.dart';
 import 'package:upark_driver/features/parking_spaces/presentation/parking_spaces.page.dart';
@@ -37,7 +38,9 @@ class AppRouter {
           builder: (context, state) => const ParkingSpacesPage()),
       GoRoute(
           path: "/favorites",
-          builder: (context, state) => const FavoritesPage())
+          builder: (context, state) => const FavoritesPage()),
+      GoRoute(
+          path: "/profile", builder: (context, state) => const ProfilePage())
     ],
   );
 }

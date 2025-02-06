@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_button.dart';
@@ -40,7 +41,9 @@ class ProfileHeader extends StatelessWidget {
         SizedBox(height: normalSpacing),
         CommonButton(
           height: 28,
-          onPressed: () {},
+          onPressed: () {
+            context.go("/edit-profile");
+          },
           backgroundColor: greenPrimary,
           child: CommonTextLabel(
             text: "Edit Profile",

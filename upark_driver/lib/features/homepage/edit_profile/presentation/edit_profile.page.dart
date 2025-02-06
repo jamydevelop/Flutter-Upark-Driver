@@ -24,7 +24,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
       appBar: CommonBackAppbar(
         textTitle: "Edit Profile",
         context: context,
-        onTap: () => context.go("/login"),
+        onTap: () => context.go("/bottomnav"),
       ),
       body: Center(
         child: Padding(

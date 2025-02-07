@@ -6,29 +6,39 @@ import 'package:upark_driver/features/dashboard/home/presentation/home_page.dart
 import 'package:upark_driver/features/dashboard/profile/presentation/profile_page.dart';
 
 class BottomNavPage extends StatefulWidget {
-  const BottomNavPage({super.key});
+  const BottomNavPage({super.key, this.initialIndex = 0});
+
+  final int initialIndex;
 
   @override
   State<BottomNavPage> createState() => _BottomNavPageState();
 }
 
 class _BottomNavPageState extends State<BottomNavPage> {
-  int currentPageIndex = 0;
+  int? _currentPageIndex;
+
+  final List<Widget> _pages = [
+    HomePage(),
+    BookingsPage(),
+    ProfilePage(),
+  ];
+
+  @override
+  void initState() {
+    super.initState();
+    _currentPageIndex = widget.initialIndex;
+  }
 
   void _onTappedItem(int index) {
     setState(() {
-      currentPageIndex = index;
+      _currentPageIndex = index;
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: <Widget>[
-        Center(child: HomePage()), // Ensure the content is centered
-        Center(child: BookingsPage()),
-        Center(child: ProfilePage()),
-      ][currentPageIndex],
+      body: _pages[_currentPageIndex ?? 0],
       bottomNavigationBar: BottomNavigationBar(
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
@@ -44,7 +54,7 @@ class _BottomNavPageState extends State<BottomNavPage> {
               label: "Profile",
             ),
           ],
-          currentIndex: currentPageIndex,
+          currentIndex: _currentPageIndex ?? 0,
           onTap: _onTappedItem,
           selectedItemColor: greenPrimary),
     );
@@ -53,7 +63,7 @@ class _BottomNavPageState extends State<BottomNavPage> {
   Widget _buildIcon(String assetPath, int index) {
     return ColorFiltered(
       colorFilter: ColorFilter.mode(
-        currentPageIndex == index ? greenPrimary : greySecondary,
+        _currentPageIndex == index ? greenPrimary : greySecondary,
         BlendMode.srcIn,
       ),
       child: Image.asset(

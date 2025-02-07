@@ -1,10 +1,8 @@
 import 'package:go_router/go_router.dart';
-import 'package:upark_driver/features/favorites/presentation/favorites_page.dart';
 import 'package:upark_driver/features/bottom_nav/presentation/bottom_nav_page.dart';
-import 'package:upark_driver/features/forgot_password/presentation/forgot_password_page.dart';
 import 'package:upark_driver/features/edit_profile/presentation/edit_profile_page.dart';
-import 'package:upark_driver/features/dashboard/home/presentation/home_page.dart';
-import 'package:upark_driver/features/dashboard/profile/presentation/profile_page.dart';
+import 'package:upark_driver/features/favorites/presentation/favorites_page.dart';
+import 'package:upark_driver/features/forgot_password/presentation/forgot_password_page.dart';
 import 'package:upark_driver/features/login/presentation/login_page.dart';
 import 'package:upark_driver/features/notifications/presentation/notifications_page.dart';
 import 'package:upark_driver/features/onboarding/presentation/onboarding_page.dart';
@@ -15,7 +13,7 @@ import 'package:upark_driver/features/splash/presentation/splash_page.dart';
 class AppRouter {
   final GoRouter router = GoRouter(
     //this is for initial location of the app
-    initialLocation: "/bottomnav",
+    initialLocation: "/bottomnav/0",
     //other routes/screen for the app
     routes: [
       GoRoute(path: "/splash", builder: (context, state) => const SplashPage()),
@@ -28,9 +26,12 @@ class AppRouter {
           path: "/forgotpassword",
           builder: (context, state) => const ForgotPasswordPage()),
       GoRoute(
-          path: "/bottomnav",
-          builder: (context, state) => const BottomNavPage()),
-      GoRoute(path: "/home", builder: (context, state) => const HomePage()),
+        path: "/bottomnav/:index",
+        builder: (context, state) {
+          final index = int.tryParse(state.pathParameters['index'] ?? '0') ?? 0;
+          return BottomNavPage(initialIndex: index);
+        },
+      ),
       GoRoute(
           path: "/edit-profile",
           builder: (context, state) => const EditProfilePage()),
@@ -40,8 +41,6 @@ class AppRouter {
       GoRoute(
           path: "/favorites",
           builder: (context, state) => const FavoritesPage()),
-      GoRoute(
-          path: "/profile", builder: (context, state) => const ProfilePage()),
       GoRoute(
           path: "/notifications",
           builder: (context, state) => const NotificationsPage())

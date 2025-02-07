@@ -34,30 +34,12 @@ class BookingsSilverAppbar extends SliverAppBar {
                 width: 3.0, // Thickness of the underline
               ),
             ),
-            tabs: List.generate(4, (index) {
-              final labels = [
-                "To Pay",
-                "Approved",
-                "Cancelled",
-                "Completed",
-              ];
-              return Tab(
-                child: AnimatedBuilder(
-                  animation: tabController,
-                  builder: (context, child) {
-                    final isSelected = tabController.index == index;
-                    return CommonTextLabel(
-                      text: labels[index],
-                      fontFamily: "Poppins",
-                      fontWeight:
-                          isSelected ? FontWeight.w600 : FontWeight.w400,
-                      fontSize: fontSizeTitle4,
-                      color: isSelected ? Colors.black : greySecondary,
-                    );
-                  },
-                ),
-              );
-            }),
+            tabs: [
+              Tab(text: "To Pay"),
+              Tab(text: "Approved"),
+              Tab(text: "Cancelled"),
+              Tab(text: "Completed")
+            ],
           ),
         );
 }

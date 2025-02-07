@@ -35,7 +35,12 @@ class BookingsSilverAppbar extends SliverAppBar {
               ),
             ),
             tabs: List.generate(4, (index) {
-              final labels = ["To Pay", "Approved", "Cancelled", "Completed"];
+              final labels = [
+                "To Pay",
+                "Approved",
+                "Cancelled",
+                "Completed",
+              ];
               return Tab(
                 child: AnimatedBuilder(
                   animation: tabController,
@@ -46,7 +51,7 @@ class BookingsSilverAppbar extends SliverAppBar {
                       fontFamily: "Poppins",
                       fontWeight:
                           isSelected ? FontWeight.w600 : FontWeight.w400,
-                      fontSize: fontSizeTitle3,
+                      fontSize: fontSizeTitle4,
                       color: isSelected ? Colors.black : greySecondary,
                     );
                   },

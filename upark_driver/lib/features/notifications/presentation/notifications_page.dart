@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:upark_driver/core/resources/assets.dart';
 import 'package:upark_driver/core/widget/common_back_appbar.dart';
-import 'package:upark_driver/features/notifications/widget/common_notif_label.dart';
-import 'package:upark_driver/features/notifications/widget/common_notification_card.dart';
 import 'package:upark_driver/features/notifications/widget/new_section.dart';
 import 'package:upark_driver/features/notifications/widget/notifications_card.widget.dart';
 import 'package:upark_driver/features/notifications/widget/notifications_header.dart';

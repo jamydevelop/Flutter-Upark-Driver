@@ -3,15 +3,15 @@ import 'package:upark_driver/core/resources/assets.dart';
 import 'package:upark_driver/features/notifications/widget/common_notif_label.dart';
 import 'package:upark_driver/features/notifications/widget/common_notification_card.dart';
 
-class YesterdaySection extends StatelessWidget {
-  const YesterdaySection({super.key});
+class PastSection extends StatelessWidget {
+  const PastSection({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        CommonNotifLabel(text: "Yesterday"),
+        CommonNotifLabel(text: "Past"),
         CommonNotificationCard(
           headerText: "SM City Davao",
           subText: "Your pending booking has been approved!",

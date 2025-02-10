@@ -3,6 +3,7 @@ import 'package:upark_driver/core/widget/common_back_appbar.dart';
 import 'package:upark_driver/features/notifications/widget/new_section.dart';
 import 'package:upark_driver/features/notifications/widget/notifications_card.widget.dart';
 import 'package:upark_driver/features/notifications/widget/notifications_header.dart';
+import 'package:upark_driver/features/notifications/widget/past_section.dart';
 import 'package:upark_driver/features/notifications/widget/yesterday_section.dart';
 
 class NotificationsPage extends StatefulWidget {
@@ -29,6 +30,7 @@ class _NotificationsPageState extends State<NotificationsPage> {
             NotificationsCardWidget(),
             NewSection(),
             YesterdaySection(),
+            PastSection(),
           ],
         ),
       ),

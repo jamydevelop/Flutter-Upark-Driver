@@ -11,7 +11,7 @@ class CommonNotifLabel extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(
-          horizontal: largeSpacing, vertical: largeSpacing),
+          horizontal: largeSpacing, vertical: smallSpacing),
       child: CommonTextLabel(
         text: text,
         fontFamily: "Inter",

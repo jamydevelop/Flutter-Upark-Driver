@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:upark_driver/core/resources/assets.dart';
+import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/features/notifications/widget/common_notif_label.dart';
 import 'package:upark_driver/features/notifications/widget/common_notification_card.dart';
 
@@ -11,6 +12,7 @@ class PastSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        SizedBox(height: extraSmallSpacing),
         CommonNotifLabel(text: "Past"),
         CommonNotificationCard(
           headerText: "SM City Davao",

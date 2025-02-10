@@ -27,6 +27,7 @@ const Color redPrimary = Color(0xFFBD1E1E);
 
 const Color notifUnreadBackground = Color(0xFFebf4eb);
 
+const Color notfiLabel = Color(0xFF374151);
 const Color notifSubText = Color(0xFF262626);
 const Color notifDateText = Color(0xFF000000);
 const Color greenPrimary = Color(0xFF379237);

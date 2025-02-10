@@ -3,8 +3,8 @@ import 'package:upark_driver/core/resources/assets.dart';
 import 'package:upark_driver/features/notifications/widget/common_notif_label.dart';
 import 'package:upark_driver/features/notifications/widget/common_notification_card.dart';
 
-class NewSection extends StatelessWidget {
-  const NewSection({super.key});
+class YesterdaySection extends StatelessWidget {
+  const YesterdaySection({super.key});
 
   @override
   Widget build(BuildContext context) {

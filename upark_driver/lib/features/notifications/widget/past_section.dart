@@ -19,6 +19,20 @@ class PastSection extends StatelessWidget {
           imagePath: Assets.notificationsImage,
           isUnread: true,
         ),
+        CommonNotificationCard(
+          headerText: "SM City Davao",
+          subText: "Your pending booking has been approved!",
+          dateAndTime: "05/24/2024 at 9:30AM",
+          imagePath: Assets.notificationsImage,
+          isUnread: false,
+        ),
+        CommonNotificationCard(
+          headerText: "SM City Davao",
+          subText: "Your pending booking has been approved!",
+          dateAndTime: "05/24/2024 at 9:30AM",
+          imagePath: Assets.notificationsImage,
+          isUnread: false,
+        ),
       ],
     );
   }

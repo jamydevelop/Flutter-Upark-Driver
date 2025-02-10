@@ -17,7 +17,7 @@ class YesterdaySection extends StatelessWidget {
           subText: "Your pending booking has been approved!",
           dateAndTime: "05/24/2024 at 9:30AM",
           imagePath: Assets.notificationsImage,
-          isUnread: true,
+          isUnread: false,
         ),
       ],
     );

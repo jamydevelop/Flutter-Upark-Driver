@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/assets.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
@@ -37,10 +38,11 @@ class _CommonNotificationCardState extends State<CommonNotificationCard> {
       width: 35,
       height: 35,
       decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        color: greyPrimary,
-      ),
-      child: Image.asset("name"),
+          shape: BoxShape.circle,
+          color: greyPrimary,
+          image: DecorationImage(
+            image: AssetImage(Assets.notificationImage),
+          )),
     );
   }
 

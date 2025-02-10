@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/assets.dart';
 import 'package:upark_driver/core/widget/common_back_appbar.dart';
 import 'package:upark_driver/features/notifications/widget/common_notification_card.dart';
 import 'package:upark_driver/features/notifications/widget/notifications_card.widget.dart';
@@ -26,7 +27,12 @@ class _NotificationsPageState extends State<NotificationsPage> {
           children: <Widget>[
             NotificationsHeader(),
             NotificationsCardWidget(),
-            CommonNotificationCard(),
+            CommonNotificationCard(
+              headerText: "SM City Davao",
+              subText: "Your pending booking has been approved!",
+              dateAndTime: "05/24/2024 at 9:30AM",
+              imagePath: Assets.notificationsImage,
+            ),
           ],
         ),
       ),

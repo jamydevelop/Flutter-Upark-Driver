@@ -28,5 +28,5 @@ class Assets {
   static const parkingSpacesLocation = "$filePath1/PS_location.png";
   static const parkingSpacesClock = "$filePath1/PS_clock.png";
 
-  static const notificationImage = "$filePath2/parking_image.png";
+  static const notificationsImage = "$filePath2/parking_image.png";
 }

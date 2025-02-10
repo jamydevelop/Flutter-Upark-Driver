@@ -8,12 +8,14 @@ class CommonNotificationCard extends StatefulWidget {
   final String subText;
   final String dateAndTime;
   final String imagePath;
+  final bool? isUnread;
   const CommonNotificationCard(
       {super.key,
       required this.headerText,
       required this.subText,
       required this.dateAndTime,
-      required this.imagePath});
+      required this.imagePath,
+      this.isUnread});
 
   @override
   State<CommonNotificationCard> createState() => _CommonNotificationCardState();

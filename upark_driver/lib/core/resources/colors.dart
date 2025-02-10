@@ -24,6 +24,11 @@ const Color blackPrimary = Color(0xFF0B0B0B);
 
 const Color redSecondary = Color(0xFFEB1D1D);
 const Color redPrimary = Color(0xFFBD1E1E);
+
+const Color notifUnreadBackground = Color(0xFFebf4eb);
+
+const Color notifSubText = Color(0xFF262626);
+const Color notifDateText = Color(0xFF000000);
 const Color greenPrimary = Color(0xFF379237);
 
 const Color whitePrimary = Color(0xFFFFFFFF);

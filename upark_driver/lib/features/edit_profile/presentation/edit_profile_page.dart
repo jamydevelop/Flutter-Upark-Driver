@@ -23,7 +23,6 @@ class _EditProfilePageState extends State<EditProfilePage> {
     return Scaffold(
       appBar: CommonBackAppbar(
         textTitle: "Edit Profile",
-        context: context,
         onTap: () => context.go("/bottomnav/2"),
       ),
       body: Center(

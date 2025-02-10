@@ -17,7 +17,6 @@ class _ParkingSpacesPageState extends State<ParkingSpacesPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CommonBackAppbar(
-        context: context,
         onTap: () => context.go("/bottomnav"),
         textTitle: "Parking Spaces",
       ),

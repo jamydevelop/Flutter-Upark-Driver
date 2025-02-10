@@ -35,7 +35,6 @@ class _RegisterPageState extends State<RegisterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CommonBackAppbar(
-        context: context,
         onTap: () => context.go("/login"),
       ),
       backgroundColor: Colors.white,

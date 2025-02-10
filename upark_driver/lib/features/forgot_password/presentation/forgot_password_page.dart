@@ -20,7 +20,6 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CommonBackAppbar(
-        context: context,
         onTap: () => context.go("/login"),
       ),
       body: Padding(

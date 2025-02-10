@@ -17,7 +17,6 @@ class _FavoritesPageState extends State<FavoritesPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CommonBackAppbar(
-        context: context,
         onTap: () {
           context.go("/bottomnav");
         },

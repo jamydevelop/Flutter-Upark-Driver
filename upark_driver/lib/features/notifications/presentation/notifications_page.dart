@@ -18,7 +18,6 @@ class _NotificationsPageState extends State<NotificationsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CommonBackAppbar(
-        context: context,
         onTap: () {},
       ),
       body: SingleChildScrollView(

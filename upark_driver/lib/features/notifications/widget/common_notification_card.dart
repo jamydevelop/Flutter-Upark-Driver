@@ -15,7 +15,7 @@ class CommonNotificationCard extends StatefulWidget {
       required this.subText,
       required this.dateAndTime,
       required this.imagePath,
-      this.isUnread});
+      this.isUnread = false});
 
   @override
   State<CommonNotificationCard> createState() => _CommonNotificationCardState();
@@ -30,7 +30,7 @@ class _CommonNotificationCardState extends State<CommonNotificationCard> {
       width: double.infinity,
       height: 77,
       decoration: BoxDecoration(
-        color: notifUnreadBackground,
+        color: widget.isUnread == true ? notifUnreadBackground : whitePrimary,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -72,14 +72,16 @@ class _CommonNotificationCardState extends State<CommonNotificationCard> {
               ),
               SizedBox(height: extraSmallSpacing),
               Spacer(),
-              Container(
-                width: 10,
-                height: 10,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: greenPrimary,
-                ),
-              )
+              widget.isUnread == true
+                  ? Container(
+                      width: 10,
+                      height: 10,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: greenPrimary,
+                      ),
+                    )
+                  : SizedBox.shrink(),
             ],
           ),
           CommonTextLabel(

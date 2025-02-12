@@ -1,5 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:upark_driver/features/bottom_nav/presentation/bottom_nav_page.dart';
+import 'package:upark_driver/features/change_password/presentation/change_password_page.dart';
 import 'package:upark_driver/features/edit_profile/presentation/edit_profile_page.dart';
 import 'package:upark_driver/features/favorites/presentation/favorites_page.dart';
 import 'package:upark_driver/features/forgot_password/presentation/forgot_password_page.dart';
@@ -13,7 +14,7 @@ import 'package:upark_driver/features/splash/presentation/splash_page.dart';
 class AppRouter {
   final GoRouter router = GoRouter(
     //this is for initial location of the app
-    initialLocation: "/notifications",
+    initialLocation: "/change-password",
     //other routes/screen for the app
     routes: [
       GoRoute(path: "/splash", builder: (context, state) => const SplashPage()),
@@ -43,7 +44,10 @@ class AppRouter {
           builder: (context, state) => const FavoritesPage()),
       GoRoute(
           path: "/notifications",
-          builder: (context, state) => const NotificationsPage())
+          builder: (context, state) => const NotificationsPage()),
+      GoRoute(
+          path: "/change-password",
+          builder: (context, state) => const ChangePasswordPage()),
     ],
   );
 }

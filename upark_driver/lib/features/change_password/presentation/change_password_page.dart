@@ -4,6 +4,7 @@ import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_back_appbar.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
+import 'package:upark_driver/features/change_password/widget/change_password_textfield.dart';
 
 class ChangePasswordPage extends StatefulWidget {
   const ChangePasswordPage({super.key});
@@ -41,6 +42,7 @@ class _ChangePasswordPageState extends State<ChangePasswordPage> {
               color: greyQuinary,
               textAlign: TextAlign.left,
             ),
+            ChangePasswordTextfield(),
           ],
         ),
       ),

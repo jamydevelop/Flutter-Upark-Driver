@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_back_appbar.dart';
+import 'package:upark_driver/core/widget/common_button.dart';
 import 'package:upark_driver/core/widget/common_text_label.dart';
 import 'package:upark_driver/features/change_password/widget/common_change_password_textfield.dart';
 
@@ -44,6 +45,26 @@ class _ChangePasswordPageState extends State<ChangePasswordPage> {
             ),
             CommonChangePasswordTextfield(labelText: "New Password"),
             CommonChangePasswordTextfield(labelText: "Confirm Password"),
+            SizedBox(height: extraLargeSpacing),
+            Row(
+              children: [
+                Expanded(
+                  child: CommonButton(
+                    borderRadius: 10,
+                    foregroundColor: whitePrimary,
+                    backgroundColor: greenPrimary,
+                    onPressed: () {},
+                    child: CommonTextLabel(
+                      fontFamily: "Roboto",
+                      fontWeight: FontWeight.w600,
+                      fontSize: fontSizeCallout,
+                      color: whitePrimary, //
+                      text: "Login",
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),

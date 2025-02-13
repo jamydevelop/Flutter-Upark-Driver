@@ -1,26 +1,35 @@
 import 'package:flutter/material.dart';
+import 'package:upark_driver/core/resources/assets.dart';
 import 'package:upark_driver/core/resources/colors.dart';
 import 'package:upark_driver/core/resources/dimensions.dart';
 import 'package:upark_driver/core/widget/common_text_field.dart';
-import 'package:upark_driver/features/login/widget/text_label/password_text_label.login.widget.dart';
+import 'package:upark_driver/core/widget/common_text_label.dart';
 
-class ChangePasswordTextfield extends StatefulWidget {
-  const ChangePasswordTextfield({super.key});
+class CommonChangePasswordTextfield extends StatefulWidget {
+  final String labelText;
+
+  const CommonChangePasswordTextfield({super.key, required this.labelText});
 
   @override
-  State<ChangePasswordTextfield> createState() =>
-      _ChangePasswordTextfieldState();
+  State<CommonChangePasswordTextfield> createState() =>
+      _CommonChangePasswordTextfieldState();
 }
 
-class _ChangePasswordTextfieldState extends State<ChangePasswordTextfield> {
+class _CommonChangePasswordTextfieldState
+    extends State<CommonChangePasswordTextfield> {
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(height: extraSmallSpacing),
-        LoginPasswordTextLabelWidget(),
-        SizedBox(height: extraSmallSpacing),
+        CommonTextLabel(
+          fontWeight: FontWeight.w500,
+          fontSize: fontSizeSubhead, //15px
+          color: greyPrimary, //#7D7777
+          text: widget.labelText,
+        ),
+        SizedBox(height: smallSpacing),
         CommonTextField(
           isSecure: true,
           hasShowHideTextIcon: true,
@@ -33,7 +42,7 @@ class _ChangePasswordTextfieldState extends State<ChangePasswordTextfield> {
             color: greySecondary, //#868686
           ),
           prefixIcon: Image.asset(
-            "assets/icons/key_fill_icon.png",
+            Assets.changePasswordKeyIcon,
             scale: 3,
             color: greySecondary, //#868686
           ),

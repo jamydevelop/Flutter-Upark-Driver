@@ -29,4 +29,6 @@ class Assets {
   static const parkingSpacesClock = "$filePath1/PS_clock.png";
 
   static const notificationsImage = "$filePath2/parking_image.png";
+
+  static const changePasswordKeyIcon = "$filePath1/key_changep.png";
 }

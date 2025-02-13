@@ -34,11 +34,13 @@ class _ChangePasswordPageState extends State<ChangePasswordPage> {
               color: blackPrimary,
             ),
             CommonTextLabel(
-              text: "text",
+              text:
+                  "Your new password must be different\nfrom previous used password.",
               fontWeight: FontWeight.w400,
               fontSize: fontSizeTitle2,
               color: greyQuinary,
-            )
+              textAlign: TextAlign.left,
+            ),
           ],
         ),
       ),

@@ -10,11 +10,12 @@ import 'package:upark_driver/features/onboarding/presentation/onboarding_page.da
 import 'package:upark_driver/features/parking_spaces/presentation/parking_spaces_page.dart';
 import 'package:upark_driver/features/register/presentation/register_page.dart';
 import 'package:upark_driver/features/splash/presentation/splash_page.dart';
+import 'package:upark_driver/features/vehicle_details/presentation/vehicle_details_page.dart';
 
 class AppRouter {
   final GoRouter router = GoRouter(
     //this is for initial location of the app
-    initialLocation: "/change-password",
+    initialLocation: "/vehicle-details",
     //other routes/screen for the app
     routes: [
       GoRoute(path: "/splash", builder: (context, state) => const SplashPage()),
@@ -48,6 +49,9 @@ class AppRouter {
       GoRoute(
           path: "/change-password",
           builder: (context, state) => const ChangePasswordPage()),
+      GoRoute(
+          path: "/vehicle-details",
+          builder: (context, state) => const VehicleDetailsPage())
     ],
   );
 }

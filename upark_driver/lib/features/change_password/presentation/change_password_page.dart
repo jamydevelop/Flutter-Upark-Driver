@@ -32,6 +32,12 @@ class _ChangePasswordPageState extends State<ChangePasswordPage> {
               fontWeight: FontWeight.w500,
               fontSize: bigFontSizeTitle1,
               color: blackPrimary,
+            ),
+            CommonTextLabel(
+              text: "text",
+              fontWeight: FontWeight.w400,
+              fontSize: fontSizeTitle2,
+              color: greyQuinary,
             )
           ],
         ),
